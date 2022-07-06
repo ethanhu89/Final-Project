@@ -1,0 +1,80 @@
+---
+title: "Breakdown of the S&P 500"
+description: ""
+site: distill::distill_website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+library(rvest)
+library(janitor)
+library(distill)
+library(ggplot2)
+library(readr)
+library(plotly)
+```
+
+```{r}
+raw_data = read_csv(file = "constituents-financials.csv")
+
+market_cap_by_sector = raw_data |> 
+  clean_names() |> 
+  select(sector, market_cap) |> 
+  group_by(sector) |> 
+  summarize(total_value = sum(market_cap)) |> 
+  mutate(total_value = total_value / 1000000000000) |> 
+  arrange(desc(total_value))
+
+ggplot(data = market_cap_by_sector,
+       mapping = aes(x = fct_reorder(sector, total_value),
+                     y = total_value,
+                     fill = total_value)) +
+  geom_col() +
+  scale_y_continuous(breaks = c(0:8)) +
+  coord_flip() + 
+  scale_fill_gradient(low = "#5782f8", high = "#2e0cf3") +
+  labs(title = "S&P 500 Companies Value by Sector",
+       x = NULL,
+       y = "Total Value in Trillion $",
+       caption = "DataHub (2018)") +
+  theme_classic() +
+  theme(legend.position="none",
+        plot.title = element_text(face = "bold", size = 17, margin = margin(b = 10)),
+        axis.title.x = element_text(margin = margin(t = 10), color = "#454545"),
+        plot.caption = element_text(face = "italic"))
+
+#add subtitle
+```
+
+```{r}
+dividend_price = raw_data |> 
+  clean_names() |> 
+  select(symbol, name, sector, price, dividend_yield) |> 
+  filter(dividend_yield != 0) |> 
+  mutate(dividend_yield = round(dividend_yield, 2),
+         price = round(price, 2))
+
+dividend_price_plot = ggplot(data = dividend_price,
+       mapping = aes(x = price, y = dividend_yield, color = "",
+                     text = paste0("Company: ", name, " (", symbol, ")", "\n",
+                                  "Sector: ", sector, "\n",
+                                  "Price: $", price, "\n",
+                                  "Dividend: $", dividend_yield))) +
+  geom_point(size = 0.85) + 
+  scale_color_manual(values = c("#455ee5")) +
+  labs(title = "Dividends Based on Stock Price",
+       x = "Share Price ($)",
+       y = "Dividend Paid per Share ($)") +
+  theme_classic() +
+  theme(legend.position="none",
+        plot.title = element_text(face = "bold", size = 17, margin = margin(b = 10)))
+  
+ggplotly(dividend_price_plot, tooltip = "text")
+```
+
+```{r}
+#something with earnings/share or price/earnings or highs and lows
+#does share price correlate to earnings/share and price/earnings
+#does volatility relate to price/earnings
+```
