@@ -1,0 +1,90 @@
+---
+title: "Investing Choices"
+description: ""
+date: "`r Sys.Date()`"
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+library(rvest)
+library(janitor)
+library(distill)
+library(ggplot2)
+library(readr)
+library(plotly)
+library(knitr)
+```
+
+**Earnings Per Share (EPS)** is a company's net profit divided by the number of common shares it has outstanding. The resulting number serves as an indicator of a company's profitability. EPS indicates how much money a company makes for each share of its stock and is a widely used metric for estimating corporate value. A higher EPS indicates greater value because investors will pay more for a company's shares if they think the company has higher profits relative to its share price.  
+
+&nbsp;  
+
+```{r}
+raw_data = read_csv(file = "constituents-financials.csv")
+
+price_to_earnings = raw_data |> 
+  clean_names() |> 
+  filter(earnings_share >= -1) |> 
+  select(name, symbol, price, earnings_share, sector) |> 
+  mutate(earnings_price = earnings_share / price)
+
+earnings_price_plot = ggplot(data = price_to_earnings,
+       mapping = aes(x = price, y = earnings_price, color = sector,
+                     text = paste0("Company: ", name, " (", symbol, ")", "\n",
+                                  "Sector: ", sector, "\n",
+                                  "Price: $", price, "\n",
+                                  "Earnings per Share: $", earnings_share, " (", round(earnings_price * 100, 2), "%)"))) +
+  geom_point(size = 1) +
+  scale_y_continuous(labels = scales::percent) +
+  scale_x_continuous(labels = scales::dollar) +
+  theme_classic() +
+  labs(title = "Stock Price and % Earnings",
+       x = "Stock Price",
+       y = "Ratio of Earnings to Price",
+       color = NULL,
+       caption = "DataHub (2018)") +
+  theme(plot.title = element_text(face = "bold", size = 17, margin = margin(b = 10)),
+        plot.caption = element_text(face = "italic", margin = margin(t = 15)))
+
+ggplotly(earnings_price_plot, tooltip = "text")
+```
+
+**Dividends** are the distribution of corporate earnings to eligible shareholders. They are often distributed quarterly and may be paid out as cash or in the form of reinvestment in additional stock. Common shareholders of dividend-paying companies are eligible to receive a distribution as long as they own the stock before the ex-dividend date. **Dividend Yield** is the amount paid per share divided by the share price. Larger, established companies with predictable profits are often the best dividend payers. 
+
+&nbsp;  
+
+```{r}
+dividend_price = raw_data |> 
+  clean_names() |> 
+  select(symbol, name, sector, price, dividend_yield) |> 
+  filter(dividend_yield != 0) |> 
+  mutate(dividend_payout = dividend_yield * price / 100) |> 
+  mutate(dividend_yield = round(dividend_yield / 100, 4),
+         price = round(price, 2),
+         dividend_payout = round(dividend_payout, 2))
+
+dividend_price_plot = ggplot(data = dividend_price,
+       mapping = aes(x = price, y = dividend_yield, color = "",
+                     text = paste0("Company: ", name, " (", symbol, ")", "\n",
+                                  "Sector: ", sector, "\n",
+                                  "Price: $", price, "\n",
+                                  "Dividend: $", dividend_payout, " (", dividend_yield * 100, "%)"))) +
+  geom_point(size = 0.85) + 
+  scale_color_manual(values = c("#455ee5")) +
+  scale_y_continuous(labels = scales::percent) +
+  scale_x_continuous(labels = scales::dollar) +
+  labs(title = "Dividends Based on Stock Price",
+       x = "Share Price",
+       y = "Dividend Yield") +
+  theme_classic() +
+  theme(legend.position="none",
+        plot.title = element_text(face = "bold", size = 17, margin = margin(b = 10)))
+  
+ggplotly(dividend_price_plot, tooltip = "text")
+```
+
+## Analysis
+
+There is no strong correlation between the share price and dividend yield or earnings. This means that a universal rule for determining whether or not to invest into a stock does not exist. Instead, investments should be determined on an individual basis formulated on a company's stability, potential, management, growth, and many other considerable factors. The role of an index fund, such as the S&P 500, is to give investors a diversified selection of securities in one easy, low-cost investment. It does not require much time, effort, and lowers risk dramatically because the chances of 500 companies crashing is a lot lower than a single company going bankrupt. 

@@ -1,0 +1,26 @@
+---
+title: "Sources"
+description: "Sources used for this project"
+date: "`r Sys.Date()`"
+output: distill::distill_article
+bibliography: bibliography.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## DataHub
+
+DataHub is a modern data catalog built to enable end-to-end data discovery, data observability, and data governance. [@datahub]: List of companies in the S&P 500 (Standard and Poor’s 500). The S&P 500 is a free-float, capitalization-weighted index of the top 500 publicly listed stocks in the US (top 500 by market cap). The dataset includes a list of all the stocks contained therein.
+
+## Wikipedia
+
+Wikipedia is a free, open content online encyclopedia created through the collaborative effort of a community of users known as Wikipedians. Anyone registered on the site can create an article for publication; registration is not required to edit articles.The Standard and Poor's 500, or simply the S&P 500, is a stock market index tracking the stock performance of 500 large companies listed on exchanges in the United States. It is one of the most commonly followed equity indices. [@wikipedia]
+
+## Distill
+
+Distill is a publication format for scientific and technical writing, native to the web. 
+
+Learn more about using Distill for R Markdown at <https://rstudio.github.io/distill>. 
+[@jones2018distill]

@@ -86,31 +86,59 @@ code span.vs { color: #20794d; } /* VerbatimString */
 code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
+<style>
+  div.csl-bib-body { }
+  div.csl-entry {
+    clear: both;
+    }
+  .hanging div.csl-entry {
+    margin-left:2em;
+    text-indent:-2em;
+  }
+  div.csl-left-margin {
+    min-width:2em;
+    float:left;
+  }
+  div.csl-right-inline {
+    margin-left:2em;
+    padding-left:1em;
+  }
+  div.csl-indent {
+    margin-left: 2em;
+  }
+</style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>Breakdown of S&amp;P 500: About this Project</title>
+  <title>Breakdown of S&amp;P 500: Sources</title>
 
-  <meta property="description" itemprop="description" content=""/>
+  <meta property="description" itemprop="description" content="Sources used for this project"/>
 
 
+  <!--  https://schema.org/Article -->
+  <meta property="article:published" itemprop="datePublished" content="2022-07-07"/>
+  <meta property="article:created" itemprop="dateCreated" content="2022-07-07"/>
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Breakdown of S&amp;P 500: About this Project"/>
+  <meta property="og:title" content="Breakdown of S&amp;P 500: Sources"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content=""/>
+  <meta property="og:description" content="Sources used for this project"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Breakdown of S&amp;P 500"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Breakdown of S&amp;P 500: About this Project"/>
-  <meta property="twitter:description" content=""/>
+  <meta property="twitter:title" content="Breakdown of S&amp;P 500: Sources"/>
+  <meta property="twitter:description" content="Sources used for this project"/>
 
   <!--/radix_placeholder_meta_tags-->
+  
+  <meta name="citation_reference" content="citation_title=Distill for r markdown;citation_publication_date=2018;citation_doi=10.23915/distill.00010;citation_author=Nora Jones"/>
+  <meta name="citation_reference" content="citation_title=S&amp;p 500;citation_publication_date=2022;citation_publisher=https://en.wikipedia.org/wiki/S"/>
+  <meta name="citation_reference" content="citation_title=S&amp;p 500 companies with financial information;citation_publication_date=2018;citation_publisher=https://datahub.io/core/s-and-p-500-companies"/>
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description"]}},"value":[{"type":"character","attributes":{},"value":["About this Project"]},{"type":"character","attributes":{},"value":[""]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","date","output","bibliography"]}},"value":[{"type":"character","attributes":{},"value":["Sources"]},{"type":"character","attributes":{},"value":["Sources used for this project"]},{"type":"character","attributes":{},"value":["2022-07-07"]},{"type":"character","attributes":{},"value":["distill::distill_article"]},{"type":"character","attributes":{},"value":["bibliography.bib"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2087,7 +2115,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"About this Project","description":"","authors":[]}
+{"title":"Sources","description":"Sources used for this project","authors":[],"publishedDate":"2022-07-07T00:00:00.000-04:00"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2111,43 +2139,60 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>About this Project</h1>
+<h1>Sources</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-
+<p>Sources used for this project</p>
 </div>
 
 
 <div class="d-article">
-<h2 id="data-sources">Data Sources</h2>
-<p>The information used for this project came from two different
-sources: Wikipedia and DataHub. Both of them tracked and recorded
-information on the 503 companies in the S&amp;P 500 index fund in their
-respective years. Although the information may not be completely
-accurate, it provides baseline information on the stock. This allows us
-to graph and visualize the data in more unique and specific ways, which
-gives insight of the trends and patterns that occur in the US
-economy.</p>
-<h2 id="about-the-course">About the Course</h2>
-<p>This project was made for <a
-href="https://bootcamp.davidkane.info/">Kane’s Free Data Science
-Course</a> in the Summer of 2022. David Kane is a data scientist and a
-teacher of statistics/data science/analytics — whatever your preferred
-term for using data to make decisions. He is the former Preceptor in
-Statistical Methods and Mathematics in the Department of Government at
-Harvard University. The course is for high school students, but those a
-bit younger or older are welcome. There is no charge. By the end of the
-four weeks, students will be able to do basic data science!</p>
-<h2 id="about-me">About Me</h2>
-<p>Ethan Hu currently lives Newton, Massachusetts, and is an incoming
-Junior at Newton North High School. He is interested in computer science
-and mathematics.<br />
-Email: <a href="mailto:ethanhu89@gmail.com"
-class="email">ethanhu89@gmail.com</a><br />
-GitHub: <a href="https://github.com/ethanhu89/"
-class="uri">https://github.com/ethanhu89/</a></p>
+<h2 id="datahub">DataHub</h2>
+<p>DataHub is a modern data catalog built to enable end-to-end data
+discovery, data observability, and data governance. <span
+class="citation" data-cites="datahub">(<a href="#ref-datahub"
+role="doc-biblioref"><em>S&amp;p 500 Companies with Financial
+Information</em> 2018</a>)</span>: List of companies in the S&amp;P 500
+(Standard and Poor’s 500). The S&amp;P 500 is a free-float,
+capitalization-weighted index of the top 500 publicly listed stocks in
+the US (top 500 by market cap). The dataset includes a list of all the
+stocks contained therein.</p>
+<h2 id="wikipedia">Wikipedia</h2>
+<p>Wikipedia is a free, open content online encyclopedia created through
+the collaborative effort of a community of users known as Wikipedians.
+Anyone registered on the site can create an article for publication;
+registration is not required to edit articles.The Standard and Poor’s
+500, or simply the S&amp;P 500, is a stock market index tracking the
+stock performance of 500 large companies listed on exchanges in the
+United States. It is one of the most commonly followed equity indices.
+<span class="citation" data-cites="wikipedia">(<a href="#ref-wikipedia"
+role="doc-biblioref"><em>S&amp;p 500</em> 2022</a>)</span></p>
+<h2 id="distill">Distill</h2>
+<p>Distill is a publication format for scientific and technical writing,
+native to the web.</p>
+<p>Learn more about using Distill for R Markdown at <a
+href="https://rstudio.github.io/distill"
+class="uri">https://rstudio.github.io/distill</a>. <span
+class="citation" data-cites="jones2018distill">(<a
+href="#ref-jones2018distill" role="doc-biblioref">Jones
+2018</a>)</span></p>
 <div class="sourceCode" id="cb1"><pre
 class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div id="refs" class="references csl-bib-body hanging-indent"
+role="doc-bibliography">
+<div id="ref-jones2018distill" class="csl-entry" role="doc-biblioentry">
+Jones, Nora. 2018. <span>“Distill for r Markdown.”</span> <em>Journal of
+Data Science Software</em>. <a
+href="https://doi.org/10.23915/distill.00010">https://doi.org/10.23915/distill.00010</a>.
+</div>
+<div id="ref-wikipedia" class="csl-entry" role="doc-biblioentry">
+<em>S&amp;p 500</em>. 2022. https://en.wikipedia.org/wiki/S.
+</div>
+<div id="ref-datahub" class="csl-entry" role="doc-biblioentry">
+<em>S&amp;p 500 Companies with Financial Information</em>. 2018.
+https://datahub.io/core/s-and-p-500-companies.
+</div>
+</div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
@@ -2159,7 +2204,10 @@ class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"><
 <!--radix_placeholder_site_after_body-->
 <!--/radix_placeholder_site_after_body-->
 <!--radix_placeholder_appendices-->
-<div class="appendix-bottom"></div>
+<div class="appendix-bottom">
+<h3 id="references">References</h3>
+<div id="references-listing"></div>
+</div>
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
 <!--/radix_placeholder_navigation_after_body-->

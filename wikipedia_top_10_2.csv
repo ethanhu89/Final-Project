@@ -1,0 +1,11 @@
+rank,company,symbol,market_cap
+1,Apple Inc., AAPL,2.83E+12
+2,Microsoft Corporation,MSFT,2.33E+12
+3,Alphabet Inc.,GOOG,1.83E+12
+4,Alphabet Inc.,GOOGL,1.83E+12
+5,"Amazon.com, Inc.",AMZN,1.64E+12
+6,"Tesla, Inc.",TSLA,1.02E+12
+7,Berkshire Hathaway Inc. ,BRK.B,7.98E+11
+8,Nvidia Corporation,NVDA,6.60E+11
+9,"Meta Platforms, Inc.",META,6.18E+11
+10,UnitedHealth Group Incorporated,UNH,4.89E+11

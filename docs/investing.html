@@ -1,0 +1,2190 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="generator" content="distill" />
+
+  <style type="text/css">
+  /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
+  body {
+    visibility: hidden;
+  }
+  </style>
+
+ <!--radix_placeholder_import_source-->
+ <!--/radix_placeholder_import_source-->
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css" data-origin="pandoc">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  { color: #00769e; background-color: #f1f3f5; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span { color: #00769e; } /* Normal */
+code span.al { color: #ad0000; } /* Alert */
+code span.an { color: #5e5e5e; } /* Annotation */
+code span.at { color: #657422; } /* Attribute */
+code span.bn { color: #ad0000; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #00769e; } /* ControlFlow */
+code span.ch { color: #20794d; } /* Char */
+code span.cn { color: #8f5902; } /* Constant */
+code span.co { color: #5e5e5e; } /* Comment */
+code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+code span.dt { color: #ad0000; } /* DataType */
+code span.dv { color: #ad0000; } /* DecVal */
+code span.er { color: #ad0000; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #ad0000; } /* Float */
+code span.fu { color: #4758ab; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #5e5e5e; } /* Information */
+code span.kw { color: #00769e; } /* Keyword */
+code span.op { color: #5e5e5e; } /* Operator */
+code span.ot { color: #00769e; } /* Other */
+code span.pp { color: #ad0000; } /* Preprocessor */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
+code span.ss { color: #20794d; } /* SpecialString */
+code span.st { color: #20794d; } /* String */
+code span.va { color: #111111; } /* Variable */
+code span.vs { color: #20794d; } /* VerbatimString */
+code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+</style>
+
+
+  <!--radix_placeholder_meta_tags-->
+  <title>Breakdown of S&amp;P 500: Investing Choices</title>
+
+  <meta property="description" itemprop="description" content=""/>
+
+
+  <!--  https://schema.org/Article -->
+  <meta property="article:published" itemprop="datePublished" content="2022-07-07"/>
+  <meta property="article:created" itemprop="dateCreated" content="2022-07-07"/>
+
+  <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
+  <meta property="og:title" content="Breakdown of S&amp;P 500: Investing Choices"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:description" content=""/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:site_name" content="Breakdown of S&amp;P 500"/>
+
+  <!--  https://dev.twitter.com/cards/types/summary -->
+  <meta property="twitter:card" content="summary"/>
+  <meta property="twitter:title" content="Breakdown of S&amp;P 500: Investing Choices"/>
+  <meta property="twitter:description" content=""/>
+
+  <!--/radix_placeholder_meta_tags-->
+  <!--radix_placeholder_rmarkdown_metadata-->
+
+  <script type="text/json" id="radix-rmarkdown-metadata">
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Investing Choices"]},{"type":"character","attributes":{},"value":[""]},{"type":"character","attributes":{},"value":["2022-07-07"]},{"type":"character","attributes":{},"value":["distill::distill_article"]}]}
+  </script>
+  <!--/radix_placeholder_rmarkdown_metadata-->
+  <!--radix_placeholder_navigation_in_header-->
+  <meta name="distill:offset" content=""/>
+
+  <script type="application/javascript">
+
+    window.headroom_prevent_pin = false;
+
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+
+      // initialize headroom for banner
+      var header = $('header').get(0);
+      var headerHeight = header.offsetHeight;
+      var headroom = new Headroom(header, {
+        tolerance: 5,
+        onPin : function() {
+          if (window.headroom_prevent_pin) {
+            window.headroom_prevent_pin = false;
+            headroom.unpin();
+          }
+        }
+      });
+      headroom.init();
+      if(window.location.hash)
+        headroom.unpin();
+      $(header).addClass('headroom--transition');
+
+      // offset scroll location for banner on hash change
+      // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
+      window.addEventListener("hashchange", function(event) {
+        window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
+      });
+
+      // responsive menu
+      $('.distill-site-header').each(function(i, val) {
+        var topnav = $(this);
+        var toggle = topnav.find('.nav-toggle');
+        toggle.on('click', function() {
+          topnav.toggleClass('responsive');
+        });
+      });
+
+      // nav dropdowns
+      $('.nav-dropbtn').click(function(e) {
+        $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
+        $(this).parent().siblings('.nav-dropdown')
+           .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
+      });
+      $("body").click(function(e){
+        $('.nav-dropdown-content').removeClass('nav-dropdown-active');
+      });
+      $(".nav-dropdown").click(function(e){
+        e.stopPropagation();
+      });
+    });
+  </script>
+
+  <style type="text/css">
+
+  /* Theme (user-documented overrideables for nav appearance) */
+
+  .distill-site-nav {
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #0F2E3D;
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  .distill-site-nav a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .distill-site-nav a:hover {
+    color: white;
+  }
+
+  @media print {
+    .distill-site-nav {
+      display: none;
+    }
+  }
+
+  .distill-site-header {
+
+  }
+
+  .distill-site-footer {
+
+  }
+
+
+  /* Site Header */
+
+  .distill-site-header {
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 3;
+  }
+
+  .distill-site-header .nav-left {
+    display: inline-block;
+    margin-left: 8px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .distill-site-header .nav-left {
+      margin-left: 0;
+    }
+  }
+
+
+  .distill-site-header .nav-right {
+    float: right;
+    margin-right: 8px;
+  }
+
+  .distill-site-header a,
+  .distill-site-header .title {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 10px 14px 10px;
+  }
+
+  .distill-site-header .title {
+    font-size: 18px;
+    min-width: 150px;
+  }
+
+  .distill-site-header .logo {
+    padding: 0;
+  }
+
+  .distill-site-header .logo img {
+    display: none;
+    max-height: 20px;
+    width: auto;
+    margin-bottom: -4px;
+  }
+
+  .distill-site-header .nav-image img {
+    max-height: 18px;
+    width: auto;
+    display: inline-block;
+    margin-bottom: -3px;
+  }
+
+
+
+  @media screen and (min-width: 1000px) {
+    .distill-site-header .logo img {
+      display: inline-block;
+    }
+    .distill-site-header .nav-left {
+      margin-left: 20px;
+    }
+    .distill-site-header .nav-right {
+      margin-right: 20px;
+    }
+    .distill-site-header .title {
+      padding-left: 12px;
+    }
+  }
+
+
+  .distill-site-header .nav-toggle {
+    display: none;
+  }
+
+  .nav-dropdown {
+    display: inline-block;
+    position: relative;
+  }
+
+  .nav-dropdown .nav-dropbtn {
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 16px 10px;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0;
+    margin-top: 1px;
+    z-index: 2;
+  }
+
+  .nav-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    border: 1px solid rgba(0,0,0,0.15);
+    border-radius: 4px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+    z-index: 1;
+    margin-top: 2px;
+    white-space: nowrap;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+
+  .nav-dropdown-content hr {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-dropdown-active {
+    display: block;
+  }
+
+  .nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
+    color: black;
+    padding: 6px 24px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .nav-dropdown-content .nav-dropdown-header {
+    display: block;
+    padding: 5px 24px;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #999999;
+    white-space: nowrap;
+  }
+
+  .nav-dropdown:hover .nav-dropbtn {
+    color: white;
+  }
+
+  .nav-dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .nav-right .nav-dropdown-content {
+    margin-left: -45%;
+    right: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
+    .distill-site-header a.nav-toggle {
+      float: right;
+      display: block;
+    }
+    .distill-site-header .title {
+      margin-left: 0;
+    }
+    .distill-site-header .nav-right {
+      margin-right: 0;
+    }
+    .distill-site-header {
+      overflow: hidden;
+    }
+    .nav-right .nav-dropdown-content {
+      margin-left: 0;
+    }
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .distill-site-header.responsive {position: relative; min-height: 500px; }
+    .distill-site-header.responsive a.nav-toggle {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .distill-site-header.responsive a,
+    .distill-site-header.responsive .nav-dropdown {
+      display: block;
+      text-align: left;
+    }
+    .distill-site-header.responsive .nav-left,
+    .distill-site-header.responsive .nav-right {
+      width: 100%;
+    }
+    .distill-site-header.responsive .nav-dropdown {float: none;}
+    .distill-site-header.responsive .nav-dropdown-content {position: relative;}
+    .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+  /* Site Footer */
+
+  .distill-site-footer {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    z-index: 3;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+
+  /* Headroom */
+
+  d-title {
+    padding-top: 6rem;
+  }
+
+  @media print {
+    d-title {
+      padding-top: 4rem;
+    }
+  }
+
+  .headroom {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .headroom--transition {
+    transition: all .4s ease-in-out;
+  }
+
+  .headroom--unpinned {
+    top: -100px;
+  }
+
+  .headroom--pinned {
+    top: 0;
+  }
+
+  /* adjust viewport for navbar height */
+  /* helps vertically center bootstrap (non-distill) content */
+  .min-vh-100 {
+    min-height: calc(100vh - 100px) !important;
+  }
+
+  </style>
+
+  <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+  <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
+  <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
+  <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
+  <script src="site_libs/autocomplete-0.37.1/autocomplete.min.js"></script>
+  <script src="site_libs/fuse-6.4.1/fuse.min.js"></script>
+
+  <script type="application/javascript">
+
+  function getMeta(metaName) {
+    var metas = document.getElementsByTagName('meta');
+    for (let i = 0; i < metas.length; i++) {
+      if (metas[i].getAttribute('name') === metaName) {
+        return metas[i].getAttribute('content');
+      }
+    }
+    return '';
+  }
+
+  function offsetURL(url) {
+    var offset = getMeta('distill:offset');
+    return offset ? offset + '/' + url : url;
+  }
+
+  function createFuseIndex() {
+
+    // create fuse index
+    var options = {
+      keys: [
+        { name: 'title', weight: 20 },
+        { name: 'categories', weight: 15 },
+        { name: 'description', weight: 10 },
+        { name: 'contents', weight: 5 },
+      ],
+      ignoreLocation: true,
+      threshold: 0
+    };
+    var fuse = new window.Fuse([], options);
+
+    // fetch the main search.json
+    return fetch(offsetURL('search.json'))
+      .then(function(response) {
+        if (response.status == 200) {
+          return response.json().then(function(json) {
+            // index main articles
+            json.articles.forEach(function(article) {
+              fuse.add(article);
+            });
+            // download collections and index their articles
+            return Promise.all(json.collections.map(function(collection) {
+              return fetch(offsetURL(collection)).then(function(response) {
+                if (response.status === 200) {
+                  return response.json().then(function(articles) {
+                    articles.forEach(function(article) {
+                      fuse.add(article);
+                    });
+                  })
+                } else {
+                  return Promise.reject(
+                    new Error('Unexpected status from search index request: ' +
+                              response.status)
+                  );
+                }
+              });
+            })).then(function() {
+              return fuse;
+            });
+          });
+
+        } else {
+          return Promise.reject(
+            new Error('Unexpected status from search index request: ' +
+                        response.status)
+          );
+        }
+      });
+  }
+
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+
+    // get search element (bail if we don't have one)
+    var searchEl = window.document.getElementById('distill-search');
+    if (!searchEl)
+      return;
+
+    createFuseIndex()
+      .then(function(fuse) {
+
+        // make search box visible
+        searchEl.classList.remove('hidden');
+
+        // initialize autocomplete
+        var options = {
+          autoselect: true,
+          hint: false,
+          minLength: 2,
+        };
+        window.autocomplete(searchEl, options, [{
+          source: function(query, callback) {
+            const searchOptions = {
+              isCaseSensitive: false,
+              shouldSort: true,
+              minMatchCharLength: 2,
+              limit: 10,
+            };
+            var results = fuse.search(query, searchOptions);
+            callback(results
+              .map(function(result) { return result.item; })
+            );
+          },
+          templates: {
+            suggestion: function(suggestion) {
+              var img = suggestion.preview && Object.keys(suggestion.preview).length > 0
+                ? `<img src="${offsetURL(suggestion.preview)}"</img>`
+                : '';
+              var html = `
+                <div class="search-item">
+                  <h3>${suggestion.title}</h3>
+                  <div class="search-item-description">
+                    ${suggestion.description || ''}
+                  </div>
+                  <div class="search-item-preview">
+                    ${img}
+                  </div>
+                </div>
+              `;
+              return html;
+            }
+          }
+        }]).on('autocomplete:selected', function(event, suggestion) {
+          window.location.href = offsetURL(suggestion.path);
+        });
+        // remove inline display style on autocompleter (we want to
+        // manage responsive display via css)
+        $('.algolia-autocomplete').css("display", "");
+      })
+      .catch(function(error) {
+        console.log(error);
+      });
+
+  });
+
+  </script>
+
+  <style type="text/css">
+
+  .nav-search {
+    font-size: x-small;
+  }
+
+  /* Algolioa Autocomplete */
+
+  .algolia-autocomplete {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: sub;
+    background-color: white;
+    color: black;
+    padding: 6px;
+    padding-top: 8px;
+    padding-bottom: 0;
+    border-radius: 6px;
+    border: 1px #0F2E3D solid;
+    width: 180px;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .distill-site-nav .algolia-autocomplete {
+      display: none;
+      visibility: hidden;
+    }
+    .distill-site-nav.responsive .algolia-autocomplete {
+      display: inline-block;
+      visibility: visible;
+    }
+    .distill-site-nav.responsive .algolia-autocomplete .aa-dropdown-menu {
+      margin-left: 0;
+      width: 400px;
+      max-height: 400px;
+    }
+  }
+
+  .algolia-autocomplete .aa-input, .algolia-autocomplete .aa-hint {
+    width: 90%;
+    outline: none;
+    border: none;
+  }
+
+  .algolia-autocomplete .aa-hint {
+    color: #999;
+  }
+  .algolia-autocomplete .aa-dropdown-menu {
+    width: 550px;
+    max-height: 70vh;
+    overflow-x: visible;
+    overflow-y: scroll;
+    padding: 5px;
+    margin-top: 3px;
+    margin-left: -150px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #999;
+    border-top: none;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
+    cursor: pointer;
+    padding: 5px 4px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion:last-of-type {
+    border-bottom: none;
+    margin-bottom: 2px;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item {
+    overflow: hidden;
+    font-size: 0.8em;
+    line-height: 1.4em;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item h3 {
+    font-size: 1rem;
+    margin-block-start: 0;
+    margin-block-end: 5px;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-description {
+    display: inline-block;
+    overflow: hidden;
+    height: 2.8em;
+    width: 80%;
+    margin-right: 4%;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview {
+    display: inline-block;
+    width: 15%;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img {
+    height: 3em;
+    width: auto;
+    display: none;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img[src] {
+    display: initial;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
+    background-color: #eee;
+  }
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  </style>
+
+
+  <!--/radix_placeholder_navigation_in_header-->
+  <!--radix_placeholder_distill-->
+
+  <style type="text/css">
+
+  body {
+    background-color: white;
+  }
+
+  .pandoc-table {
+    width: 100%;
+  }
+
+  .pandoc-table>caption {
+    margin-bottom: 10px;
+  }
+
+  .pandoc-table th:not([align]) {
+    text-align: left;
+  }
+
+  .pagedtable-footer {
+    font-size: 15px;
+  }
+
+  d-byline .byline {
+    grid-template-columns: 2fr 2fr;
+  }
+
+  d-byline .byline h3 {
+    margin-block-start: 1.5em;
+  }
+
+  d-byline .byline .authors-affiliations h3 {
+    margin-block-start: 0.5em;
+  }
+
+  .authors-affiliations .orcid-id {
+    width: 16px;
+    height:16px;
+    margin-left: 4px;
+    margin-right: 4px;
+    vertical-align: middle;
+    padding-bottom: 2px;
+  }
+
+  d-title .dt-tags {
+    margin-top: 1em;
+    grid-column: text;
+  }
+
+  .dt-tags .dt-tag {
+    text-decoration: none;
+    display: inline-block;
+    color: rgba(0,0,0,0.6);
+    padding: 0em 0.4em;
+    margin-right: 0.5em;
+    margin-bottom: 0.4em;
+    font-size: 70%;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  d-article table.gt_table td,
+  d-article table.gt_table th {
+    border-bottom: none;
+  }
+
+  .html-widget {
+    margin-bottom: 2.0em;
+  }
+
+  .l-screen-inset {
+    padding-right: 16px;
+  }
+
+  .l-screen .caption {
+    margin-left: 10px;
+  }
+
+  .shaded {
+    background: rgb(247, 247, 247);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .shaded .html-widget {
+    margin-bottom: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .shaded .shaded-content {
+    background: white;
+  }
+
+  .text-output {
+    margin-top: 0;
+    line-height: 1.5em;
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+  d-article {
+    padding-top: 2.5rem;
+    padding-bottom: 30px;
+  }
+
+  d-appendix {
+    padding-top: 30px;
+  }
+
+  d-article>p>img {
+    width: 100%;
+  }
+
+  d-article h2 {
+    margin: 1rem 0 1.5rem 0;
+  }
+
+  d-article h3 {
+    margin-top: 1.5rem;
+  }
+
+  d-article iframe {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 2.0em;
+    width: 100%;
+  }
+
+  /* Tweak code blocks */
+
+  d-article div.sourceCode code,
+  d-article pre code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  d-article pre,
+  d-article div.sourceCode,
+  d-article div.sourceCode pre {
+    overflow: auto;
+  }
+
+  d-article div.sourceCode {
+    background-color: white;
+  }
+
+  d-article div.sourceCode pre {
+    padding-left: 10px;
+    font-size: 12px;
+    border-left: 2px solid rgba(0,0,0,0.1);
+  }
+
+  d-article pre {
+    font-size: 12px;
+    color: black;
+    background: none;
+    margin-top: 0;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  d-article pre a {
+    border-bottom: none;
+  }
+
+  d-article pre a:hover {
+    border-bottom: none;
+    text-decoration: underline;
+  }
+
+  d-article details {
+    grid-column: text;
+    margin-bottom: 0.8em;
+  }
+
+  @media(min-width: 768px) {
+
+  d-article pre,
+  d-article div.sourceCode,
+  d-article div.sourceCode pre {
+    overflow: visible !important;
+  }
+
+  d-article div.sourceCode pre {
+    padding-left: 18px;
+    font-size: 14px;
+  }
+
+  d-article pre {
+    font-size: 14px;
+  }
+
+  }
+
+  figure img.external {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    box-sizing: border-box;
+  }
+
+  /* CSS for d-contents */
+
+  .d-contents {
+    grid-column: text;
+    color: rgba(0,0,0,0.8);
+    font-size: 0.9em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    padding-left: 0.25em;
+    justify-self: start;
+  }
+
+  @media(min-width: 1000px) {
+    .d-contents.d-contents-float {
+      height: 0;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      justify-self: center;
+      padding-right: 3em;
+      padding-left: 2em;
+    }
+  }
+
+  .d-contents nav h3 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
+
+  .d-contents li {
+    list-style-type: none
+  }
+
+  .d-contents nav > ul {
+    padding-left: 0;
+  }
+
+  .d-contents ul {
+    padding-left: 1em
+  }
+
+  .d-contents nav ul li {
+    margin-top: 0.6em;
+    margin-bottom: 0.2em;
+  }
+
+  .d-contents nav a {
+    font-size: 13px;
+    border-bottom: none;
+    text-decoration: none
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  .d-contents nav a:hover {
+    text-decoration: underline solid rgba(0, 0, 0, 0.6)
+  }
+
+  .d-contents nav > ul > li > a {
+    font-weight: 600;
+  }
+
+  .d-contents nav > ul > li > ul {
+    font-weight: inherit;
+  }
+
+  .d-contents nav > ul > li > ul > li {
+    margin-top: 0.2em;
+  }
+
+
+  .d-contents nav ul {
+    margin-top: 0;
+    margin-bottom: 0.25em;
+  }
+
+  .d-article-with-toc h2:nth-child(2) {
+    margin-top: 0;
+  }
+
+
+  /* Figure */
+
+  .figure {
+    position: relative;
+    margin-bottom: 2.5em;
+    margin-top: 1.5em;
+  }
+
+  .figure .caption {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 12px;
+    line-height: 1.5em;
+  }
+
+  .figure img.external {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    box-sizing: border-box;
+  }
+
+  .figure .caption a {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .figure .caption b,
+  .figure .caption strong, {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 1.0);
+  }
+
+  /* Citations */
+
+  d-article .citation {
+    color: inherit;
+    cursor: inherit;
+  }
+
+  div.hanging-indent{
+    margin-left: 1em; text-indent: -1em;
+  }
+
+  /* Citation hover box */
+
+  .tippy-box[data-theme~=light-border] {
+    background-color: rgba(250, 250, 250, 0.95);
+  }
+
+  .tippy-content > p {
+    margin-bottom: 0;
+    padding: 2px;
+  }
+
+
+  /* Tweak 1000px media break to show more text */
+
+  @media(min-width: 1000px) {
+    .base-grid,
+    distill-header,
+    d-title,
+    d-abstract,
+    d-article,
+    d-appendix,
+    distill-appendix,
+    d-byline,
+    d-footnote-list,
+    d-citation-list,
+    distill-footer {
+      grid-template-columns: [screen-start] 1fr [page-start kicker-start] 80px [middle-start] 50px [text-start kicker-end] 65px 65px 65px 65px 65px 65px 65px 65px [text-end gutter-start] 65px [middle-end] 65px [page-end gutter-end] 1fr [screen-end];
+      grid-column-gap: 16px;
+    }
+
+    .grid {
+      grid-column-gap: 16px;
+    }
+
+    d-article {
+      font-size: 1.06rem;
+      line-height: 1.7em;
+    }
+    figure .caption, .figure .caption, figure figcaption {
+      font-size: 13px;
+    }
+  }
+
+  @media(min-width: 1180px) {
+    .base-grid,
+    distill-header,
+    d-title,
+    d-abstract,
+    d-article,
+    d-appendix,
+    distill-appendix,
+    d-byline,
+    d-footnote-list,
+    d-citation-list,
+    distill-footer {
+      grid-template-columns: [screen-start] 1fr [page-start kicker-start] 60px [middle-start] 60px [text-start kicker-end] 60px 60px 60px 60px 60px 60px 60px 60px [text-end gutter-start] 60px [middle-end] 60px [page-end gutter-end] 1fr [screen-end];
+      grid-column-gap: 32px;
+    }
+
+    .grid {
+      grid-column-gap: 32px;
+    }
+  }
+
+
+  /* Get the citation styles for the appendix (not auto-injected on render since
+     we do our own rendering of the citation appendix) */
+
+  d-appendix .citation-appendix,
+  .d-appendix .citation-appendix {
+    font-size: 11px;
+    line-height: 15px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    padding-left: 18px;
+    border: 1px solid rgba(0,0,0,0.1);
+    background: rgba(0, 0, 0, 0.02);
+    padding: 10px 18px;
+    border-radius: 3px;
+    color: rgba(150, 150, 150, 1);
+    overflow: hidden;
+    margin-top: -12px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  /* Include appendix styles here so they can be overridden */
+
+  d-appendix {
+    contain: layout style;
+    font-size: 0.8em;
+    line-height: 1.7em;
+    margin-top: 60px;
+    margin-bottom: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    color: rgba(0,0,0,0.5);
+    padding-top: 60px;
+    padding-bottom: 48px;
+  }
+
+  d-appendix h3 {
+    grid-column: page-start / text-start;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 1em;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.65);
+  }
+
+  d-appendix h3 + * {
+    margin-top: 1em;
+  }
+
+  d-appendix ol {
+    padding: 0 0 0 15px;
+  }
+
+  @media (min-width: 768px) {
+    d-appendix ol {
+      padding: 0 0 0 30px;
+      margin-left: -30px;
+    }
+  }
+
+  d-appendix li {
+    margin-bottom: 1em;
+  }
+
+  d-appendix a {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  d-appendix > * {
+    grid-column: text;
+  }
+
+  d-appendix > d-footnote-list,
+  d-appendix > d-citation-list,
+  d-appendix > distill-appendix {
+    grid-column: screen;
+  }
+
+  /* Include footnote styles here so they can be overridden */
+
+  d-footnote-list {
+    contain: layout style;
+  }
+
+  d-footnote-list > * {
+    grid-column: text;
+  }
+
+  d-footnote-list a.footnote-backlink {
+    color: rgba(0,0,0,0.3);
+    padding-left: 0.5em;
+  }
+
+
+
+  /* Anchor.js */
+
+  .anchorjs-link {
+    /*transition: all .25s linear; */
+    text-decoration: none;
+    border-bottom: none;
+  }
+  *:hover > .anchorjs-link {
+    margin-left: -1.125em !important;
+    text-decoration: none;
+    border-bottom: none;
+  }
+
+  /* Social footer */
+
+  .social_footer {
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.67);
+  }
+
+  .disqus-comments {
+    margin-right: 30px;
+  }
+
+  .disqus-comment-count {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+  }
+
+  #disqus_thread {
+    margin-top: 30px;
+  }
+
+  .article-sharing a {
+    border-bottom: none;
+    margin-right: 8px;
+  }
+
+  .article-sharing a:hover {
+    border-bottom: none;
+  }
+
+  .sidebar-section.subscribe {
+    font-size: 12px;
+    line-height: 1.6em;
+  }
+
+  .subscribe p {
+    margin-bottom: 0.5em;
+  }
+
+
+  .article-footer .subscribe {
+    font-size: 15px;
+    margin-top: 45px;
+  }
+
+
+  .sidebar-section.custom {
+    font-size: 12px;
+    line-height: 1.6em;
+  }
+
+  .custom p {
+    margin-bottom: 0.5em;
+  }
+
+  /* Styles for listing layout (hide title) */
+  .layout-listing d-title, .layout-listing .d-title {
+    display: none;
+  }
+
+  /* Styles for posts lists (not auto-injected) */
+
+
+  .posts-with-sidebar {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .posts-list .description h2,
+  .posts-list .description p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  }
+
+  .posts-list .description h2 {
+    font-weight: 700;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .posts-list h2.post-tag {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 12px;
+  }
+  .posts-list {
+    margin-top: 60px;
+    margin-bottom: 24px;
+  }
+
+  .posts-list .post-preview {
+    text-decoration: none;
+    overflow: hidden;
+    display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 24px 0;
+  }
+
+  .post-preview-last {
+    border-bottom: none !important;
+  }
+
+  .posts-list .posts-list-caption {
+    grid-column: screen;
+    font-weight: 400;
+  }
+
+  .posts-list .post-preview h2 {
+    margin: 0 0 6px 0;
+    line-height: 1.2em;
+    font-style: normal;
+    font-size: 24px;
+  }
+
+  .posts-list .post-preview p {
+    margin: 0 0 12px 0;
+    line-height: 1.4em;
+    font-size: 16px;
+  }
+
+  .posts-list .post-preview .thumbnail {
+    box-sizing: border-box;
+    margin-bottom: 24px;
+    position: relative;
+    max-width: 500px;
+  }
+  .posts-list .post-preview img {
+    width: 100%;
+    display: block;
+  }
+
+  .posts-list .metadata {
+    font-size: 12px;
+    line-height: 1.4em;
+    margin-bottom: 18px;
+  }
+
+  .posts-list .metadata > * {
+    display: inline-block;
+  }
+
+  .posts-list .metadata .publishedDate {
+    margin-right: 2em;
+  }
+
+  .posts-list .metadata .dt-authors {
+    display: block;
+    margin-top: 0.3em;
+    margin-right: 2em;
+  }
+
+  .posts-list .dt-tags {
+    display: block;
+    line-height: 1em;
+  }
+
+  .posts-list .dt-tags .dt-tag {
+    display: inline-block;
+    color: rgba(0,0,0,0.6);
+    padding: 0.3em 0.4em;
+    margin-right: 0.2em;
+    margin-bottom: 0.4em;
+    font-size: 60%;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .posts-list img {
+    opacity: 1;
+  }
+
+  .posts-list img[data-src] {
+    opacity: 0;
+  }
+
+  .posts-more {
+    clear: both;
+  }
+
+
+  .posts-sidebar {
+    font-size: 16px;
+  }
+
+  .posts-sidebar h3 {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .sidebar-section {
+    margin-bottom: 30px;
+  }
+
+  .categories ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .categories li {
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 0;
+  }
+
+  .categories li>a {
+    border-bottom: none;
+  }
+
+  .categories li>a:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  }
+
+  .categories .active {
+    font-weight: 600;
+  }
+
+  .categories .category-count {
+    color: rgba(0, 0, 0, 0.4);
+  }
+
+
+  @media(min-width: 768px) {
+    .posts-list .post-preview h2 {
+      font-size: 26px;
+    }
+    .posts-list .post-preview .thumbnail {
+      float: right;
+      width: 30%;
+      margin-bottom: 0;
+    }
+    .posts-list .post-preview .description {
+      float: left;
+      width: 45%;
+    }
+    .posts-list .post-preview .metadata {
+      float: left;
+      width: 20%;
+      margin-top: 8px;
+    }
+    .posts-list .post-preview p {
+      margin: 0 0 12px 0;
+      line-height: 1.5em;
+      font-size: 16px;
+    }
+    .posts-with-sidebar .posts-list {
+      float: left;
+      width: 75%;
+    }
+    .posts-with-sidebar .posts-sidebar {
+      float: right;
+      width: 20%;
+      margin-top: 60px;
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+  }
+
+
+  /* Improve display for browsers without grid (IE/Edge <= 15) */
+
+  .downlevel {
+    line-height: 1.6em;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+  }
+
+  .downlevel .d-title {
+    padding-top: 6rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .downlevel .d-title h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.1em;
+    margin: 0 0 0.5rem;
+  }
+
+  .downlevel .d-title p {
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.55em;
+    margin-top: 0;
+  }
+
+  .downlevel .d-byline {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    font-size: 0.8rem;
+    line-height: 1.8em;
+  }
+
+  .downlevel .section-separator {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .downlevel .d-article {
+    font-size: 1.06rem;
+    line-height: 1.7em;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+
+  .downlevel .d-appendix {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: none;
+    font-size: 0.8em;
+    line-height: 1.7em;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.5);
+    padding-top: 40px;
+    padding-bottom: 48px;
+  }
+
+  .downlevel .footnotes ol {
+    padding-left: 13px;
+  }
+
+  .downlevel .base-grid,
+  .downlevel .distill-header,
+  .downlevel .d-title,
+  .downlevel .d-abstract,
+  .downlevel .d-article,
+  .downlevel .d-appendix,
+  .downlevel .distill-appendix,
+  .downlevel .d-byline,
+  .downlevel .d-footnote-list,
+  .downlevel .d-citation-list,
+  .downlevel .distill-footer,
+  .downlevel .appendix-bottom,
+  .downlevel .posts-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media(min-width: 768px) {
+    .downlevel .base-grid,
+    .downlevel .distill-header,
+    .downlevel .d-title,
+    .downlevel .d-abstract,
+    .downlevel .d-article,
+    .downlevel .d-appendix,
+    .downlevel .distill-appendix,
+    .downlevel .d-byline,
+    .downlevel .d-footnote-list,
+    .downlevel .d-citation-list,
+    .downlevel .distill-footer,
+    .downlevel .appendix-bottom,
+    .downlevel .posts-container {
+    padding-left: 150px;
+    padding-right: 150px;
+    max-width: 900px;
+  }
+  }
+
+  .downlevel pre code {
+    display: block;
+    border-left: 2px solid rgba(0, 0, 0, .1);
+    padding: 0 0 0 20px;
+    font-size: 14px;
+  }
+
+  .downlevel code, .downlevel pre {
+    color: black;
+    background: none;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  .downlevel .posts-list .post-preview {
+    color: inherit;
+  }
+
+
+
+  </style>
+
+  <script type="application/javascript">
+
+  function is_downlevel_browser() {
+    if (bowser.isUnsupportedBrowser({ msie: "12", msedge: "16"},
+                                   window.navigator.userAgent)) {
+      return true;
+    } else {
+      return window.load_distill_framework === undefined;
+    }
+  }
+
+  // show body when load is complete
+  function on_load_complete() {
+
+    // add anchors
+    if (window.anchors) {
+      window.anchors.options.placement = 'left';
+      window.anchors.add('d-article > h2, d-article > h3, d-article > h4, d-article > h5');
+    }
+
+
+    // set body to visible
+    document.body.style.visibility = 'visible';
+
+    // force redraw for leaflet widgets
+    if (window.HTMLWidgets) {
+      var maps = window.HTMLWidgets.findAll(".leaflet");
+      $.each(maps, function(i, el) {
+        var map = this.getMap();
+        map.invalidateSize();
+        map.eachLayer(function(layer) {
+          if (layer instanceof L.TileLayer)
+            layer.redraw();
+        });
+      });
+    }
+
+    // trigger 'shown' so htmlwidgets resize
+    $('d-article').trigger('shown');
+  }
+
+  function init_distill() {
+
+    init_common();
+
+    // create front matter
+    var front_matter = $('<d-front-matter></d-front-matter>');
+    $('#distill-front-matter').wrap(front_matter);
+
+    // create d-title
+    $('.d-title').changeElementType('d-title');
+
+    // create d-byline
+    var byline = $('<d-byline></d-byline>');
+    $('.d-byline').replaceWith(byline);
+
+    // create d-article
+    var article = $('<d-article></d-article>');
+    $('.d-article').wrap(article).children().unwrap();
+
+    // move posts container into article
+    $('.posts-container').appendTo($('d-article'));
+
+    // create d-appendix
+    $('.d-appendix').changeElementType('d-appendix');
+
+    // flag indicating that we have appendix items
+    var appendix = $('.appendix-bottom').children('h3').length > 0;
+
+    // replace footnotes with <d-footnote>
+    $('.footnote-ref').each(function(i, val) {
+      appendix = true;
+      var href = $(this).attr('href');
+      var id = href.replace('#', '');
+      var fn = $('#' + id);
+      var fn_p = $('#' + id + '>p');
+      fn_p.find('.footnote-back').remove();
+      var text = fn_p.html();
+      var dtfn = $('<d-footnote></d-footnote>');
+      dtfn.html(text);
+      $(this).replaceWith(dtfn);
+    });
+    // remove footnotes
+    $('.footnotes').remove();
+
+    // move refs into #references-listing
+    $('#references-listing').replaceWith($('#refs'));
+
+    $('h1.appendix, h2.appendix').each(function(i, val) {
+      $(this).changeElementType('h3');
+    });
+    $('h3.appendix').each(function(i, val) {
+      var id = $(this).attr('id');
+      $('.d-contents a[href="#' + id + '"]').parent().remove();
+      appendix = true;
+      $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('d-appendix'));
+    });
+
+    // show d-appendix if we have appendix content
+    $("d-appendix").css('display', appendix ? 'grid' : 'none');
+
+    // localize layout chunks to just output
+    $('.layout-chunk').each(function(i, val) {
+
+      // capture layout
+      var layout = $(this).attr('data-layout');
+
+      // apply layout to markdown level block elements
+      var elements = $(this).children().not('details, div.sourceCode, pre, script');
+      elements.each(function(i, el) {
+        var layout_div = $('<div class="' + layout + '"></div>');
+        if (layout_div.hasClass('shaded')) {
+          var shaded_content = $('<div class="shaded-content"></div>');
+          $(this).wrap(shaded_content);
+          $(this).parent().wrap(layout_div);
+        } else {
+          $(this).wrap(layout_div);
+        }
+      });
+
+
+      // unwrap the layout-chunk div
+      $(this).children().unwrap();
+    });
+
+    // remove code block used to force  highlighting css
+    $('.distill-force-highlighting-css').parent().remove();
+
+    // remove empty line numbers inserted by pandoc when using a
+    // custom syntax highlighting theme
+    $('code.sourceCode a:empty').remove();
+
+    // load distill framework
+    load_distill_framework();
+
+    // wait for window.distillRunlevel == 4 to do post processing
+    function distill_post_process() {
+
+      if (!window.distillRunlevel || window.distillRunlevel < 4)
+        return;
+
+      // hide author/affiliations entirely if we have no authors
+      var front_matter = JSON.parse($("#distill-front-matter").html());
+      var have_authors = front_matter.authors && front_matter.authors.length > 0;
+      if (!have_authors)
+        $('d-byline').addClass('hidden');
+
+      // article with toc class
+      $('.d-contents').parent().addClass('d-article-with-toc');
+
+      // strip links that point to #
+      $('.authors-affiliations').find('a[href="#"]').removeAttr('href');
+
+      // add orcid ids
+      $('.authors-affiliations').find('.author').each(function(i, el) {
+        var orcid_id = front_matter.authors[i].orcidID;
+        if (orcid_id) {
+          var a = $('<a></a>');
+          a.attr('href', 'https://orcid.org/' + orcid_id);
+          var img = $('<img></img>');
+          img.addClass('orcid-id');
+          img.attr('alt', 'ORCID ID');
+          img.attr('src','data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==');
+          a.append(img);
+          $(this).append(a);
+        }
+      });
+
+      // hide elements of author/affiliations grid that have no value
+      function hide_byline_column(caption) {
+        $('d-byline').find('h3:contains("' + caption + '")').parent().css('visibility', 'hidden');
+      }
+
+      // affiliations
+      var have_affiliations = false;
+      for (var i = 0; i<front_matter.authors.length; ++i) {
+        var author = front_matter.authors[i];
+        if (author.affiliation !== "&nbsp;") {
+          have_affiliations = true;
+          break;
+        }
+      }
+      if (!have_affiliations)
+        $('d-byline').find('h3:contains("Affiliations")').css('visibility', 'hidden');
+
+      // published date
+      if (!front_matter.publishedDate)
+        hide_byline_column("Published");
+
+      // document object identifier
+      var doi = $('d-byline').find('h3:contains("DOI")');
+      var doi_p = doi.next().empty();
+      if (!front_matter.doi) {
+        // if we have a citation and valid citationText then link to that
+        if ($('#citation').length > 0 && front_matter.citationText) {
+          doi.html('Citation');
+          $('<a href="#citation"></a>')
+            .text(front_matter.citationText)
+            .appendTo(doi_p);
+        } else {
+          hide_byline_column("DOI");
+        }
+      } else {
+        $('<a></a>')
+           .attr('href', "https://doi.org/" + front_matter.doi)
+           .html(front_matter.doi)
+           .appendTo(doi_p);
+      }
+
+       // change plural form of authors/affiliations
+      if (front_matter.authors.length === 1) {
+        var grid = $('.authors-affiliations');
+        grid.children('h3:contains("Authors")').text('Author');
+        grid.children('h3:contains("Affiliations")').text('Affiliation');
+      }
+
+      // remove d-appendix and d-footnote-list local styles
+      $('d-appendix > style:first-child').remove();
+      $('d-footnote-list > style:first-child').remove();
+
+      // move appendix-bottom entries to the bottom
+      $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
+      $('.appendix-bottom').remove();
+
+      // hoverable references
+      $('span.citation[data-cites]').each(function() {
+        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
+          var fn = $(this).children()[0]
+          $(this).html(fn.shadowRoot.querySelector("sup"))
+          $(this).id = fn.id
+          fn.remove()
+        }
+        var refs = $(this).attr('data-cites').split(" ");
+        var refHtml = refs.map(function(ref) {
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
+        }).join("\n");
+        window.tippy(this, {
+          allowHTML: true,
+          content: refHtml,
+          maxWidth: 500,
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'light-border',
+          placement: 'bottom-start'
+        });
+      });
+
+      // fix footnotes in tables (#411)
+      // replacing broken distill.pub feature
+      $('table d-footnote').each(function() {
+        // we replace internal showAtNode methode which is triggered when hovering a footnote
+        this.hoverBox.showAtNode = function(node) {
+          // ported from https://github.com/distillpub/template/pull/105/files
+          calcOffset = function(elem) {
+              let x = elem.offsetLeft;
+              let y = elem.offsetTop;
+              // Traverse upwards until an `absolute` element is found or `elem`
+              // becomes null.
+              while (elem = elem.offsetParent && elem.style.position != 'absolute') {
+                  x += elem.offsetLeft;
+                  y += elem.offsetTop;
+              }
+
+              return { left: x, top: y };
+          }
+          // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+          const bbox = node.getBoundingClientRect();
+          const offset = calcOffset(node);
+          this.show([offset.left + bbox.width, offset.top + bbox.height]);
+        }
+      })
+
+      // clear polling timer
+      clearInterval(tid);
+
+      // show body now that everything is ready
+      on_load_complete();
+    }
+
+    var tid = setInterval(distill_post_process, 50);
+    distill_post_process();
+
+  }
+
+  function init_downlevel() {
+
+    init_common();
+
+     // insert hr after d-title
+    $('.d-title').after($('<hr class="section-separator"/>'));
+
+    // check if we have authors
+    var front_matter = JSON.parse($("#distill-front-matter").html());
+    var have_authors = front_matter.authors && front_matter.authors.length > 0;
+
+    // manage byline/border
+    if (!have_authors)
+      $('.d-byline').remove();
+    $('.d-byline').after($('<hr class="section-separator"/>'));
+    $('.d-byline a').remove();
+
+    // remove toc
+    $('.d-contents').remove();
+
+    // move appendix elements
+    $('h1.appendix, h2.appendix').each(function(i, val) {
+      $(this).changeElementType('h3');
+    });
+    $('h3.appendix').each(function(i, val) {
+      $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('.d-appendix'));
+    });
+
+
+    // inject headers into references and footnotes
+    var refs_header = $('<h3></h3>');
+    refs_header.text('References');
+    $('#refs').prepend(refs_header);
+
+    var footnotes_header = $('<h3></h3');
+    footnotes_header.text('Footnotes');
+    $('.footnotes').children('hr').first().replaceWith(footnotes_header);
+
+    // move appendix-bottom entries to the bottom
+    $('.appendix-bottom').appendTo('.d-appendix').children().unwrap();
+    $('.appendix-bottom').remove();
+
+    // remove appendix if it's empty
+    if ($('.d-appendix').children().length === 0)
+      $('.d-appendix').remove();
+
+    // prepend separator above appendix
+    $('.d-appendix').before($('<hr class="section-separator" style="clear: both"/>'));
+
+    // trim code
+    $('pre>code').each(function(i, val) {
+      $(this).html($.trim($(this).html()));
+    });
+
+    // move posts-container right before article
+    $('.posts-container').insertBefore($('.d-article'));
+
+    $('body').addClass('downlevel');
+
+    on_load_complete();
+  }
+
+
+  function init_common() {
+
+    // jquery plugin to change element types
+    (function($) {
+      $.fn.changeElementType = function(newType) {
+        var attrs = {};
+
+        $.each(this[0].attributes, function(idx, attr) {
+          attrs[attr.nodeName] = attr.nodeValue;
+        });
+
+        this.replaceWith(function() {
+          return $("<" + newType + "/>", attrs).append($(this).contents());
+        });
+      };
+    })(jQuery);
+
+    // prevent underline for linked images
+    $('a > img').parent().css({'border-bottom' : 'none'});
+
+    // mark non-body figures created by knitr chunks as 100% width
+    $('.layout-chunk').each(function(i, val) {
+      var figures = $(this).find('img, .html-widget');
+      // ignore leaflet img layers (#106)
+      figures = figures.filter(':not(img[class*="leaflet"])')
+      if ($(this).attr('data-layout') !== "l-body") {
+        figures.css('width', '100%');
+      } else {
+        figures.css('max-width', '100%');
+        figures.filter("[width]").each(function(i, val) {
+          var fig = $(this);
+          fig.css('width', fig.attr('width') + 'px');
+        });
+
+      }
+    });
+
+    // auto-append index.html to post-preview links in file: protocol
+    // and in rstudio ide preview
+    $('.post-preview').each(function(i, val) {
+      if (window.location.protocol === "file:")
+        $(this).attr('href', $(this).attr('href') + "index.html");
+    });
+
+    // get rid of index.html references in header
+    if (window.location.protocol !== "file:") {
+      $('.distill-site-header a[href]').each(function(i,val) {
+        $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
+      });
+    }
+
+    // add class to pandoc style tables
+    $('tr.header').parent('thead').parent('table').addClass('pandoc-table');
+    $('.kable-table').children('table').addClass('pandoc-table');
+
+    // add figcaption style to table captions
+    $('caption').parent('table').addClass("figcaption");
+
+    // initialize posts list
+    if (window.init_posts_list)
+      window.init_posts_list();
+
+    // implmement disqus comment link
+    $('.disqus-comment-count').click(function() {
+      window.headroom_prevent_pin = true;
+      $('#disqus_thread').toggleClass('hidden');
+      if (!$('#disqus_thread').hasClass('hidden')) {
+        var offset = $(this).offset();
+        $(window).resize();
+        $('html, body').animate({
+          scrollTop: offset.top - 35
+        });
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    if (is_downlevel_browser())
+      init_downlevel();
+    else
+      window.addEventListener('WebComponentsReady', init_distill);
+  });
+
+  </script>
+
+  <!--/radix_placeholder_distill-->
+  <script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+  <script src="site_libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+  <script src="site_libs/plotly-binding-4.10.0/plotly.js"></script>
+  <script src="site_libs/typedarray-0.1/typedarray.min.js"></script>
+  <script src="site_libs/jquery-3.5.1/jquery.min.js"></script>
+  <link href="site_libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet" />
+  <script src="site_libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
+  <link href="site_libs/plotly-htmlwidgets-css-2.5.1/plotly-htmlwidgets.css" rel="stylesheet" />
+  <script src="site_libs/plotly-main-2.5.1/plotly-latest.min.js"></script>
+  <script src="site_libs/popper-2.6.0/popper.min.js"></script>
+  <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
+  <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
+  <script src="site_libs/tippy-6.2.7/tippy.umd.min.js"></script>
+  <script src="site_libs/anchor-4.2.2/anchor.min.js"></script>
+  <script src="site_libs/bowser-1.9.3/bowser.min.js"></script>
+  <script src="site_libs/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="site_libs/distill-2.2.21/template.v2.js"></script>
+  <!--radix_placeholder_site_in_header-->
+  <!--/radix_placeholder_site_in_header-->
+
+
+</head>
+
+<body>
+
+<!--radix_placeholder_front_matter-->
+
+<script id="distill-front-matter" type="text/json">
+{"title":"Investing Choices","description":"","authors":[],"publishedDate":"2022-07-07T00:00:00.000-04:00"}
+</script>
+
+<!--/radix_placeholder_front_matter-->
+<!--radix_placeholder_navigation_before_body-->
+<header class="header header--fixed" role="banner">
+<nav class="distill-site-nav distill-site-header">
+<div class="nav-left">
+<a href="index.html" class="title">Breakdown of S&amp;P 500</a>
+</div>
+<div class="nav-right">
+<a href="index.html">Home</a>
+<a href="investing.html">More Info</a>
+<a href="about.html">About</a>
+<a href="sources.html">Sources</a>
+<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
+</div>
+</nav>
+</header>
+<!--/radix_placeholder_navigation_before_body-->
+<!--radix_placeholder_site_before_body-->
+<!--/radix_placeholder_site_before_body-->
+
+<div class="d-title">
+<h1>Investing Choices</h1>
+<!--radix_placeholder_categories-->
+<!--/radix_placeholder_categories-->
+
+</div>
+
+
+<div class="d-article">
+<p><strong>Earnings Per Share (EPS)</strong> is a company’s net profit
+divided by the number of common shares it has outstanding. The resulting
+number serves as an indicator of a company’s profitability. EPS
+indicates how much money a company makes for each share of its stock and
+is a widely used metric for estimating corporate value. A higher EPS
+indicates greater value because investors will pay more for a company’s
+shares if they think the company has higher profits relative to its
+share price.</p>
+<p> </p>
+<div class="layout-chunk" data-layout="l-body">
+<div id="htmlwidget-d55cb2eff1be56b5bc3e" style="width:624px;height:384px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-d55cb2eff1be56b5bc3e">{"x":{"data":[{"x":[109.63,1350.5,89.27,718.57,68.79,51.94,64.34,66.76,51.8,348.65,266.01,38.19,44.55,91.33,22.87,21.58,43.77,95.1,101.58,123.03,45.88,10.43,31.17,61.13,40.75,96.31,30.75,19.57,47.54,96.48,78.66,181.22,21.34,60.34,47.77,43.99,59.11,38.86,95.01,24,133.88,158.97,33.5,60.03,256.57,27.91,62.49,47.23,56.01,252.22,75.91,1806.06,28.67,142.68,75.06,122.45,86.46,49.38,156.72,152.86,53.77,48.85,71.11,101.35,99.62,93.02,74.36,65.94,40.05,34.56,34.09,209.09,13.14,11.95,78.75,32.71,164.95,113.56,169.28,76.3],"y":[0.0564626470856517,0.00456127360236949,0.056569956312311,0.0613579748667492,0.0553859572612298,0.0105891413169041,0.0617034504196456,0.0536249251048532,0.0542471042471043,0.0977484583393088,0.00300740573662644,0.124116260801257,0.0612794612794613,0.0417168509799628,0.0857017927415828,0.0908248378127896,0.069910897875257,0.0465825446898002,0.0371136050403623,0.0147118588962042,0.107018308631212,0.182166826462128,0.0542188001283285,0.0440045804024211,0.147239263803681,0.0477624338074966,0.154146341463415,0.0720490546755237,0.0626840555321834,0.044983416252073,0.013348588863463,0.0356472795497186,0.0698219306466729,0.0517069937023533,0.0833158886330333,0.0627415321664015,0.0571815259685332,0.0386001029336078,0.03641721924008,0.0825,0.0199432327457425,0.0400075485940744,0.0573134328358209,0.0551390971181076,0.0486416962232529,0.0419204586169832,0.0401664266282605,0.0427694262121533,0.0496339939296554,0.0425422250416303,0.0631010407060993,0.0236204777249925,0.0502267178235089,0.0474488365573311,0.037703170796696,0.0614944875459371,0.059912098080037,0.142365330093155,0.0587034201123022,0.0526625670548214,0.036637530221313,0.0427840327533265,0.0662354099282801,0.056240749876665,0.0356354145753865,0.0711674908621802,0.0465303926842388,0.0500454959053685,0.0202247191011236,0.0460069444444444,0.0466412437665004,0.0311827442728012,0.0342465753424658,0.0376569037656904,0.0323809523809524,0.143075512075818,0.0273416186723249,0.0486967241986615,0.0429465973534972,0.0533420707732634],"text":["Company: Advance Auto Parts (AAP)<br />Sector: Consumer Discretionary<br />Price: $109.63<br />Earnings per Share: $6.19 (5.65%)","Company: Amazon.com Inc (AMZN)<br />Sector: Consumer Discretionary<br />Price: $1350.5<br />Earnings per Share: $6.16 (0.46%)","Company: Aptiv Plc (APTV)<br />Sector: Consumer Discretionary<br />Price: $89.27<br />Earnings per Share: $5.05 (5.66%)","Company: AutoZone Inc (AZO)<br />Sector: Consumer Discretionary<br />Price: $718.57<br />Earnings per Share: $44.09 (6.14%)","Company: Best Buy Co. Inc. (BBY)<br />Sector: Consumer Discretionary<br />Price: $68.79<br />Earnings per Share: $3.81 (5.54%)","Company: BorgWarner (BWA)<br />Sector: Consumer Discretionary<br />Price: $51.94<br />Earnings per Share: $0.55 (1.06%)","Company: Carmax Inc (KMX)<br />Sector: Consumer Discretionary<br />Price: $64.34<br />Earnings per Share: $3.97 (6.17%)","Company: Carnival Corp. (CCL)<br />Sector: Consumer Discretionary<br />Price: $66.76<br />Earnings per Share: $3.58 (5.36%)","Company: CBS Corp. (CBS)<br />Sector: Consumer Discretionary<br />Price: $51.8<br />Earnings per Share: $2.81 (5.42%)","Company: Charter Communications (CHTR)<br />Sector: Consumer Discretionary<br />Price: $348.65<br />Earnings per Share: $34.08 (9.77%)","Company: Chipotle Mexican Grill (CMG)<br />Sector: Consumer Discretionary<br />Price: $266.01<br />Earnings per Share: $0.8 (0.3%)","Company: Comcast Corp. (CMCSA)<br />Sector: Consumer Discretionary<br />Price: $38.19<br />Earnings per Share: $4.74 (12.41%)","Company: D. R. Horton (DHI)<br />Sector: Consumer Discretionary<br />Price: $44.55<br />Earnings per Share: $2.73 (6.13%)","Company: Darden Restaurants (DRI)<br />Sector: Consumer Discretionary<br />Price: $91.33<br />Earnings per Share: $3.81 (4.17%)","Company: Discovery Communications-A (DISCA)<br />Sector: Consumer Discretionary<br />Price: $22.87<br />Earnings per Share: $1.96 (8.57%)","Company: Discovery Communications-C (DISCK)<br />Sector: Consumer Discretionary<br />Price: $21.58<br />Earnings per Share: $1.96 (9.08%)","Company: Dish Network (DISH)<br />Sector: Consumer Discretionary<br />Price: $43.77<br />Earnings per Share: $3.06 (6.99%)","Company: Dollar General (DG)<br />Sector: Consumer Discretionary<br />Price: $95.1<br />Earnings per Share: $4.43 (4.66%)","Company: Dollar Tree (DLTR)<br />Sector: Consumer Discretionary<br />Price: $101.58<br />Earnings per Share: $3.77 (3.71%)","Company: Expedia Inc. (EXPE)<br />Sector: Consumer Discretionary<br />Price: $123.03<br />Earnings per Share: $1.81 (1.47%)","Company: Foot Locker Inc (FL)<br />Sector: Consumer Discretionary<br />Price: $45.88<br />Earnings per Share: $4.91 (10.7%)","Company: Ford Motor (F)<br />Sector: Consumer Discretionary<br />Price: $10.43<br />Earnings per Share: $1.9 (18.22%)","Company: Gap Inc. (GPS)<br />Sector: Consumer Discretionary<br />Price: $31.17<br />Earnings per Share: $1.69 (5.42%)","Company: Garmin Ltd. (GRMN)<br />Sector: Consumer Discretionary<br />Price: $61.13<br />Earnings per Share: $2.69 (4.4%)","Company: General Motors (GM)<br />Sector: Consumer Discretionary<br />Price: $40.75<br />Earnings per Share: $6 (14.72%)","Company: Genuine Parts (GPC)<br />Sector: Consumer Discretionary<br />Price: $96.31<br />Earnings per Share: $4.6 (4.78%)","Company: Goodyear Tire & Rubber (GT)<br />Sector: Consumer Discretionary<br />Price: $30.75<br />Earnings per Share: $4.74 (15.41%)","Company: Hanesbrands Inc (HBI)<br />Sector: Consumer Discretionary<br />Price: $19.57<br />Earnings per Share: $1.41 (7.2%)","Company: Harley-Davidson (HOG)<br />Sector: Consumer Discretionary<br />Price: $47.54<br />Earnings per Share: $2.98 (6.27%)","Company: Hasbro Inc. (HAS)<br />Sector: Consumer Discretionary<br />Price: $96.48<br />Earnings per Share: $4.34 (4.5%)","Company: Hilton Worldwide Holdings Inc (HLT)<br />Sector: Consumer Discretionary<br />Price: $78.66<br />Earnings per Share: $1.05 (1.33%)","Company: Home Depot (HD)<br />Sector: Consumer Discretionary<br />Price: $181.22<br />Earnings per Share: $6.46 (3.56%)","Company: Interpublic Group (IPG)<br />Sector: Consumer Discretionary<br />Price: $21.34<br />Earnings per Share: $1.49 (6.98%)","Company: Kohl's Corp. (KSS)<br />Sector: Consumer Discretionary<br />Price: $60.34<br />Earnings per Share: $3.12 (5.17%)","Company: L Brands Inc. (LB)<br />Sector: Consumer Discretionary<br />Price: $47.77<br />Earnings per Share: $3.98 (8.33%)","Company: Leggett & Platt (LEG)<br />Sector: Consumer Discretionary<br />Price: $43.99<br />Earnings per Share: $2.76 (6.27%)","Company: Lennar Corp. (LEN)<br />Sector: Consumer Discretionary<br />Price: $59.11<br />Earnings per Share: $3.38 (5.72%)","Company: LKQ Corporation (LKQ)<br />Sector: Consumer Discretionary<br />Price: $38.86<br />Earnings per Share: $1.5 (3.86%)","Company: Lowe's Cos. (LOW)<br />Sector: Consumer Discretionary<br />Price: $95.01<br />Earnings per Share: $3.46 (3.64%)","Company: Macy's Inc. (M)<br />Sector: Consumer Discretionary<br />Price: $24<br />Earnings per Share: $1.98 (8.25%)","Company: Marriott Int'l. (MAR)<br />Sector: Consumer Discretionary<br />Price: $133.88<br />Earnings per Share: $2.67 (1.99%)","Company: McDonald's Corp. (MCD)<br />Sector: Consumer Discretionary<br />Price: $158.97<br />Earnings per Share: $6.36 (4%)","Company: MGM Resorts International (MGM)<br />Sector: Consumer Discretionary<br />Price: $33.5<br />Earnings per Share: $1.92 (5.73%)","Company: Michael Kors Holdings (KORS)<br />Sector: Consumer Discretionary<br />Price: $60.03<br />Earnings per Share: $3.31 (5.51%)","Company: Mohawk Industries (MHK)<br />Sector: Consumer Discretionary<br />Price: $256.57<br />Earnings per Share: $12.48 (4.86%)","Company: Newell Brands (NWL)<br />Sector: Consumer Discretionary<br />Price: $27.91<br />Earnings per Share: $1.17 (4.19%)","Company: Nike (NKE)<br />Sector: Consumer Discretionary<br />Price: $62.49<br />Earnings per Share: $2.51 (4.02%)","Company: Nordstrom (JWN)<br />Sector: Consumer Discretionary<br />Price: $47.23<br />Earnings per Share: $2.02 (4.28%)","Company: Norwegian Cruise Line (NCLH)<br />Sector: Consumer Discretionary<br />Price: $56.01<br />Earnings per Share: $2.78 (4.96%)","Company: O'Reilly Automotive (ORLY)<br />Sector: Consumer Discretionary<br />Price: $252.22<br />Earnings per Share: $10.73 (4.25%)","Company: Omnicom Group (OMC)<br />Sector: Consumer Discretionary<br />Price: $75.91<br />Earnings per Share: $4.79 (6.31%)","Company: Priceline.com Inc (PCLN)<br />Sector: Consumer Discretionary<br />Price: $1806.06<br />Earnings per Share: $42.66 (2.36%)","Company: Pulte Homes Inc. (PHM)<br />Sector: Consumer Discretionary<br />Price: $28.67<br />Earnings per Share: $1.44 (5.02%)","Company: PVH Corp. (PVH)<br />Sector: Consumer Discretionary<br />Price: $142.68<br />Earnings per Share: $6.77 (4.74%)","Company: Ross Stores (ROST)<br />Sector: Consumer Discretionary<br />Price: $75.06<br />Earnings per Share: $2.83 (3.77%)","Company: Royal Caribbean Cruises Ltd (RCL)<br />Sector: Consumer Discretionary<br />Price: $122.45<br />Earnings per Share: $7.53 (6.15%)","Company: Scripps Networks Interactive Inc. (SNI)<br />Sector: Consumer Discretionary<br />Price: $86.46<br />Earnings per Share: $5.18 (5.99%)","Company: Signet Jewelers (SIG)<br />Sector: Consumer Discretionary<br />Price: $49.38<br />Earnings per Share: $7.03 (14.24%)","Company: Snap-On Inc. (SNA)<br />Sector: Consumer Discretionary<br />Price: $156.72<br />Earnings per Share: $9.2 (5.87%)","Company: Stanley Black & Decker (SWK)<br />Sector: Consumer Discretionary<br />Price: $152.86<br />Earnings per Share: $8.05 (5.27%)","Company: Starbucks Corp. (SBUX)<br />Sector: Consumer Discretionary<br />Price: $53.77<br />Earnings per Share: $1.97 (3.66%)","Company: Tapestry, Inc. (TPR)<br />Sector: Consumer Discretionary<br />Price: $48.85<br />Earnings per Share: $2.09 (4.28%)","Company: Target Corp. (TGT)<br />Sector: Consumer Discretionary<br />Price: $71.11<br />Earnings per Share: $4.71 (6.62%)","Company: The Walt Disney Company (DIS)<br />Sector: Consumer Discretionary<br />Price: $101.35<br />Earnings per Share: $5.7 (5.62%)","Company: Tiffany & Co. (TIF)<br />Sector: Consumer Discretionary<br />Price: $99.62<br />Earnings per Share: $3.55 (3.56%)","Company: Time Warner Inc. (TWX)<br />Sector: Consumer Discretionary<br />Price: $93.02<br />Earnings per Share: $6.62 (7.12%)","Company: TJX Companies Inc. (TJX)<br />Sector: Consumer Discretionary<br />Price: $74.36<br />Earnings per Share: $3.46 (4.65%)","Company: Tractor Supply Company (TSCO)<br />Sector: Consumer Discretionary<br />Price: $65.94<br />Earnings per Share: $3.3 (5%)","Company: TripAdvisor (TRIP)<br />Sector: Consumer Discretionary<br />Price: $40.05<br />Earnings per Share: $0.81 (2.02%)","Company: Twenty-First Century Fox Class A (FOXA)<br />Sector: Consumer Discretionary<br />Price: $34.56<br />Earnings per Share: $1.59 (4.6%)","Company: Twenty-First Century Fox Class B (FOX)<br />Sector: Consumer Discretionary<br />Price: $34.09<br />Earnings per Share: $1.59 (4.66%)","Company: Ulta Salon Cosmetics & Fragrance Inc (ULTA)<br />Sector: Consumer Discretionary<br />Price: $209.09<br />Earnings per Share: $6.52 (3.12%)","Company: Under Armour Class A (UAA)<br />Sector: Consumer Discretionary<br />Price: $13.14<br />Earnings per Share: $0.45 (3.42%)","Company: Under Armour Class C (UA)<br />Sector: Consumer Discretionary<br />Price: $11.95<br />Earnings per Share: $0.45 (3.77%)","Company: V.F. Corp. (VFC)<br />Sector: Consumer Discretionary<br />Price: $78.75<br />Earnings per Share: $2.55 (3.24%)","Company: Viacom Inc. (VIAB)<br />Sector: Consumer Discretionary<br />Price: $32.71<br />Earnings per Share: $4.68 (14.31%)","Company: Whirlpool Corp. (WHR)<br />Sector: Consumer Discretionary<br />Price: $164.95<br />Earnings per Share: $4.51 (2.73%)","Company: Wyndham Worldwide (WYN)<br />Sector: Consumer Discretionary<br />Price: $113.56<br />Earnings per Share: $5.53 (4.87%)","Company: Wynn Resorts Ltd (WYNN)<br />Sector: Consumer Discretionary<br />Price: $169.28<br />Earnings per Share: $7.27 (4.29%)","Company: Yum! Brands Inc (YUM)<br />Sector: Consumer Discretionary<br />Price: $76.3<br />Earnings per Share: $4.07 (5.33%)"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(248,118,109,1)","opacity":1,"size":3.77952755905512,"symbol":"circle","line":{"width":1.88976377952756,"color":"rgba(248,118,109,1)"}},"hoveron":"points","name":"Consumer Discretionary","legendgroup":"Consumer Discretionary","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[64.05,41.35,63.33,44.83,47.38,43.1,68.95,35.49,208.73,178.61,19.96,70.55,116.93,131.46,53.99,32.21,118.37,65.98,111.69,71.58,27.57,101.36,74.51,42.68,61.99,110.15,100.39,80.22,57,127.76,97.65,73.92,100.02,68.22],"y":[0.082903981264637,0.0524788391777509,0.0268435180798989,0.064465759536025,0.0616293794850148,0.0345707656612529,0.0330674401740392,0.0411383488306565,0.0417285488430029,0.0340966351268126,-0.031563126252505,0.0695960311835578,0.0388266484221329,0.0254830366651453,0.0513057973698833,0.0487426265135051,0.0430852411928698,0.0295544104274022,0.0573909929268511,0.0392567756356524,0.0743561842582517,0.0367995264404104,0.124412830492551,0.0447516401124649,0.0191966446201,0.0395823876532002,0.0446259587608328,0.0698080279232112,0.0364912280701754,0.0417188478396994,0.0374807987711213,0.0647997835497836,0.0438912217556489,0.0554089709762533],"text":["Company: Altria Group Inc (MO)<br />Sector: Consumer Staples<br />Price: $64.05<br />Earnings per Share: $5.31 (8.29%)","Company: Archer-Daniels-Midland Co (ADM)<br />Sector: Consumer Staples<br />Price: $41.35<br />Earnings per Share: $2.17 (5.25%)","Company: Brown-Forman Corp. (BF.B)<br />Sector: Consumer Staples<br />Price: $63.33<br />Earnings per Share: $1.7 (2.68%)","Company: Campbell Soup (CPB)<br />Sector: Consumer Staples<br />Price: $44.83<br />Earnings per Share: $2.89 (6.45%)","Company: Church & Dwight (CHD)<br />Sector: Consumer Staples<br />Price: $47.38<br />Earnings per Share: $2.92 (6.16%)","Company: Coca-Cola Company (The) (KO)<br />Sector: Consumer Staples<br />Price: $43.1<br />Earnings per Share: $1.49 (3.46%)","Company: Colgate-Palmolive (CL)<br />Sector: Consumer Staples<br />Price: $68.95<br />Earnings per Share: $2.28 (3.31%)","Company: Conagra Brands (CAG)<br />Sector: Consumer Staples<br />Price: $35.49<br />Earnings per Share: $1.46 (4.11%)","Company: Constellation Brands (STZ)<br />Sector: Consumer Staples<br />Price: $208.73<br />Earnings per Share: $8.71 (4.17%)","Company: Costco Wholesale Corp. (COST)<br />Sector: Consumer Staples<br />Price: $178.61<br />Earnings per Share: $6.09 (3.41%)","Company: Coty, Inc (COTY)<br />Sector: Consumer Staples<br />Price: $19.96<br />Earnings per Share: $-0.63 (-3.16%)","Company: CVS Health (CVS)<br />Sector: Consumer Staples<br />Price: $70.55<br />Earnings per Share: $4.91 (6.96%)","Company: Dr Pepper Snapple Group (DPS)<br />Sector: Consumer Staples<br />Price: $116.93<br />Earnings per Share: $4.54 (3.88%)","Company: Estee Lauder Cos. (EL)<br />Sector: Consumer Staples<br />Price: $131.46<br />Earnings per Share: $3.35 (2.55%)","Company: General Mills (GIS)<br />Sector: Consumer Staples<br />Price: $53.99<br />Earnings per Share: $2.77 (5.13%)","Company: Hormel Foods Corp. (HRL)<br />Sector: Consumer Staples<br />Price: $32.21<br />Earnings per Share: $1.57 (4.87%)","Company: JM Smucker (SJM)<br />Sector: Consumer Staples<br />Price: $118.37<br />Earnings per Share: $5.1 (4.31%)","Company: Kellogg Co. (K)<br />Sector: Consumer Staples<br />Price: $65.98<br />Earnings per Share: $1.95 (2.96%)","Company: Kimberly-Clark (KMB)<br />Sector: Consumer Staples<br />Price: $111.69<br />Earnings per Share: $6.41 (5.74%)","Company: Kraft Heinz Co (KHC)<br />Sector: Consumer Staples<br />Price: $71.58<br />Earnings per Share: $2.81 (3.93%)","Company: Kroger Co. (KR)<br />Sector: Consumer Staples<br />Price: $27.57<br />Earnings per Share: $2.05 (7.44%)","Company: McCormick & Co. (MKC)<br />Sector: Consumer Staples<br />Price: $101.36<br />Earnings per Share: $3.73 (3.68%)","Company: Molson Coors Brewing Company (TAP)<br />Sector: Consumer Staples<br />Price: $74.51<br />Earnings per Share: $9.27 (12.44%)","Company: Mondelez International (MDLZ)<br />Sector: Consumer Staples<br />Price: $42.68<br />Earnings per Share: $1.91 (4.48%)","Company: Monster Beverage (MNST)<br />Sector: Consumer Staples<br />Price: $61.99<br />Earnings per Share: $1.19 (1.92%)","Company: PepsiCo Inc. (PEP)<br />Sector: Consumer Staples<br />Price: $110.15<br />Earnings per Share: $4.36 (3.96%)","Company: Philip Morris International (PM)<br />Sector: Consumer Staples<br />Price: $100.39<br />Earnings per Share: $4.48 (4.46%)","Company: Procter & Gamble (PG)<br />Sector: Consumer Staples<br />Price: $80.22<br />Earnings per Share: $5.6 (6.98%)","Company: Sysco Corp. (SYY)<br />Sector: Consumer Staples<br />Price: $57<br />Earnings per Share: $2.08 (3.65%)","Company: The Clorox Company (CLX)<br />Sector: Consumer Staples<br />Price: $127.76<br />Earnings per Share: $5.33 (4.17%)","Company: The Hershey Company (HSY)<br />Sector: Consumer Staples<br />Price: $97.65<br />Earnings per Share: $3.66 (3.75%)","Company: Tyson Foods (TSN)<br />Sector: Consumer Staples<br />Price: $73.92<br />Earnings per Share: $4.79 (6.48%)","Company: Wal-Mart Stores (WMT)<br />Sector: Consumer Staples<br />Price: $100.02<br />Earnings per Share: $4.39 (4.39%)","Company: Walgreens Boots Alliance (WBA)<br />Sector: Consumer Staples<br />Price: $68.22<br />Earnings per Share: $3.78 (5.54%)"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(219,142,0,1)","opacity":1,"size":3.77952755905512,"symbol":"circle","line":{"width":1.88976377952756,"color":"rgba(219,142,0,1)"}},"hoveron":"points","name":"Consumer Staples","legendgroup":"Consumer Staples","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[96.9,27.5,23.01,112.3,53.24,76.07,47.41,16.8,62.79,68.47,54.4,92.44,29.1,86.77,28.56],"y":[0.0632610939112487,-0.0112727272727273,-0.0399826162538027,0.0431878895814782,-0.0122088655146506,0.0247140791376364,-0.0111790761442734,0.000595238095238095,0.109093804745979,-0.0109537023513948,0.0305147058823529,0.107421029857205,0,0.106488417655872,-0.0199579831932773],"text":["Company: Andeavor (ANDV)<br />Sector: Energy<br />Price: $96.9<br />Earnings per Share: $6.13 (6.33%)","Company: Baker Hughes, a GE Company (BHGE)<br />Sector: Energy<br />Price: $27.5<br />Earnings per Share: $-0.31 (-1.13%)","Company: Cabot Oil & Gas (COG)<br />Sector: Energy<br />Price: $23.01<br />Earnings per Share: $-0.92 (-4%)","Company: Chevron Corp. (CVX)<br />Sector: Energy<br />Price: $112.3<br />Earnings per Share: $4.85 (4.32%)","Company: ConocoPhillips (COP)<br />Sector: Energy<br />Price: $53.24<br />Earnings per Share: $-0.65 (-1.22%)","Company: Exxon Mobil Corp. (XOM)<br />Sector: Energy<br />Price: $76.07<br />Earnings per Share: $1.88 (2.47%)","Company: Halliburton Co. (HAL)<br />Sector: Energy<br />Price: $47.41<br />Earnings per Share: $-0.53 (-1.12%)","Company: Kinder Morgan (KMI)<br />Sector: Energy<br />Price: $16.8<br />Earnings per Share: $0.01 (0.06%)","Company: Marathon Petroleum (MPC)<br />Sector: Energy<br />Price: $62.79<br />Earnings per Share: $6.85 (10.91%)","Company: Occidental Petroleum (OXY)<br />Sector: Energy<br />Price: $68.47<br />Earnings per Share: $-0.75 (-1.1%)","Company: ONEOK (OKE)<br />Sector: Energy<br />Price: $54.4<br />Earnings per Share: $1.66 (3.05%)","Company: Phillips 66 (PSX)<br />Sector: Energy<br />Price: $92.44<br />Earnings per Share: $9.93 (10.74%)","Company: TechnipFMC (FTI)<br />Sector: Energy<br />Price: $29.1<br />Earnings per Share: $0 (0%)","Company: Valero Energy (VLO)<br />Sector: Energy<br />Price: $86.77<br />Earnings per Share: $9.24 (10.65%)","Company: Williams Cos. (WMB)<br />Sector: Energy<br />Price: $28.56<br />Earnings per Share: $-0.57 (-2%)"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(174,162,0,1)","opacity":1,"size":3.77952755905512,"symbol":"circle","line":{"width":1.88976377952756,"color":"rgba(174,162,0,1)"}},"hoveron":"points","name":"Energy","legendgroup":"Energy","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[179.11,83.25,90.06,88.34,58.28,152.5,136.05,64.4,85.16,29.74,51.07,191.42,509.38,25.19,91.8,111.15,48.9,140.39,70.34,42.19,153.04,89.18,72.4,48.48,241.06,31.1,38,246.35,53.34,15.1,67,31.92,107.88,20.08,23.86,73.86,46.05,178.35,79.31,44.28,152.14,51.79,75.21,13.38,96.2,18.56,149.38,60.38,51.07,103.38,86.06,17.9,173.31,98.54,65.8,34.98,101.99,53.29,135.01,80.52,52.65,47.87,55.4,152.36,50.71],"y":[0.0673887555133717,0.132252252252252,0.0519653564290473,0.0328277111161422,-0.0130404941660947,0.0619016393442623,0.0342521131936788,0.0394409937888199,0.1066228276186,0.0521183591123067,0.0536518504014098,0.0509873576428795,0.0594840786838902,0.0762207225089321,0.0375816993464052,0.0204228520017994,0.0329243353783231,0.0584087185696987,0.0504691498436167,0.0775065181322588,0.0780188186095139,0.0463108320251177,0.0747237569060773,0.0443481848184819,0.0983572554550734,0.0916398713826367,0.0789473684210526,0.0349502740004059,0.0425571803524559,0.0662251655629139,0.0353731343283582,0.0858395989974937,0.0583982202447164,0.0557768924302789,0.0138306789606035,0.125101543460601,0.0419109663409338,0.0487244182786655,0.0361871138570168,0.0142276422764228,0.00887340607335349,0.0596640278045955,0.0574391703230953,0.0754857997010463,0.0511434511434511,0.0522629310344828,0.0696211005489356,0.0745279894004637,0.053456040728412,0.0941187850648094,0.0478735765744829,0.0558659217877095,0.0458715596330275,0.0530748934442866,0.0680851063829787,0.0688965122927387,0.0465731934503383,0.0699943704259711,0.0541441374712984,0.0558867362146051,0.0668566001899335,0.0914978065594318,0.0734657039711191,0.0201496455762667,0.0512719384736738],"text":["Company: Affiliated Managers Group Inc (AMG)<br />Sector: Financials<br />Price: $179.11<br />Earnings per Share: $12.07 (6.74%)","Company: AFLAC Inc (AFL)<br />Sector: Financials<br />Price: $83.25<br />Earnings per Share: $11.01 (13.23%)","Company: Allstate Corp (ALL)<br />Sector: Financials<br />Price: $90.06<br />Earnings per Share: $4.68 (5.2%)","Company: American Express Co (AXP)<br />Sector: Financials<br />Price: $88.34<br />Earnings per Share: $2.9 (3.28%)","Company: American International Group, Inc. (AIG)<br />Sector: Financials<br />Price: $58.28<br />Earnings per Share: $-0.76 (-1.3%)","Company: Ameriprise Financial (AMP)<br />Sector: Financials<br />Price: $152.5<br />Earnings per Share: $9.44 (6.19%)","Company: Aon plc (AON)<br />Sector: Financials<br />Price: $136.05<br />Earnings per Share: $4.66 (3.43%)","Company: Arthur J. Gallagher & Co. (AJG)<br />Sector: Financials<br />Price: $64.4<br />Earnings per Share: $2.54 (3.94%)","Company: Assurant Inc (AIZ)<br />Sector: Financials<br />Price: $85.16<br />Earnings per Share: $9.08 (10.66%)","Company: Bank of America Corp (BAC)<br />Sector: Financials<br />Price: $29.74<br />Earnings per Share: $1.55 (5.21%)","Company: BB&T Corporation (BBT)<br />Sector: Financials<br />Price: $51.07<br />Earnings per Share: $2.74 (5.37%)","Company: Berkshire Hathaway (BRK.B)<br />Sector: Financials<br />Price: $191.42<br />Earnings per Share: $9.76 (5.1%)","Company: BlackRock (BLK)<br />Sector: Financials<br />Price: $509.38<br />Earnings per Share: $30.3 (5.95%)","Company: Block H&R (HRB)<br />Sector: Financials<br />Price: $25.19<br />Earnings per Share: $1.92 (7.62%)","Company: Capital One Financial (COF)<br />Sector: Financials<br />Price: $91.8<br />Earnings per Share: $3.45 (3.76%)","Company: CBOE Holdings (CBOE)<br />Sector: Financials<br />Price: $111.15<br />Earnings per Share: $2.27 (2.04%)","Company: Charles Schwab Corporation (SCHW)<br />Sector: Financials<br />Price: $48.9<br />Earnings per Share: $1.61 (3.29%)","Company: Chubb Limited (CB)<br />Sector: Financials<br />Price: $140.39<br />Earnings per Share: $8.2 (5.84%)","Company: Cincinnati Financial (CINF)<br />Sector: Financials<br />Price: $70.34<br />Earnings per Share: $3.55 (5.05%)","Company: Citizens Financial Group (CFG)<br />Sector: Financials<br />Price: $42.19<br />Earnings per Share: $3.27 (7.75%)","Company: CME Group Inc. (CME)<br />Sector: Financials<br />Price: $153.04<br />Earnings per Share: $11.94 (7.8%)","Company: Comerica Inc. (CMA)<br />Sector: Financials<br />Price: $89.18<br />Earnings per Share: $4.13 (4.63%)","Company: Discover Financial Services (DFS)<br />Sector: Financials<br />Price: $72.4<br />Earnings per Share: $5.41 (7.47%)","Company: E*Trade (ETFC)<br />Sector: Financials<br />Price: $48.48<br />Earnings per Share: $2.15 (4.43%)","Company: Everest Re Group Ltd. (RE)<br />Sector: Financials<br />Price: $241.06<br />Earnings per Share: $23.71 (9.84%)","Company: Fifth Third Bancorp (FITB)<br />Sector: Financials<br />Price: $31.1<br />Earnings per Share: $2.85 (9.16%)","Company: Franklin Resources (BEN)<br />Sector: Financials<br />Price: $38<br />Earnings per Share: $3 (7.89%)","Company: Goldman Sachs Group (GS)<br />Sector: Financials<br />Price: $246.35<br />Earnings per Share: $8.61 (3.5%)","Company: Hartford Financial Svc.Gp. (HIG)<br />Sector: Financials<br />Price: $53.34<br />Earnings per Share: $2.27 (4.26%)","Company: Huntington Bancshares (HBAN)<br />Sector: Financials<br />Price: $15.1<br />Earnings per Share: $1 (6.62%)","Company: Intercontinental Exchange (ICE)<br />Sector: Financials<br />Price: $67<br />Earnings per Share: $2.37 (3.54%)","Company: Invesco Ltd. (IVZ)<br />Sector: Financials<br />Price: $31.92<br />Earnings per Share: $2.74 (8.58%)","Company: JPMorgan Chase & Co. (JPM)<br />Sector: Financials<br />Price: $107.88<br />Earnings per Share: $6.3 (5.84%)","Company: KeyCorp (KEY)<br />Sector: Financials<br />Price: $20.08<br />Earnings per Share: $1.12 (5.58%)","Company: Leucadia National Corp. (LUK)<br />Sector: Financials<br />Price: $23.86<br />Earnings per Share: $0.33 (1.38%)","Company: Lincoln National (LNC)<br />Sector: Financials<br />Price: $73.86<br />Earnings per Share: $9.24 (12.51%)","Company: Loews Corp. (L)<br />Sector: Financials<br />Price: $46.05<br />Earnings per Share: $1.93 (4.19%)","Company: M&T Bank Corp. (MTB)<br />Sector: Financials<br />Price: $178.35<br />Earnings per Share: $8.69 (4.87%)","Company: Marsh & McLennan (MMC)<br />Sector: Financials<br />Price: $79.31<br />Earnings per Share: $2.87 (3.62%)","Company: MetLife Inc. (MET)<br />Sector: Financials<br />Price: $44.28<br />Earnings per Share: $0.63 (1.42%)","Company: Moody's Corp (MCO)<br />Sector: Financials<br />Price: $152.14<br />Earnings per Share: $1.35 (0.89%)","Company: Morgan Stanley (MS)<br />Sector: Financials<br />Price: $51.79<br />Earnings per Share: $3.09 (5.97%)","Company: Nasdaq, Inc. (NDAQ)<br />Sector: Financials<br />Price: $75.21<br />Earnings per Share: $4.32 (5.74%)","Company: Navient (NAVI)<br />Sector: Financials<br />Price: $13.38<br />Earnings per Share: $1.01 (7.55%)","Company: Northern Trust Corp. (NTRS)<br />Sector: Financials<br />Price: $96.2<br />Earnings per Share: $4.92 (5.11%)","Company: People's United Financial (PBCT)<br />Sector: Financials<br />Price: $18.56<br />Earnings per Share: $0.97 (5.23%)","Company: PNC Financial Services (PNC)<br />Sector: Financials<br />Price: $149.38<br />Earnings per Share: $10.4 (6.96%)","Company: Principal Financial Group (PFG)<br />Sector: Financials<br />Price: $60.38<br />Earnings per Share: $4.5 (7.45%)","Company: Progressive Corp. (PGR)<br />Sector: Financials<br />Price: $51.07<br />Earnings per Share: $2.73 (5.35%)","Company: Prudential Financial (PRU)<br />Sector: Financials<br />Price: $103.38<br />Earnings per Share: $9.73 (9.41%)","Company: Raymond James Financial Inc. (RJF)<br />Sector: Financials<br />Price: $86.06<br />Earnings per Share: $4.12 (4.79%)","Company: Regions Financial Corp. (RF)<br />Sector: Financials<br />Price: $17.9<br />Earnings per Share: $1 (5.59%)","Company: S&P Global, Inc. (SPGI)<br />Sector: Financials<br />Price: $173.31<br />Earnings per Share: $7.95 (4.59%)","Company: State Street Corp. (STT)<br />Sector: Financials<br />Price: $98.54<br />Earnings per Share: $5.23 (5.31%)","Company: SunTrust Banks (STI)<br />Sector: Financials<br />Price: $65.8<br />Earnings per Share: $4.48 (6.81%)","Company: Synchrony Financial (SYF)<br />Sector: Financials<br />Price: $34.98<br />Earnings per Share: $2.41 (6.89%)","Company: T. Rowe Price Group (TROW)<br />Sector: Financials<br />Price: $101.99<br />Earnings per Share: $4.75 (4.66%)","Company: The Bank of New York Mellon Corp. (BK)<br />Sector: Financials<br />Price: $53.29<br />Earnings per Share: $3.73 (7%)","Company: The Travelers Companies Inc. (TRV)<br />Sector: Financials<br />Price: $135.01<br />Earnings per Share: $7.31 (5.41%)","Company: Torchmark Corp. (TMK)<br />Sector: Financials<br />Price: $80.52<br />Earnings per Share: $4.5 (5.59%)","Company: U.S. Bancorp (USB)<br />Sector: Financials<br />Price: $52.65<br />Earnings per Share: $3.52 (6.69%)","Company: Unum Group (UNM)<br />Sector: Financials<br />Price: $47.87<br />Earnings per Share: $4.38 (9.15%)","Company: Wells Fargo (WFC)<br />Sector: Financials<br />Price: $55.4<br />Earnings per Share: $4.07 (7.35%)","Company: Willis Towers Watson (WLTW)<br />Sector: Financials<br />Price: $152.36<br />Earnings per Share: $3.07 (2.01%)","Company: Zions Bancorp (ZION)<br />Sector: Financials<br />Price: $50.71<br />Earnings per Share: $2.6 (5.13%)"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(100,178,0,1)","opacity":1,"size":3.77952755905512,"symbol":"circle","line":{"width":1.88976377952756,"color":"rgba(100,178,0,1)"}},"hoveron":"points","name":"Financials","legendgroup":"Financials","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[56.27,108.48,178,65.05,108.47,220.71,164.2,91.55,173.12,230.57,62.56,211.44,311.79,25.2,62.69,66.63,91.02,100.36,61.22,189.27,92.16,71.91,56.85,123.78,35.34,73.35,78.22,95.97,70.85,38.8,262.37,169.28,209.54,83.92,381.87,95.23,126.36,165.46,74.21,150.23,78.38,54.73,601,39.25,32.88,72.06,33.63,96.42,322.62,89.26,148.01,223.17,198.73,216.46,114.87,112.82,151.6,191.79,115.53,71.51],"y":[0.0046205793495646,0.0303281710914454,0.0323033707865169,0.03228285933897,0.01631787591039,0.0128675637714648,0.233556638246041,0.0179137083560896,0.0148451940850277,0.0622804354425988,0.0206202046035806,0.0219920544835414,0.0382950062542096,0.00277777777777778,0.042271494656245,0.0606333483415879,0.039332014941771,0.0321841371064169,0.0300555374060764,0.0380408939610081,0.0383029513888889,0.0597969684327632,0.0350043975373791,0.0232670867668444,-0.0135823429541596,0.0734832992501704,0.127205318332907,0.0618943419818693,0.0437544107268878,0.0680412371134021,0.0154743301444525,0.0173676748582231,0.0234800038178868,0.00643469971401335,0.0148479849163328,0.0079806783576604,0.00308641975308642,0.0424271727305693,-0.00269505457485514,0.151367902549424,0.03687165093136,0.0255801205919971,0.02369384359401,0.0236942675159236,0.0544403892944039,0.0366361365528726,0.104371097234612,0.0570421074465878,0.0239910730890831,0.0269997759354694,0.0181068846699547,0.0336962853430121,0.0281789362451567,0.0494779635960455,0.0621572212065813,0.0238432901967736,0.00686015831134565,0.000990666875228114,0.0779884012810525,0.0230736959865753],"text":["Company: Abbott Laboratories (ABT)<br />Sector: Health Care<br />Price: $56.27<br />Earnings per Share: $0.26 (0.46%)","Company: AbbVie Inc. (ABBV)<br />Sector: Health Care<br />Price: $108.48<br />Earnings per Share: $3.29 (3.03%)","Company: Aetna Inc (AET)<br />Sector: Health Care<br />Price: $178<br />Earnings per Share: $5.75 (3.23%)","Company: Agilent Technologies Inc (A)<br />Sector: Health Care<br />Price: $65.05<br />Earnings per Share: $2.1 (3.23%)","Company: Alexion Pharmaceuticals (ALXN)<br />Sector: Health Care<br />Price: $108.47<br />Earnings per Share: $1.77 (1.63%)","Company: Align Technology (ALGN)<br />Sector: Health Care<br />Price: $220.71<br />Earnings per Share: $2.84 (1.29%)","Company: Allergan, Plc (AGN)<br />Sector: Health Care<br />Price: $164.2<br />Earnings per Share: $38.35 (23.36%)","Company: AmerisourceBergen Corp (ABC)<br />Sector: Health Care<br />Price: $91.55<br />Earnings per Share: $1.64 (1.79%)","Company: Amgen Inc (AMGN)<br />Sector: Health Care<br />Price: $173.12<br />Earnings per Share: $2.57 (1.48%)","Company: Anthem Inc. (ANTM)<br />Sector: Health Care<br />Price: $230.57<br />Earnings per Share: $14.36 (6.23%)","Company: Baxter International Inc. (BAX)<br />Sector: Health Care<br />Price: $62.56<br />Earnings per Share: $1.29 (2.06%)","Company: Becton Dickinson (BDX)<br />Sector: Health Care<br />Price: $211.44<br />Earnings per Share: $4.65 (2.2%)","Company: Biogen Inc. (BIIB)<br />Sector: Health Care<br />Price: $311.79<br />Earnings per Share: $11.94 (3.83%)","Company: Boston Scientific (BSX)<br />Sector: Health Care<br />Price: $25.2<br />Earnings per Share: $0.07 (0.28%)","Company: Bristol-Myers Squibb (BMY)<br />Sector: Health Care<br />Price: $62.69<br />Earnings per Share: $2.65 (4.23%)","Company: Cardinal Health Inc. (CAH)<br />Sector: Health Care<br />Price: $66.63<br />Earnings per Share: $4.04 (6.06%)","Company: Celgene Corp. (CELG)<br />Sector: Health Care<br />Price: $91.02<br />Earnings per Share: $3.58 (3.93%)","Company: Centene Corporation (CNC)<br />Sector: Health Care<br />Price: $100.36<br />Earnings per Share: $3.23 (3.22%)","Company: Cerner (CERN)<br />Sector: Health Care<br />Price: $61.22<br />Earnings per Share: $1.84 (3.01%)","Company: CIGNA Corp. (CI)<br />Sector: Health Care<br />Price: $189.27<br />Earnings per Share: $7.2 (3.8%)","Company: Danaher Corp. (DHR)<br />Sector: Health Care<br />Price: $92.16<br />Earnings per Share: $3.53 (3.83%)","Company: DaVita Inc. (DVA)<br />Sector: Health Care<br />Price: $71.91<br />Earnings per Share: $4.3 (5.98%)","Company: Dentsply Sirona (XRAY)<br />Sector: Health Care<br />Price: $56.85<br />Earnings per Share: $1.99 (3.5%)","Company: Edwards Lifesciences (EW)<br />Sector: Health Care<br />Price: $123.78<br />Earnings per Share: $2.88 (2.33%)","Company: Envision Healthcare (EVHC)<br />Sector: Health Care<br />Price: $35.34<br />Earnings per Share: $-0.48 (-1.36%)","Company: Express Scripts (ESRX)<br />Sector: Health Care<br />Price: $73.35<br />Earnings per Share: $5.39 (7.35%)","Company: Gilead Sciences (GILD)<br />Sector: Health Care<br />Price: $78.22<br />Earnings per Share: $9.95 (12.72%)","Company: HCA Holdings (HCA)<br />Sector: Health Care<br />Price: $95.97<br />Earnings per Share: $5.94 (6.19%)","Company: Henry Schein (HSIC)<br />Sector: Health Care<br />Price: $70.85<br />Earnings per Share: $3.1 (4.38%)","Company: Hologic (HOLX)<br />Sector: Health Care<br />Price: $38.8<br />Earnings per Share: $2.64 (6.8%)","Company: Humana Inc. (HUM)<br />Sector: Health Care<br />Price: $262.37<br />Earnings per Share: $4.06 (1.55%)","Company: IDEXX Laboratories (IDXX)<br />Sector: Health Care<br />Price: $169.28<br />Earnings per Share: $2.94 (1.74%)","Company: Illumina Inc (ILMN)<br />Sector: Health Care<br />Price: $209.54<br />Earnings per Share: $4.92 (2.35%)","Company: Incyte (INCY)<br />Sector: Health Care<br />Price: $83.92<br />Earnings per Share: $0.54 (0.64%)","Company: Intuitive Surgical Inc. (ISRG)<br />Sector: Health Care<br />Price: $381.87<br />Earnings per Share: $5.67 (1.48%)","Company: IQVIA Holdings Inc. (IQV)<br />Sector: Health Care<br />Price: $95.23<br />Earnings per Share: $0.76 (0.8%)","Company: Johnson & Johnson (JNJ)<br />Sector: Health Care<br />Price: $126.36<br />Earnings per Share: $0.39 (0.31%)","Company: Laboratory Corp. of America Holding (LH)<br />Sector: Health Care<br />Price: $165.46<br />Earnings per Share: $7.02 (4.24%)","Company: Lilly (Eli) & Co. (LLY)<br />Sector: Health Care<br />Price: $74.21<br />Earnings per Share: $-0.2 (-0.27%)","Company: McKesson Corp. (MCK)<br />Sector: Health Care<br />Price: $150.23<br />Earnings per Share: $22.74 (15.14%)","Company: Medtronic plc (MDT)<br />Sector: Health Care<br />Price: $78.38<br />Earnings per Share: $2.89 (3.69%)","Company: Merck & Co. (MRK)<br />Sector: Health Care<br />Price: $54.73<br />Earnings per Share: $1.4 (2.56%)","Company: Mettler Toledo (MTD)<br />Sector: Health Care<br />Price: $601<br />Earnings per Share: $14.24 (2.37%)","Company: Mylan N.V. (MYL)<br />Sector: Health Care<br />Price: $39.25<br />Earnings per Share: $0.93 (2.37%)","Company: Patterson Companies (PDCO)<br />Sector: Health Care<br />Price: $32.88<br />Earnings per Share: $1.79 (5.44%)","Company: PerkinElmer (PKI)<br />Sector: Health Care<br />Price: $72.06<br />Earnings per Share: $2.64 (3.66%)","Company: Pfizer Inc. (PFE)<br />Sector: Health Care<br />Price: $33.63<br />Earnings per Share: $3.51 (10.44%)","Company: Quest Diagnostics (DGX)<br />Sector: Health Care<br />Price: $96.42<br />Earnings per Share: $5.5 (5.7%)","Company: Regeneron (REGN)<br />Sector: Health Care<br />Price: $322.62<br />Earnings per Share: $7.74 (2.4%)","Company: ResMed (RMD)<br />Sector: Health Care<br />Price: $89.26<br />Earnings per Share: $2.41 (2.7%)","Company: Stryker Corp. (SYK)<br />Sector: Health Care<br />Price: $148.01<br />Earnings per Share: $2.68 (1.81%)","Company: The Cooper Companies (COO)<br />Sector: Health Care<br />Price: $223.17<br />Earnings per Share: $7.52 (3.37%)","Company: Thermo Fisher Scientific (TMO)<br />Sector: Health Care<br />Price: $198.73<br />Earnings per Share: $5.6 (2.82%)","Company: United Health Group Inc. (UNH)<br />Sector: Health Care<br />Price: $216.46<br />Earnings per Share: $10.71 (4.95%)","Company: Universal Health Services, Inc. (UHS)<br />Sector: Health Care<br />Price: $114.87<br />Earnings per Share: $7.14 (6.22%)","Company: Varian Medical Systems (VAR)<br />Sector: Health Care<br />Price: $112.82<br />Earnings per Share: $2.69 (2.38%)","Company: Vertex Pharmaceuticals Inc (VRTX)<br />Sector: Health Care<br />Price: $151.6<br />Earnings per Share: $1.04 (0.69%)","Company: Waters Corporation (WAT)<br />Sector: Health Care<br />Price: $191.79<br />Earnings per Share: $0.19 (0.1%)","Company: Zimmer Biomet Holdings (ZBH)<br />Sector: Health Care<br />Price: $115.53<br />Earnings per Share: $9.01 (7.8%)","Company: Zoetis (ZTS)<br />Sector: Health Care<br />Price: $71.51<br />Earnings per Share: $1.65 (2.31%)"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,189,92,1)","opacity":1,"size":3.77952755905512,"symbol":"circle","line":{"width":1.88976377952756,"color":"rgba(0,189,92,1)"}},"hoveron":"points","name":"Health Care","legendgroup":"Health Care","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[222.89,60.24,145.41,64.04,77.32,48.6,72.05,24.45,329.66,90.47,145.99,149.32,50.47,165.73,153.66,51.23,96.2,79.41,66.4,114,60.36,52.15,239.27,40.82,55.31,69.14,62.44,206.05,14.45,258.6,146.02,225.37,43.73,156.15,87.6,114.81,62.82,36.55,103.53,198.79,334.3,40.7,33.9,136.89,324.01,66.98,174.51,66.67,33.51,198.74,62.72,52.26,178.73,133.31,259.4,55.63,70.55,55.54,283,124.86,63.37,109.28,161.99,127.48,92.28,79.12,70.24],"y":[0.035533222665889,0.0282204515272244,0.0510968984251427,0.129294191130543,0.0306518365235385,0.0804526748971193,0.0408049965301874,-0.00858895705521472,0.0408602802887824,0.039460594672267,0.00863072813206384,0.0293329761585856,0.120269467010105,0.0496590840523743,0.0432122868671092,0.0964278742924068,0.0535343035343035,0.084120387860471,0.0353915662650602,0.0354385964912281,0.0390987408880053,0.038542665388303,0.0462657249132779,0.027437530622244,0.035979027300669,0.0355799826439109,0.0486867392696989,0.0463479737927687,-0.0498269896193772,0.0387470997679814,0.0142446240241063,0.0539113457869282,0.0228675966155957,0.0311239193083573,0.0578767123287671,0.0539151641843045,0.0386819484240688,0.0467852257181943,0.0884767700183522,0.0428089944162181,0.0204307508226144,0.0361179361179361,0.0410029498525074,0.136825188107239,0.0354001419709268,0.0709166915497163,0.0414875938341642,0.0544472776361182,0.0381975529692629,0.0349703129717218,0.0282206632653061,0.0443934175277459,0.0355284507357467,0.036006301102693,0.0361603700848111,0.10461980945533,0.0294826364280652,0.0205257472092186,0.0279858657243816,0.108281275028031,0.111251380779549,0.0514275256222548,0.0970430273473671,0.0447128961405711,0.0373862158647594,0.0336198179979778,0.0260535307517084],"text":["Company: 3M Company (MMM)<br />Sector: Industrials<br />Price: $222.89<br />Earnings per Share: $7.92 (3.55%)","Company: A.O. Smith Corp (AOS)<br />Sector: Industrials<br />Price: $60.24<br />Earnings per Share: $1.7 (2.82%)","Company: Acuity Brands Inc (AYI)<br />Sector: Industrials<br />Price: $145.41<br />Earnings per Share: $7.43 (5.11%)","Company: Alaska Air Group Inc (ALK)<br />Sector: Industrials<br />Price: $64.04<br />Earnings per Share: $8.28 (12.93%)","Company: Allegion (ALLE)<br />Sector: Industrials<br />Price: $77.32<br />Earnings per Share: $2.37 (3.07%)","Company: American Airlines Group (AAL)<br />Sector: Industrials<br />Price: $48.6<br />Earnings per Share: $3.91 (8.05%)","Company: AMETEK Inc (AME)<br />Sector: Industrials<br />Price: $72.05<br />Earnings per Share: $2.94 (4.08%)","Company: Arconic Inc (ARNC)<br />Sector: Industrials<br />Price: $24.45<br />Earnings per Share: $-0.21 (-0.86%)","Company: Boeing Company (BA)<br />Sector: Industrials<br />Price: $329.66<br />Earnings per Share: $13.47 (4.09%)","Company: C. H. Robinson Worldwide (CHRW)<br />Sector: Industrials<br />Price: $90.47<br />Earnings per Share: $3.57 (3.95%)","Company: Caterpillar Inc. (CAT)<br />Sector: Industrials<br />Price: $145.99<br />Earnings per Share: $1.26 (0.86%)","Company: Cintas Corporation (CTAS)<br />Sector: Industrials<br />Price: $149.32<br />Earnings per Share: $4.38 (2.93%)","Company: CSX Corp. (CSX)<br />Sector: Industrials<br />Price: $50.47<br />Earnings per Share: $6.07 (12.03%)","Company: Cummins Inc. (CMI)<br />Sector: Industrials<br />Price: $165.73<br />Earnings per Share: $8.23 (4.97%)","Company: Deere & Co. (DE)<br />Sector: Industrials<br />Price: $153.66<br />Earnings per Share: $6.64 (4.32%)","Company: Delta Air Lines Inc. (DAL)<br />Sector: Industrials<br />Price: $51.23<br />Earnings per Share: $4.94 (9.64%)","Company: Dover Corp. (DOV)<br />Sector: Industrials<br />Price: $96.2<br />Earnings per Share: $5.15 (5.35%)","Company: Eaton Corporation (ETN)<br />Sector: Industrials<br />Price: $79.41<br />Earnings per Share: $6.68 (8.41%)","Company: Emerson Electric Company (EMR)<br />Sector: Industrials<br />Price: $66.4<br />Earnings per Share: $2.35 (3.54%)","Company: Equifax Inc. (EFX)<br />Sector: Industrials<br />Price: $114<br />Earnings per Share: $4.04 (3.54%)","Company: Expeditors International (EXPD)<br />Sector: Industrials<br />Price: $60.36<br />Earnings per Share: $2.36 (3.91%)","Company: Fastenal Co (FAST)<br />Sector: Industrials<br />Price: $52.15<br />Earnings per Share: $2.01 (3.85%)","Company: FedEx Corporation (FDX)<br />Sector: Industrials<br />Price: $239.27<br />Earnings per Share: $11.07 (4.63%)","Company: Flowserve Corporation (FLS)<br />Sector: Industrials<br />Price: $40.82<br />Earnings per Share: $1.12 (2.74%)","Company: Fluor Corp. (FLR)<br />Sector: Industrials<br />Price: $55.31<br />Earnings per Share: $1.99 (3.6%)","Company: Fortive Corp (FTV)<br />Sector: Industrials<br />Price: $69.14<br />Earnings per Share: $2.46 (3.56%)","Company: Fortune Brands Home & Security (FBHS)<br />Sector: Industrials<br />Price: $62.44<br />Earnings per Share: $3.04 (4.87%)","Company: General Dynamics (GD)<br />Sector: Industrials<br />Price: $206.05<br />Earnings per Share: $9.55 (4.63%)","Company: General Electric (GE)<br />Sector: Industrials<br />Price: $14.45<br />Earnings per Share: $-0.72 (-4.98%)","Company: Grainger (W.W.) Inc. (GWW)<br />Sector: Industrials<br />Price: $258.6<br />Earnings per Share: $10.02 (3.87%)","Company: Honeywell Int'l Inc. (HON)<br />Sector: Industrials<br />Price: $146.02<br />Earnings per Share: $2.08 (1.42%)","Company: Huntington Ingalls Industries (HII)<br />Sector: Industrials<br />Price: $225.37<br />Earnings per Share: $12.15 (5.39%)","Company: IHS Markit Ltd. (INFO)<br />Sector: Industrials<br />Price: $43.73<br />Earnings per Share: $1 (2.29%)","Company: Illinois Tool Works (ITW)<br />Sector: Industrials<br />Price: $156.15<br />Earnings per Share: $4.86 (3.11%)","Company: Ingersoll-Rand PLC (IR)<br />Sector: Industrials<br />Price: $87.6<br />Earnings per Share: $5.07 (5.79%)","Company: J. B. Hunt Transport Services (JBHT)<br />Sector: Industrials<br />Price: $114.81<br />Earnings per Share: $6.19 (5.39%)","Company: Jacobs Engineering Group (JEC)<br />Sector: Industrials<br />Price: $62.82<br />Earnings per Share: $2.43 (3.87%)","Company: Johnson Controls International (JCI)<br />Sector: Industrials<br />Price: $36.55<br />Earnings per Share: $1.71 (4.68%)","Company: Kansas City Southern (KSU)<br />Sector: Industrials<br />Price: $103.53<br />Earnings per Share: $9.16 (8.85%)","Company: L-3 Communications Holdings (LLL)<br />Sector: Industrials<br />Price: $198.79<br />Earnings per Share: $8.51 (4.28%)","Company: Lockheed Martin Corp. (LMT)<br />Sector: Industrials<br />Price: $334.3<br />Earnings per Share: $6.83 (2.04%)","Company: Masco Corp. (MAS)<br />Sector: Industrials<br />Price: $40.7<br />Earnings per Share: $1.47 (3.61%)","Company: Nielsen Holdings (NLSN)<br />Sector: Industrials<br />Price: $33.9<br />Earnings per Share: $1.39 (4.1%)","Company: Norfolk Southern Corp. (NSC)<br />Sector: Industrials<br />Price: $136.89<br />Earnings per Share: $18.73 (13.68%)","Company: Northrop Grumman Corp. (NOC)<br />Sector: Industrials<br />Price: $324.01<br />Earnings per Share: $11.47 (3.54%)","Company: PACCAR Inc. (PCAR)<br />Sector: Industrials<br />Price: $66.98<br />Earnings per Share: $4.75 (7.09%)","Company: Parker-Hannifin (PH)<br />Sector: Industrials<br />Price: $174.51<br />Earnings per Share: $7.24 (4.15%)","Company: Pentair Ltd. (PNR)<br />Sector: Industrials<br />Price: $66.67<br />Earnings per Share: $3.63 (5.44%)","Company: Quanta Services Inc. (PWR)<br />Sector: Industrials<br />Price: $33.51<br />Earnings per Share: $1.28 (3.82%)","Company: Raytheon Co. (RTN)<br />Sector: Industrials<br />Price: $198.74<br />Earnings per Share: $6.95 (3.5%)","Company: Republic Services Inc (RSG)<br />Sector: Industrials<br />Price: $62.72<br />Earnings per Share: $1.77 (2.82%)","Company: Robert Half International (RHI)<br />Sector: Industrials<br />Price: $52.26<br />Earnings per Share: $2.32 (4.44%)","Company: Rockwell Automation Inc. (ROK)<br />Sector: Industrials<br />Price: $178.73<br />Earnings per Share: $6.35 (3.55%)","Company: Rockwell Collins (COL)<br />Sector: Industrials<br />Price: $133.31<br />Earnings per Share: $4.8 (3.6%)","Company: Roper Technologies (ROP)<br />Sector: Industrials<br />Price: $259.4<br />Earnings per Share: $9.38 (3.62%)","Company: Southwest Airlines (LUV)<br />Sector: Industrials<br />Price: $55.63<br />Earnings per Share: $5.82 (10.46%)","Company: Stericycle Inc (SRCL)<br />Sector: Industrials<br />Price: $70.55<br />Earnings per Share: $2.08 (2.95%)","Company: Textron Inc. (TXT)<br />Sector: Industrials<br />Price: $55.54<br />Earnings per Share: $1.14 (2.05%)","Company: TransDigm Group (TDG)<br />Sector: Industrials<br />Price: $283<br />Earnings per Share: $7.92 (2.8%)","Company: Union Pacific (UNP)<br />Sector: Industrials<br />Price: $124.86<br />Earnings per Share: $13.52 (10.83%)","Company: United Continental Holdings (UAL)<br />Sector: Industrials<br />Price: $63.37<br />Earnings per Share: $7.05 (11.13%)","Company: United Parcel Service (UPS)<br />Sector: Industrials<br />Price: $109.28<br />Earnings per Share: $5.62 (5.14%)","Company: United Rentals, Inc. (URI)<br />Sector: Industrials<br />Price: $161.99<br />Earnings per Share: $15.72 (9.7%)","Company: United Technologies (UTX)<br />Sector: Industrials<br />Price: $127.48<br />Earnings per Share: $5.7 (4.47%)","Company: Verisk Analytics (VRSK)<br />Sector: Industrials<br />Price: $92.28<br />Earnings per Share: $3.45 (3.74%)","Company: Waste Management Inc. (WM)<br />Sector: Industrials<br />Price: $79.12<br />Earnings per Share: $2.66 (3.36%)","Company: Xylem Inc. (XYL)<br />Sector: Industrials<br />Price: $70.24<br />Earnings per Share: $1.83 (2.61%)"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,193,167,1)","opacity":1,"size":3.77952755905512,"symbol":"circle","line":{"width":1.88976377952756,"color":"rgba(0,193,167,1)"}},"hoveron":"points","name":"Industrials","legendgroup":"Industrials","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[150.51,65.83,185.16,11.22,62.49,240.6,1007.71,1001.52,84.44,82.68,148.84,155.15,45.75,108.25,229.57,32.66,36.82,38.77,84.53,75.16,28.45,30.85,91.92,116.54,137.25,171.58,92.74,133.05,46.46,114.26,100.59,149.84,15.04,19.92,42.75,147.59,152.75,24.66,98.54,162.23,160.62,79.9,40,85.01,55.85,250.1,217.52,46.84,61.86,72.32,76.85,62.42,124.65,104.03,47.44,99.04,25.59,82.62,95.27,97.66,81.17,105.62,113.86,80.09,18.81,29.8,62.82],"y":[0.0361437778220716,0.019444022482151,0.0183084899546338,0.00267379679144385,0.0286445831333013,0.0587281795511222,0.0220996119915452,0.0222362009745187,0.0242775935575557,0.0255200774068699,0.0200886858371406,0.0592974540767,0.0692896174863388,0.0355658198614319,0.0174674391253213,0.0566442131047153,0.020097772949484,0.0492648955377869,-0.00283922867620963,0.033794571580628,-0.0274165202108963,0.0593192868719611,-0.00968233246301131,0.0263428865625536,0.047431693989071,0.0314139177060263,0.0185464740133707,0.0311161217587373,0.0260439087387,0.0202170488359881,0.0157073267720449,0.0295648691938067,0.0139627659574468,0.0747991967871486,0.0463157894736842,0.0413984687309438,0.0243535188216039,0.0316301703163017,0.0596711995128882,0.0568328915736917,0.0227244427842112,0.00826032540675845,0.109,0.0349370662275026,0.032408236347359,0.00499800079968013,0.0118150055167341,0.0469684030742955,0.0365341092790171,0.0203263274336283,-0.00169160702667534,0.0264338353091958,0.0134777376654633,0.00259540517158512,0.0543844856661046,0.054624394184168,-0.00664322000781555,0.0105301379811184,0.0494384381232287,0.0368625844767561,0.0389306393987927,0.0324749100549138,0.0245916037238714,0.0161068797602697,0.0271132376395534,0.0197986577181208,0.0369309137217447],"text":["Company: Accenture plc (ACN)<br />Sector: Information Technology<br />Price: $150.51<br />Earnings per Share: $5.44 (3.61%)","Company: Activision Blizzard (ATVI)<br />Sector: Information Technology<br />Price: $65.83<br />Earnings per Share: $1.28 (1.94%)","Company: Adobe Systems Inc (ADBE)<br />Sector: Information Technology<br />Price: $185.16<br />Earnings per Share: $3.39 (1.83%)","Company: Advanced Micro Devices Inc (AMD)<br />Sector: Information Technology<br />Price: $11.22<br />Earnings per Share: $0.03 (0.27%)","Company: Akamai Technologies Inc (AKAM)<br />Sector: Information Technology<br />Price: $62.49<br />Earnings per Share: $1.79 (2.86%)","Company: Alliance Data Systems (ADS)<br />Sector: Information Technology<br />Price: $240.6<br />Earnings per Share: $14.13 (5.87%)","Company: Alphabet Inc Class A (GOOGL)<br />Sector: Information Technology<br />Price: $1007.71<br />Earnings per Share: $22.27 (2.21%)","Company: Alphabet Inc Class C (GOOG)<br />Sector: Information Technology<br />Price: $1001.52<br />Earnings per Share: $22.27 (2.22%)","Company: Amphenol Corp (APH)<br />Sector: Information Technology<br />Price: $84.44<br />Earnings per Share: $2.05 (2.43%)","Company: Analog Devices, Inc. (ADI)<br />Sector: Information Technology<br />Price: $82.68<br />Earnings per Share: $2.11 (2.55%)","Company: ANSYS (ANSS)<br />Sector: Information Technology<br />Price: $148.84<br />Earnings per Share: $2.99 (2.01%)","Company: Apple Inc. (AAPL)<br />Sector: Information Technology<br />Price: $155.15<br />Earnings per Share: $9.2 (5.93%)","Company: Applied Materials Inc (AMAT)<br />Sector: Information Technology<br />Price: $45.75<br />Earnings per Share: $3.17 (6.93%)","Company: Automatic Data Processing (ADP)<br />Sector: Information Technology<br />Price: $108.25<br />Earnings per Share: $3.85 (3.56%)","Company: Broadcom (AVGO)<br />Sector: Information Technology<br />Price: $229.57<br />Earnings per Share: $4.01 (1.75%)","Company: CA, Inc. (CA)<br />Sector: Information Technology<br />Price: $32.66<br />Earnings per Share: $1.85 (5.66%)","Company: Cadence Design Systems (CDNS)<br />Sector: Information Technology<br />Price: $36.82<br />Earnings per Share: $0.74 (2.01%)","Company: Cisco Systems (CSCO)<br />Sector: Information Technology<br />Price: $38.77<br />Earnings per Share: $1.91 (4.93%)","Company: Citrix Systems (CTXS)<br />Sector: Information Technology<br />Price: $84.53<br />Earnings per Share: $-0.24 (-0.28%)","Company: Cognizant Technology Solutions (CTSH)<br />Sector: Information Technology<br />Price: $75.16<br />Earnings per Share: $2.54 (3.38%)","Company: Corning Inc. (GLW)<br />Sector: Information Technology<br />Price: $28.45<br />Earnings per Share: $-0.78 (-2.74%)","Company: CSRA Inc. (CSRA)<br />Sector: Information Technology<br />Price: $30.85<br />Earnings per Share: $1.83 (5.93%)","Company: DXC Technology (DXC)<br />Sector: Information Technology<br />Price: $91.92<br />Earnings per Share: $-0.89 (-0.97%)","Company: Electronic Arts (EA)<br />Sector: Information Technology<br />Price: $116.54<br />Earnings per Share: $3.07 (2.63%)","Company: F5 Networks (FFIV)<br />Sector: Information Technology<br />Price: $137.25<br />Earnings per Share: $6.51 (4.74%)","Company: Facebook, Inc. (FB)<br />Sector: Information Technology<br />Price: $171.58<br />Earnings per Share: $5.39 (3.14%)","Company: Fidelity National Information Services (FIS)<br />Sector: Information Technology<br />Price: $92.74<br />Earnings per Share: $1.72 (1.85%)","Company: Fiserv Inc (FISV)<br />Sector: Information Technology<br />Price: $133.05<br />Earnings per Share: $4.14 (3.11%)","Company: FLIR Systems (FLIR)<br />Sector: Information Technology<br />Price: $46.46<br />Earnings per Share: $1.21 (2.6%)","Company: Gartner Inc (IT)<br />Sector: Information Technology<br />Price: $114.26<br />Earnings per Share: $2.31 (2.02%)","Company: Global Payments Inc. (GPN)<br />Sector: Information Technology<br />Price: $100.59<br />Earnings per Share: $1.58 (1.57%)","Company: Harris Corporation (HRS)<br />Sector: Information Technology<br />Price: $149.84<br />Earnings per Share: $4.43 (2.96%)","Company: Hewlett Packard Enterprise (HPE)<br />Sector: Information Technology<br />Price: $15.04<br />Earnings per Share: $0.21 (1.4%)","Company: HP Inc. (HPQ)<br />Sector: Information Technology<br />Price: $19.92<br />Earnings per Share: $1.49 (7.48%)","Company: Intel Corp. (INTC)<br />Sector: Information Technology<br />Price: $42.75<br />Earnings per Share: $1.98 (4.63%)","Company: International Business Machines (IBM)<br />Sector: Information Technology<br />Price: $147.59<br />Earnings per Share: $6.11 (4.14%)","Company: Intuit Inc. (INTU)<br />Sector: Information Technology<br />Price: $152.75<br />Earnings per Share: $3.72 (2.44%)","Company: Juniper Networks (JNPR)<br />Sector: Information Technology<br />Price: $24.66<br />Earnings per Share: $0.78 (3.16%)","Company: KLA-Tencor Corp. (KLAC)<br />Sector: Information Technology<br />Price: $98.54<br />Earnings per Share: $5.88 (5.97%)","Company: Lam Research (LRCX)<br />Sector: Information Technology<br />Price: $162.23<br />Earnings per Share: $9.22 (5.68%)","Company: Mastercard Inc. (MA)<br />Sector: Information Technology<br />Price: $160.62<br />Earnings per Share: $3.65 (2.27%)","Company: Microchip Technology (MCHP)<br />Sector: Information Technology<br />Price: $79.9<br />Earnings per Share: $0.66 (0.83%)","Company: Micron Technology (MU)<br />Sector: Information Technology<br />Price: $40<br />Earnings per Share: $4.36 (10.9%)","Company: Microsoft Corp. (MSFT)<br />Sector: Information Technology<br />Price: $85.01<br />Earnings per Share: $2.97 (3.49%)","Company: NetApp (NTAP)<br />Sector: Information Technology<br />Price: $55.85<br />Earnings per Share: $1.81 (3.24%)","Company: Netflix Inc. (NFLX)<br />Sector: Information Technology<br />Price: $250.1<br />Earnings per Share: $1.25 (0.5%)","Company: Nvidia Corporation (NVDA)<br />Sector: Information Technology<br />Price: $217.52<br />Earnings per Share: $2.57 (1.18%)","Company: Oracle Corp. (ORCL)<br />Sector: Information Technology<br />Price: $46.84<br />Earnings per Share: $2.2 (4.7%)","Company: Paychex Inc. (PAYX)<br />Sector: Information Technology<br />Price: $61.86<br />Earnings per Share: $2.26 (3.65%)","Company: PayPal (PYPL)<br />Sector: Information Technology<br />Price: $72.32<br />Earnings per Share: $1.47 (2.03%)","Company: Qorvo (QRVO)<br />Sector: Information Technology<br />Price: $76.85<br />Earnings per Share: $-0.13 (-0.17%)","Company: QUALCOMM Inc. (QCOM)<br />Sector: Information Technology<br />Price: $62.42<br />Earnings per Share: $1.65 (2.64%)","Company: Red Hat Inc. (RHT)<br />Sector: Information Technology<br />Price: $124.65<br />Earnings per Share: $1.68 (1.35%)","Company: Salesforce.com (CRM)<br />Sector: Information Technology<br />Price: $104.03<br />Earnings per Share: $0.27 (0.26%)","Company: Seagate Technology (STX)<br />Sector: Information Technology<br />Price: $47.44<br />Earnings per Share: $2.58 (5.44%)","Company: Skyworks Solutions (SWKS)<br />Sector: Information Technology<br />Price: $99.04<br />Earnings per Share: $5.41 (5.46%)","Company: Symantec Corp. (SYMC)<br />Sector: Information Technology<br />Price: $25.59<br />Earnings per Share: $-0.17 (-0.66%)","Company: Synopsys Inc. (SNPS)<br />Sector: Information Technology<br />Price: $82.62<br />Earnings per Share: $0.87 (1.05%)","Company: TE Connectivity Ltd. (TEL)<br />Sector: Information Technology<br />Price: $95.27<br />Earnings per Share: $4.71 (4.94%)","Company: Texas Instruments (TXN)<br />Sector: Information Technology<br />Price: $97.66<br />Earnings per Share: $3.6 (3.69%)","Company: Total System Services (TSS)<br />Sector: Information Technology<br />Price: $81.17<br />Earnings per Share: $3.16 (3.89%)","Company: Verisign Inc. (VRSN)<br />Sector: Information Technology<br />Price: $105.62<br />Earnings per Share: $3.43 (3.25%)","Company: Visa Inc. (V)<br />Sector: Information Technology<br />Price: $113.86<br />Earnings per Share: $2.8 (2.46%)","Company: Western Digital (WDC)<br />Sector: Information Technology<br />Price: $80.09<br />Earnings per Share: $1.29 (1.61%)","Company: Western Union Co (WU)<br />Sector: Information Technology<br />Price: $18.81<br />Earnings per Share: $0.51 (2.71%)","Company: Xerox Corp. (XRX)<br />Sector: Information Technology<br />Price: $29.8<br />Earnings per Share: $0.59 (1.98%)","Company: Xilinx Inc (XLNX)<br />Sector: Information Technology<br />Price: $62.82<br />Earnings per Share: $2.32 (3.69%)"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,186,222,1)","opacity":1,"size":3.77952755905512,"symbol":"circle","line":{"width":1.88976377952756,"color":"rgba(0,186,222,1)"}},"hoveron":"points","name":"Information Technology","legendgroup":"Information Technology","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[152.8,105.18,110.77,38.44,68.21,93.57,127.76,80.87,17.16,56.05,138,105.79,208.42,119.08,60.38,111.95,110.3,144.07,42.62,387.65,24.13,121.47,60.93],"y":[0.0893979057591623,0.0538125118843887,0.02807619391532,0.0221123829344433,0.023310365049113,0.108154322966763,0.03240450845335,0.019290218869791,0.0722610722610723,0.0917038358608385,0.0365942028985507,0.115795443803762,0.031810766721044,0.0427443735303997,0.0679032792315336,0.0631531933899062,0.057207615593835,0.0299854237523426,0.0577193805725012,0.0480072230104476,0.0352258599254041,0.0255207047007492,0.045462005580174],"text":["Company: Air Products & Chemicals Inc (APD)<br />Sector: Materials<br />Price: $152.8<br />Earnings per Share: $13.66 (8.94%)","Company: Albemarle Corp (ALB)<br />Sector: Materials<br />Price: $105.18<br />Earnings per Share: $5.66 (5.38%)","Company: Avery Dennison Corp (AVY)<br />Sector: Materials<br />Price: $110.77<br />Earnings per Share: $3.11 (2.81%)","Company: Ball Corp (BLL)<br />Sector: Materials<br />Price: $38.44<br />Earnings per Share: $0.85 (2.21%)","Company: DowDuPont (DWDP)<br />Sector: Materials<br />Price: $68.21<br />Earnings per Share: $1.59 (2.33%)","Company: Eastman Chemical (EMN)<br />Sector: Materials<br />Price: $93.57<br />Earnings per Share: $10.12 (10.82%)","Company: Ecolab Inc. (ECL)<br />Sector: Materials<br />Price: $127.76<br />Earnings per Share: $4.14 (3.24%)","Company: FMC Corporation (FMC)<br />Sector: Materials<br />Price: $80.87<br />Earnings per Share: $1.56 (1.93%)","Company: Freeport-McMoRan Inc. (FCX)<br />Sector: Materials<br />Price: $17.16<br />Earnings per Share: $1.24 (7.23%)","Company: International Paper (IP)<br />Sector: Materials<br />Price: $56.05<br />Earnings per Share: $5.14 (9.17%)","Company: Intl Flavors & Fragrances (IFF)<br />Sector: Materials<br />Price: $138<br />Earnings per Share: $5.05 (3.66%)","Company: LyondellBasell (LYB)<br />Sector: Materials<br />Price: $105.79<br />Earnings per Share: $12.25 (11.58%)","Company: Martin Marietta Materials (MLM)<br />Sector: Materials<br />Price: $208.42<br />Earnings per Share: $6.63 (3.18%)","Company: Monsanto Co. (MON)<br />Sector: Materials<br />Price: $119.08<br />Earnings per Share: $5.09 (4.27%)","Company: Nucor Corp. (NUE)<br />Sector: Materials<br />Price: $60.38<br />Earnings per Share: $4.1 (6.79%)","Company: Packaging Corporation of America (PKG)<br />Sector: Materials<br />Price: $111.95<br />Earnings per Share: $7.07 (6.32%)","Company: PPG Industries (PPG)<br />Sector: Materials<br />Price: $110.3<br />Earnings per Share: $6.31 (5.72%)","Company: Praxair Inc. (PX)<br />Sector: Materials<br />Price: $144.07<br />Earnings per Share: $4.32 (3%)","Company: Sealed Air (SEE)<br />Sector: Materials<br />Price: $42.62<br />Earnings per Share: $2.46 (5.77%)","Company: Sherwin-Williams (SHW)<br />Sector: Materials<br />Price: $387.65<br />Earnings per Share: $18.61 (4.8%)","Company: The Mosaic Company (MOS)<br />Sector: Materials<br />Price: $24.13<br />Earnings per Share: $0.85 (3.52%)","Company: Vulcan Materials (VMC)<br />Sector: Materials<br />Price: $121.47<br />Earnings per Share: $3.1 (2.55%)","Company: WestRock Company (WRK)<br />Sector: Materials<br />Price: $60.93<br />Earnings per Share: $2.77 (4.55%)"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,166,255,1)","opacity":1,"size":3.77952755905512,"symbol":"circle","line":{"width":1.88976377952756,"color":"rgba(0,166,255,1)"}},"hoveron":"points","name":"Materials","legendgroup":"Materials","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[114.58,133.57,38.21,154.94,112.09,41.92,103.81,98.96,24.52,409.98,55.26,218.28,77.56,108.11,21.62,22.64,18.75,32.07,14.01,58.36,85.39,58.33,180.49,47.56,55.58,159.85,152.18,90.61,32.92,50.92,66.18,54.67,33.6],"y":[0.0137022167917612,0.0147488208430037,0.0510337607956032,0.0410481476700658,0.0261397091622803,0.0403148854961832,0.00982564300163761,0.0221301535974131,0.0358890701468189,0.00431728376994,0.0294969236337315,0.0287245739417262,0.037648272305312,0.0323744334474147,0.0619796484736355,0.0587455830388693,0.0544,0.0143436233239788,0.0571020699500357,0.0587731322823852,0.0334933833001522,0.0524601405794617,0.0377306221951355,0.0235492010092515,0.0257286793810723,0.00387863622145762,0.0410697857799974,0.00971195232314314,0.0328068043742406,0.0365278868813826,0.0654276216379571,0.0513993049204317,0.0229166666666667],"text":["Company: Alexandria Real Estate Equities Inc (ARE)<br />Sector: Real Estate<br />Price: $114.58<br />Earnings per Share: $1.57 (1.37%)","Company: American Tower Corp A (AMT)<br />Sector: Real Estate<br />Price: $133.57<br />Earnings per Share: $1.97 (1.47%)","Company: Apartment Investment & Management (AIV)<br />Sector: Real Estate<br />Price: $38.21<br />Earnings per Share: $1.95 (5.1%)","Company: AvalonBay Communities, Inc. (AVB)<br />Sector: Real Estate<br />Price: $154.94<br />Earnings per Share: $6.36 (4.1%)","Company: Boston Properties (BXP)<br />Sector: Real Estate<br />Price: $112.09<br />Earnings per Share: $2.93 (2.61%)","Company: CBRE Group (CBG)<br />Sector: Real Estate<br />Price: $41.92<br />Earnings per Share: $1.69 (4.03%)","Company: Crown Castle International Corp. (CCI)<br />Sector: Real Estate<br />Price: $103.81<br />Earnings per Share: $1.02 (0.98%)","Company: Digital Realty Trust Inc (DLR)<br />Sector: Real Estate<br />Price: $98.96<br />Earnings per Share: $2.19 (2.21%)","Company: Duke Realty Corp (DRE)<br />Sector: Real Estate<br />Price: $24.52<br />Earnings per Share: $0.88 (3.59%)","Company: Equinix (EQIX)<br />Sector: Real Estate<br />Price: $409.98<br />Earnings per Share: $1.77 (0.43%)","Company: Equity Residential (EQR)<br />Sector: Real Estate<br />Price: $55.26<br />Earnings per Share: $1.63 (2.95%)","Company: Essex Property Trust, Inc. (ESS)<br />Sector: Real Estate<br />Price: $218.28<br />Earnings per Share: $6.27 (2.87%)","Company: Extra Space Storage (EXR)<br />Sector: Real Estate<br />Price: $77.56<br />Earnings per Share: $2.92 (3.76%)","Company: Federal Realty Investment Trust (FRT)<br />Sector: Real Estate<br />Price: $108.11<br />Earnings per Share: $3.5 (3.24%)","Company: General Growth Properties Inc. (GGP)<br />Sector: Real Estate<br />Price: $21.62<br />Earnings per Share: $1.34 (6.2%)","Company: HCP Inc. (HCP)<br />Sector: Real Estate<br />Price: $22.64<br />Earnings per Share: $1.33 (5.87%)","Company: Host Hotels & Resorts (HST)<br />Sector: Real Estate<br />Price: $18.75<br />Earnings per Share: $1.02 (5.44%)","Company: Iron Mountain Incorporated (IRM)<br />Sector: Real Estate<br />Price: $32.07<br />Earnings per Share: $0.46 (1.43%)","Company: Kimco Realty (KIM)<br />Sector: Real Estate<br />Price: $14.01<br />Earnings per Share: $0.8 (5.71%)","Company: Macerich (MAC)<br />Sector: Real Estate<br />Price: $58.36<br />Earnings per Share: $3.43 (5.88%)","Company: Mid-America Apartments (MAA)<br />Sector: Real Estate<br />Price: $85.39<br />Earnings per Share: $2.86 (3.35%)","Company: Prologis (PLD)<br />Sector: Real Estate<br />Price: $58.33<br />Earnings per Share: $3.06 (5.25%)","Company: Public Storage (PSA)<br />Sector: Real Estate<br />Price: $180.49<br />Earnings per Share: $6.81 (3.77%)","Company: Realty Income Corporation (O)<br />Sector: Real Estate<br />Price: $47.56<br />Earnings per Share: $1.12 (2.35%)","Company: Regency Centers Corporation (REG)<br />Sector: Real Estate<br />Price: $55.58<br />Earnings per Share: $1.43 (2.57%)","Company: SBA Communications (SBAC)<br />Sector: Real Estate<br />Price: $159.85<br />Earnings per Share: $0.62 (0.39%)","Company: Simon Property Group Inc (SPG)<br />Sector: Real Estate<br />Price: $152.18<br />Earnings per Share: $6.25 (4.11%)","Company: SL Green Realty (SLG)<br />Sector: Real Estate<br />Price: $90.61<br />Earnings per Share: $0.88 (0.97%)","Company: UDR Inc (UDR)<br />Sector: Real Estate<br />Price: $32.92<br />Earnings per Share: $1.08 (3.28%)","Company: Ventas Inc (VTR)<br />Sector: Real Estate<br />Price: $50.92<br />Earnings per Share: $1.86 (3.65%)","Company: Vornado Realty Trust (VNO)<br />Sector: Real Estate<br />Price: $66.18<br />Earnings per Share: $4.33 (6.54%)","Company: Welltower Inc. (HCN)<br />Sector: Real Estate<br />Price: $54.67<br />Earnings per Share: $2.81 (5.14%)","Company: Weyerhaeuser Corp. (WY)<br />Sector: Real Estate<br />Price: $33.6<br />Earnings per Share: $0.77 (2.29%)"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(179,133,255,1)","opacity":1,"size":3.77952755905512,"symbol":"circle","line":{"width":1.88976377952756,"color":"rgba(179,133,255,1)"}},"hoveron":"points","name":"Real Estate","legendgroup":"Real Estate","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[35.57,16.2,49.04],"y":[0.133820635366882,0.0716049382716049,0.150081566068515],"text":["Company: AT&T Inc (T)<br />Sector: Telecommunication Services<br />Price: $35.57<br />Earnings per Share: $4.76 (13.38%)","Company: CenturyLink Inc (CTL)<br />Sector: Telecommunication Services<br />Price: $16.2<br />Earnings per Share: $1.16 (7.16%)","Company: Verizon Communications (VZ)<br />Sector: Telecommunication Services<br />Price: $49.04<br />Earnings per Share: $7.36 (15.01%)"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(239,103,235,1)","opacity":1,"size":3.77952755905512,"symbol":"circle","line":{"width":1.88976377952756,"color":"rgba(239,103,235,1)"}},"hoveron":"points","name":"Telecommunication Services","legendgroup":"Telecommunication Services","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[37.14,52.59,63.38,76.06,25.85,41.77,74.73,73.31,98.49,74.32,58.07,56.11,35.98,145.29,22.51,38.24,74.34,29.52,46.73,35.6,103.36,43.4,59.5,42.44],"y":[0.0444264943457189,0.0509602586042974,0.0195645313979173,0.0345779647646595,0.0386847195357834,0.0476418482164233,0.0548641777064097,0.0669758559541672,0.0489389785765052,0.0419806243272336,0.0681935594971586,0.0527535198716806,0.0341856586992774,0.0783949342693923,0.0453131941359396,0.0726987447698745,0.0531342480495023,0.0945121951219512,0.0374491761181254,0.11685393258427,0.0527283281733746,0.058294930875576,0.0636974789915966,0.0520735155513666],"text":["Company: Alliant Energy Corp (LNT)<br />Sector: Utilities<br />Price: $37.14<br />Earnings per Share: $1.65 (4.44%)","Company: Ameren Corp (AEE)<br />Sector: Utilities<br />Price: $52.59<br />Earnings per Share: $2.68 (5.1%)","Company: American Electric Power (AEP)<br />Sector: Utilities<br />Price: $63.38<br />Earnings per Share: $1.24 (1.96%)","Company: American Water Works Company Inc (AWK)<br />Sector: Utilities<br />Price: $76.06<br />Earnings per Share: $2.63 (3.46%)","Company: CenterPoint Energy (CNP)<br />Sector: Utilities<br />Price: $25.85<br />Earnings per Share: $1 (3.87%)","Company: CMS Energy (CMS)<br />Sector: Utilities<br />Price: $41.77<br />Earnings per Share: $1.99 (4.76%)","Company: Consolidated Edison (ED)<br />Sector: Utilities<br />Price: $74.73<br />Earnings per Share: $4.1 (5.49%)","Company: Dominion Energy (D)<br />Sector: Utilities<br />Price: $73.31<br />Earnings per Share: $4.91 (6.7%)","Company: DTE Energy Co. (DTE)<br />Sector: Utilities<br />Price: $98.49<br />Earnings per Share: $4.82 (4.89%)","Company: Duke Energy (DUK)<br />Sector: Utilities<br />Price: $74.32<br />Earnings per Share: $3.12 (4.2%)","Company: Edison Int'l (EIX)<br />Sector: Utilities<br />Price: $58.07<br />Earnings per Share: $3.96 (6.82%)","Company: Eversource Energy (ES)<br />Sector: Utilities<br />Price: $56.11<br />Earnings per Share: $2.96 (5.28%)","Company: Exelon Corp. (EXC)<br />Sector: Utilities<br />Price: $35.98<br />Earnings per Share: $1.23 (3.42%)","Company: NextEra Energy (NEE)<br />Sector: Utilities<br />Price: $145.29<br />Earnings per Share: $11.39 (7.84%)","Company: NiSource Inc. (NI)<br />Sector: Utilities<br />Price: $22.51<br />Earnings per Share: $1.02 (4.53%)","Company: PG&E Corp. (PCG)<br />Sector: Utilities<br />Price: $38.24<br />Earnings per Share: $2.78 (7.27%)","Company: Pinnacle West Capital (PNW)<br />Sector: Utilities<br />Price: $74.34<br />Earnings per Share: $3.95 (5.31%)","Company: PPL Corp. (PPL)<br />Sector: Utilities<br />Price: $29.52<br />Earnings per Share: $2.79 (9.45%)","Company: Public Serv. Enterprise Inc. (PEG)<br />Sector: Utilities<br />Price: $46.73<br />Earnings per Share: $1.75 (3.74%)","Company: SCANA Corp (SCG)<br />Sector: Utilities<br />Price: $35.6<br />Earnings per Share: $4.16 (11.69%)","Company: Sempra Energy (SRE)<br />Sector: Utilities<br />Price: $103.36<br />Earnings per Share: $5.45 (5.27%)","Company: Southern Co. (SO)<br />Sector: Utilities<br />Price: $43.4<br />Earnings per Share: $2.53 (5.83%)","Company: Wec Energy Group Inc (WEC)<br />Sector: Utilities<br />Price: $59.5<br />Earnings per Share: $3.79 (6.37%)","Company: Xcel Energy Inc (XEL)<br />Sector: Utilities<br />Price: $42.44<br />Earnings per Share: $2.21 (5.21%)"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(255,99,182,1)","opacity":1,"size":3.77952755905512,"symbol":"circle","line":{"width":1.88976377952756,"color":"rgba(255,99,182,1)"}},"hoveron":"points","name":"Utilities","legendgroup":"Utilities","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":50.4541303445413,"r":7.30593607305936,"b":41.8264840182648,"l":43.1050228310502},"plot_bgcolor":"rgba(255,255,255,1)","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"title":{"text":"<b> Stock Price and % Earnings <\/b>","font":{"color":"rgba(0,0,0,1)","family":"","size":22.5819842258198},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-79.3515,1895.8415],"tickmode":"array","ticktext":["$0","$500","$1,000","$1,500"],"tickvals":[0,500,1000,1500],"categoryorder":"array","categoryarray":["$0","$500","$1,000","$1,500"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":0.66417600664176,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"y","title":{"text":"Stock Price","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-0.0639961710126481,0.247725819639312],"tickmode":"array","ticktext":["-5%","0%","5%","10%","15%","20%"],"tickvals":[-0.05,0,0.05,0.1,0.15,0.2],"categoryorder":"array","categoryarray":["-5%","0%","5%","10%","15%","20%"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":0.66417600664176,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"x","title":{"text":"Ratio of Earnings to Price","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":true,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.88976377952756,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.689497716895},"title":{"text":"","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187}}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"4f9043ce4fb0":{"x":{},"y":{},"colour":{},"text":{},"type":"scatter"}},"cur_data":"4f9043ce4fb0","visdat":{"4f9043ce4fb0":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+<p><strong>Dividends</strong> are the distribution of corporate earnings
+to eligible shareholders. They are often distributed quarterly and may
+be paid out as cash or in the form of reinvestment in additional stock.
+Common shareholders of dividend-paying companies are eligible to receive
+a distribution as long as they own the stock before the ex-dividend
+date. <strong>Dividend Yield</strong> is the amount paid per share
+divided by the share price. Larger, established companies with
+predictable profits are often the best dividend payers.</p>
+<p> </p>
+<div class="layout-chunk" data-layout="l-body">
+<div id="htmlwidget-fb33e20e39e2b6473d29" style="width:624px;height:384px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-fb33e20e39e2b6473d29">{"x":{"data":[{"x":[222.89,60.24,56.27,108.48,150.51,65.83,145.41,109.63,10.06,178,179.11,83.25,65.05,152.8,64.04,105.18,114.58,77.32,164.2,240.6,37.14,90.06,64.05,52.59,48.6,63.38,88.34,58.28,133.57,76.06,152.5,91.55,72.05,173.12,84.44,56.2,82.68,96.9,230.57,136.05,37.73,38.21,155.15,45.75,89.27,41.35,24.45,64.4,85.16,35.57,108.25,154.94,110.77,27.5,38.44,29.74,62.56,51.07,211.44,68.79,509.38,25.19,329.66,51.94,112.09,62.69,229.57,63.33,90.47,32.66,23.01,44.83,91.8,66.63,66.76,145.99,111.15,51.8,25.85,16.2,37.46,48.9,112.3,140.39,47.38,189.27,100.19,70.34,149.32,38.77,71.87,42.19,153.04,41.77,43.1,75.16,68.95,38.19,89.18,35.49,53.24,74.73,208.73,28.45,178.61,19.96,103.81,30.85,50.47,165.73,70.55,44.55,92.16,91.33,153.66,51.23,56.85,34.94,98.96,72.4,95.1,73.31,96.2,68.21,116.93,98.49,74.32,24.52,91.92,93.57,79.41,127.76,58.07,66.4,72.02,101.04,46.25,114,409.98,55.26,218.28,131.46,241.06,56.11,35.98,123.03,60.36,77.56,76.07,52.15,108.11,239.27,92.74,31.1,30.64,46.46,40.82,55.31,80.87,45.88,10.43,69.14,62.44,38,17.16,31.17,61.13,206.05,14.45,21.62,53.99,40.75,96.31,78.22,100.59,246.35,30.75,258.6,47.41,19.57,47.54,149.84,53.34,96.48,95.97,22.64,64.87,43,15.04,78.66,181.22,146.02,32.21,18.75,19.92,262.37,15.1,225.37,156.15,87.6,42.75,67,147.59,56.05,21.34,138,152.75,31.92,32.07,114.81,62.82,118.37,126.36,36.55,107.88,24.66,103.53,65.98,20.08,111.69,14.01,16.8,98.54,60.34,71.58,27.57,47.77,198.79,162.23,43.99,59.11,23.86,74.21,73.86,334.3,46.05,95.01,105.79,178.35,58.36,24,15.68,62.79,133.88,79.31,208.42,40.7,160.62,101.36,158.97,150.23,78.38,54.73,44.28,33.5,79.9,85.01,85.39,74.51,42.68,119.08,152.14,51.79,98.74,75.21,32.64,13.38,55.85,27.91,36.61,15.65,15.85,145.29,33.9,62.49,22.51,25.43,47.23,136.89,96.2,324.01,24,60.38,217.52,68.47,75.91,54.4,46.84,66.98,111.95,174.51,32.88,61.86,66.67,18.56,110.15,72.06,84.44,33.63,100.39,92.44,74.34,169.16,149.38,101.32,110.3,29.52,144.07,60.38,80.22,51.07,58.33,103.38,46.73,180.49,28.67,142.68,62.42,96.42,12.82,86.06,198.74,47.56,55.58,17.9,62.72,89.26,52.26,178.73,133.31,259.4,75.06,122.45,173.31,35.6,67.4,86.46,47.44,42.62,103.36,387.65,49.38,152.18,99.04,90.61,156.72,43.4,55.63,152.86,53.77,98.54,148.01,65.8,25.59,34.98,57,101.99,71.11,95.27,29.1,97.66,55.54,53.29,127.76,223.17,97.65,24.13,135.01,101.35,198.73,99.62,93.02,74.36,80.52,81.17,65.94,34.56,34.09,73.92,52.65,32.92,124.86,216.46,109.28,127.48,114.87,47.87,78.75,86.77,50.92,49.04,32.71,113.86,66.18,121.47,100.02,68.22,79.12,59.5,55.4,54.67,80.09,18.81,60.93,33.6,164.95,28.56,152.36,113.56,169.28,42.44,29.8,62.82,41.26,70.24,76.3,115.53,50.71,71.51],"y":[0.0233,0.0115,0.0191,0.025,0.0171,0.0043,0.0035,0.0022,0.0496,0.011,0.0064,0.0243,0.0088,0.0278,0.0199,0.012,0.0303,0.008,0.0164,0.0092,0.0357,0.0153,0.0395,0.0344,0.0078,0.0385,0.015,0.0212,0.02,0.0213,0.0207,0.0161,0.0076,0.0298,0.0086,0.017,0.0211,0.0235,0.0126,0.0102,0.0253,0.0388,0.0158,0.0082,0.0094,0.0318,0.0096,0.0248,0.0253,0.0542,0.0222,0.0371,0.0157,0.025,0.0102,0.0154,0.0098,0.0245,0.0135,0.0191,0.0216,0.0373,0.0196,0.0124,0.0277,0.0255,0.0295,0.0112,0.0199,0.03,0.0103,0.0312,0.0163,0.0284,0.026,0.0202,0.0094,0.0135,0.0421,0.1266,0.0304,0.0077,0.0389,0.0193,0.0184,0.0002,0.003,0.0292,0.0103,0.0288,0.0171,0.0196,0.0368,0.0339,0.0332,0.0105,0.0228,0.0189,0.0128,0.0237,0.0205,0.038,0.0097,0.0208,0.0109,0.0286,0.0386,0.0128,0.0151,0.025,0.0269,0.0108,0.0059,0.0265,0.0149,0.0227,0.006,0.0065,0.0357,0.0183,0.0106,0.0453,0.0188,0.0215,0.0197,0.0356,0.0478,0.0315,0.0075,0.0226,0.0294,0.0123,0.0405,0.0281,0.0489,0.0063,0.0025,0.0133,0.0188,0.0354,0.0321,0.0113,0.0211,0.0334,0.0382,0.0093,0.0135,0.0388,0.04,0.0278,0.0359,0.008,0.0132,0.0198,0.0467,0.0124,0.0183,0.0147,0.0079,0.0258,0.0678,0.0039,0.0126,0.0233,0.0112,0.0282,0.0323,0.0156,0.0315,0.0401,0.0359,0.0359,0.0272,0.0275,0.0004,0.0117,0.0167,0.0197,0.0145,0.0273,0.0302,0.0149,0.0179,0.0223,0.0142,0.0633,0.0415,0.0227,0.0193,0.0073,0.0186,0.0197,0.0229,0.0411,0.0263,0.006,0.0281,0.0123,0.0191,0.0197,0.0265,0.0543,0.039,0.0321,0.0338,0.0193,0.0097,0.0347,0.0708,0.0081,0.0091,0.026,0.0256,0.0277,0.0198,0.0158,0.0134,0.0336,0.0199,0.0356,0.0771,0.0289,0.023,0.035,0.034,0.0173,0.0489,0.0144,0.0117,0.0315,0.0026,0.016,0.0293,0.0168,0.0232,0.0451,0.0164,0.0326,0.0162,0.0492,0.061,0.0122,0.0283,0.0095,0.0183,0.008,0.0098,0.0059,0.0203,0.0244,0.0089,0.0226,0.0344,0.0346,0.0127,0.0175,0.0187,0.042,0.0215,0.02,0.0179,0.0111,0.0183,0.0203,0.0197,0.0059,0.0456,0.0139,0.0312,0.0081,0.0125,0.0123,0.0265,0.0362,0.0122,0.0338,0.0148,0.03,0.0202,0.0167,0.013,0.0142,0.0242,0.0026,0.0441,0.0318,0.0544,0.0156,0.0146,0.0215,0.0144,0.0307,0.0309,0.0204,0.0359,0.0284,0.0037,0.0073,0.0389,0.0433,0.0293,0.037,0.0018,0.0194,0.0186,0.0158,0.0522,0.022,0.0319,0.0337,0.0211,0.0293,0.027,0.0361,0.0432,0.012,0.001,0.0351,0.0199,0.0061,0.011,0.0156,0.0537,0.0369,0.019,0.0214,0.0151,0.0171,0.0177,0.0097,0.0062,0.0082,0.0187,0.0109,0.0668,0.0287,0.0138,0.0509,0.0144,0.0316,0.0084,0.0247,0.0504,0.0126,0.035,0.0197,0.0535,0.0086,0.0158,0.022,0.0162,0.0122,0.0232,0.0113,0.016,0.0246,0.0214,0.0339,0.0161,0.0171,0.0243,0.0014,0.0173,0.0263,0.0003,0.0265,0.004,0.0203,0.016,0.0033,0.0194,0.0169,0.0164,0.0072,0.0061,0.016,0.01,0.0101,0.0164,0.0219,0.0367,0.0206,0.0133,0.0297,0.0212,0.0034,0.0182,0.0229,0.0356,0.0597,0.0463,0.0262,0.007,0.0374,0.0078,0.0198,0.0224,0.0208,0.0369,0.0271,0.0615,0.0239,0.0359,0.0267,0.0371,0.0257,0.04,0.0135,0.0195,0.0113,0.0339,0.0321,0.0209,0.021,0.0117,0.018,0.0079,0.0148,0.0068],"text":["Company: 3M Company (MMM)<br />Sector: Industrials<br />Price: $222.89<br />Dividend: $5.2 (2.33%)","Company: A.O. Smith Corp (AOS)<br />Sector: Industrials<br />Price: $60.24<br />Dividend: $0.69 (1.15%)","Company: Abbott Laboratories (ABT)<br />Sector: Health Care<br />Price: $56.27<br />Dividend: $1.07 (1.91%)","Company: AbbVie Inc. (ABBV)<br />Sector: Health Care<br />Price: $108.48<br />Dividend: $2.71 (2.5%)","Company: Accenture plc (ACN)<br />Sector: Information Technology<br />Price: $150.51<br />Dividend: $2.58 (1.71%)","Company: Activision Blizzard (ATVI)<br />Sector: Information Technology<br />Price: $65.83<br />Dividend: $0.28 (0.43%)","Company: Acuity Brands Inc (AYI)<br />Sector: Industrials<br />Price: $145.41<br />Dividend: $0.51 (0.35%)","Company: Advance Auto Parts (AAP)<br />Sector: Consumer Discretionary<br />Price: $109.63<br />Dividend: $0.24 (0.22%)","Company: AES Corp (AES)<br />Sector: Utilities<br />Price: $10.06<br />Dividend: $0.5 (4.96%)","Company: Aetna Inc (AET)<br />Sector: Health Care<br />Price: $178<br />Dividend: $1.96 (1.1%)","Company: Affiliated Managers Group Inc (AMG)<br />Sector: Financials<br />Price: $179.11<br />Dividend: $1.14 (0.64%)","Company: AFLAC Inc (AFL)<br />Sector: Financials<br />Price: $83.25<br />Dividend: $2.02 (2.43%)","Company: Agilent Technologies Inc (A)<br />Sector: Health Care<br />Price: $65.05<br />Dividend: $0.57 (0.88%)","Company: Air Products & Chemicals Inc (APD)<br />Sector: Materials<br />Price: $152.8<br />Dividend: $4.25 (2.78%)","Company: Alaska Air Group Inc (ALK)<br />Sector: Industrials<br />Price: $64.04<br />Dividend: $1.28 (1.99%)","Company: Albemarle Corp (ALB)<br />Sector: Materials<br />Price: $105.18<br />Dividend: $1.26 (1.2%)","Company: Alexandria Real Estate Equities Inc (ARE)<br />Sector: Real Estate<br />Price: $114.58<br />Dividend: $3.47 (3.03%)","Company: Allegion (ALLE)<br />Sector: Industrials<br />Price: $77.32<br />Dividend: $0.62 (0.8%)","Company: Allergan, Plc (AGN)<br />Sector: Health Care<br />Price: $164.2<br />Dividend: $2.7 (1.64%)","Company: Alliance Data Systems (ADS)<br />Sector: Information Technology<br />Price: $240.6<br />Dividend: $2.22 (0.92%)","Company: Alliant Energy Corp (LNT)<br />Sector: Utilities<br />Price: $37.14<br />Dividend: $1.33 (3.57%)","Company: Allstate Corp (ALL)<br />Sector: Financials<br />Price: $90.06<br />Dividend: $1.38 (1.53%)","Company: Altria Group Inc (MO)<br />Sector: Consumer Staples<br />Price: $64.05<br />Dividend: $2.53 (3.95%)","Company: Ameren Corp (AEE)<br />Sector: Utilities<br />Price: $52.59<br />Dividend: $1.81 (3.44%)","Company: American Airlines Group (AAL)<br />Sector: Industrials<br />Price: $48.6<br />Dividend: $0.38 (0.78%)","Company: American Electric Power (AEP)<br />Sector: Utilities<br />Price: $63.38<br />Dividend: $2.44 (3.85%)","Company: American Express Co (AXP)<br />Sector: Financials<br />Price: $88.34<br />Dividend: $1.32 (1.5%)","Company: American International Group, Inc. (AIG)<br />Sector: Financials<br />Price: $58.28<br />Dividend: $1.23 (2.12%)","Company: American Tower Corp A (AMT)<br />Sector: Real Estate<br />Price: $133.57<br />Dividend: $2.67 (2%)","Company: American Water Works Company Inc (AWK)<br />Sector: Utilities<br />Price: $76.06<br />Dividend: $1.62 (2.13%)","Company: Ameriprise Financial (AMP)<br />Sector: Financials<br />Price: $152.5<br />Dividend: $3.16 (2.07%)","Company: AmerisourceBergen Corp (ABC)<br />Sector: Health Care<br />Price: $91.55<br />Dividend: $1.48 (1.61%)","Company: AMETEK Inc (AME)<br />Sector: Industrials<br />Price: $72.05<br />Dividend: $0.54 (0.76%)","Company: Amgen Inc (AMGN)<br />Sector: Health Care<br />Price: $173.12<br />Dividend: $5.15 (2.98%)","Company: Amphenol Corp (APH)<br />Sector: Information Technology<br />Price: $84.44<br />Dividend: $0.73 (0.86%)","Company: Anadarko Petroleum Corp (APC)<br />Sector: Energy<br />Price: $56.2<br />Dividend: $0.96 (1.7%)","Company: Analog Devices, Inc. (ADI)<br />Sector: Information Technology<br />Price: $82.68<br />Dividend: $1.74 (2.11%)","Company: Andeavor (ANDV)<br />Sector: Energy<br />Price: $96.9<br />Dividend: $2.27 (2.35%)","Company: Anthem Inc. (ANTM)<br />Sector: Health Care<br />Price: $230.57<br />Dividend: $2.9 (1.26%)","Company: Aon plc (AON)<br />Sector: Financials<br />Price: $136.05<br />Dividend: $1.39 (1.02%)","Company: Apache Corporation (APA)<br />Sector: Energy<br />Price: $37.73<br />Dividend: $0.95 (2.53%)","Company: Apartment Investment & Management (AIV)<br />Sector: Real Estate<br />Price: $38.21<br />Dividend: $1.48 (3.88%)","Company: Apple Inc. (AAPL)<br />Sector: Information Technology<br />Price: $155.15<br />Dividend: $2.45 (1.58%)","Company: Applied Materials Inc (AMAT)<br />Sector: Information Technology<br />Price: $45.75<br />Dividend: $0.38 (0.82%)","Company: Aptiv Plc (APTV)<br />Sector: Consumer Discretionary<br />Price: $89.27<br />Dividend: $0.84 (0.94%)","Company: Archer-Daniels-Midland Co (ADM)<br />Sector: Consumer Staples<br />Price: $41.35<br />Dividend: $1.31 (3.18%)","Company: Arconic Inc (ARNC)<br />Sector: Industrials<br />Price: $24.45<br />Dividend: $0.23 (0.96%)","Company: Arthur J. Gallagher & Co. (AJG)<br />Sector: Financials<br />Price: $64.4<br />Dividend: $1.6 (2.48%)","Company: Assurant Inc (AIZ)<br />Sector: Financials<br />Price: $85.16<br />Dividend: $2.16 (2.53%)","Company: AT&T Inc (T)<br />Sector: Telecommunication Services<br />Price: $35.57<br />Dividend: $1.93 (5.42%)","Company: Automatic Data Processing (ADP)<br />Sector: Information Technology<br />Price: $108.25<br />Dividend: $2.4 (2.22%)","Company: AvalonBay Communities, Inc. (AVB)<br />Sector: Real Estate<br />Price: $154.94<br />Dividend: $5.76 (3.71%)","Company: Avery Dennison Corp (AVY)<br />Sector: Materials<br />Price: $110.77<br />Dividend: $1.74 (1.57%)","Company: Baker Hughes, a GE Company (BHGE)<br />Sector: Energy<br />Price: $27.5<br />Dividend: $0.69 (2.5%)","Company: Ball Corp (BLL)<br />Sector: Materials<br />Price: $38.44<br />Dividend: $0.39 (1.02%)","Company: Bank of America Corp (BAC)<br />Sector: Financials<br />Price: $29.74<br />Dividend: $0.46 (1.54%)","Company: Baxter International Inc. (BAX)<br />Sector: Health Care<br />Price: $62.56<br />Dividend: $0.61 (0.98%)","Company: BB&T Corporation (BBT)<br />Sector: Financials<br />Price: $51.07<br />Dividend: $1.25 (2.45%)","Company: Becton Dickinson (BDX)<br />Sector: Health Care<br />Price: $211.44<br />Dividend: $2.86 (1.35%)","Company: Best Buy Co. Inc. (BBY)<br />Sector: Consumer Discretionary<br />Price: $68.79<br />Dividend: $1.31 (1.91%)","Company: BlackRock (BLK)<br />Sector: Financials<br />Price: $509.38<br />Dividend: $11.02 (2.16%)","Company: Block H&R (HRB)<br />Sector: Financials<br />Price: $25.19<br />Dividend: $0.94 (3.73%)","Company: Boeing Company (BA)<br />Sector: Industrials<br />Price: $329.66<br />Dividend: $6.48 (1.96%)","Company: BorgWarner (BWA)<br />Sector: Consumer Discretionary<br />Price: $51.94<br />Dividend: $0.64 (1.24%)","Company: Boston Properties (BXP)<br />Sector: Real Estate<br />Price: $112.09<br />Dividend: $3.11 (2.77%)","Company: Bristol-Myers Squibb (BMY)<br />Sector: Health Care<br />Price: $62.69<br />Dividend: $1.6 (2.55%)","Company: Broadcom (AVGO)<br />Sector: Information Technology<br />Price: $229.57<br />Dividend: $6.77 (2.95%)","Company: Brown-Forman Corp. (BF.B)<br />Sector: Consumer Staples<br />Price: $63.33<br />Dividend: $0.71 (1.12%)","Company: C. H. Robinson Worldwide (CHRW)<br />Sector: Industrials<br />Price: $90.47<br />Dividend: $1.8 (1.99%)","Company: CA, Inc. (CA)<br />Sector: Information Technology<br />Price: $32.66<br />Dividend: $0.98 (3%)","Company: Cabot Oil & Gas (COG)<br />Sector: Energy<br />Price: $23.01<br />Dividend: $0.24 (1.03%)","Company: Campbell Soup (CPB)<br />Sector: Consumer Staples<br />Price: $44.83<br />Dividend: $1.4 (3.12%)","Company: Capital One Financial (COF)<br />Sector: Financials<br />Price: $91.8<br />Dividend: $1.5 (1.63%)","Company: Cardinal Health Inc. (CAH)<br />Sector: Health Care<br />Price: $66.63<br />Dividend: $1.89 (2.84%)","Company: Carnival Corp. (CCL)<br />Sector: Consumer Discretionary<br />Price: $66.76<br />Dividend: $1.74 (2.6%)","Company: Caterpillar Inc. (CAT)<br />Sector: Industrials<br />Price: $145.99<br />Dividend: $2.95 (2.02%)","Company: CBOE Holdings (CBOE)<br />Sector: Financials<br />Price: $111.15<br />Dividend: $1.05 (0.94%)","Company: CBS Corp. (CBS)<br />Sector: Consumer Discretionary<br />Price: $51.8<br />Dividend: $0.7 (1.35%)","Company: CenterPoint Energy (CNP)<br />Sector: Utilities<br />Price: $25.85<br />Dividend: $1.09 (4.21%)","Company: CenturyLink Inc (CTL)<br />Sector: Telecommunication Services<br />Price: $16.2<br />Dividend: $2.05 (12.66%)","Company: CF Industries Holdings Inc (CF)<br />Sector: Materials<br />Price: $37.46<br />Dividend: $1.14 (3.04%)","Company: Charles Schwab Corporation (SCHW)<br />Sector: Financials<br />Price: $48.9<br />Dividend: $0.38 (0.77%)","Company: Chevron Corp. (CVX)<br />Sector: Energy<br />Price: $112.3<br />Dividend: $4.36 (3.89%)","Company: Chubb Limited (CB)<br />Sector: Financials<br />Price: $140.39<br />Dividend: $2.7 (1.93%)","Company: Church & Dwight (CHD)<br />Sector: Consumer Staples<br />Price: $47.38<br />Dividend: $0.87 (1.84%)","Company: CIGNA Corp. (CI)<br />Sector: Health Care<br />Price: $189.27<br />Dividend: $0.04 (0.02%)","Company: Cimarex Energy (XEC)<br />Sector: Energy<br />Price: $100.19<br />Dividend: $0.3 (0.3%)","Company: Cincinnati Financial (CINF)<br />Sector: Financials<br />Price: $70.34<br />Dividend: $2.05 (2.92%)","Company: Cintas Corporation (CTAS)<br />Sector: Industrials<br />Price: $149.32<br />Dividend: $1.54 (1.03%)","Company: Cisco Systems (CSCO)<br />Sector: Information Technology<br />Price: $38.77<br />Dividend: $1.11 (2.88%)","Company: Citigroup Inc. (C)<br />Sector: Financials<br />Price: $71.87<br />Dividend: $1.23 (1.71%)","Company: Citizens Financial Group (CFG)<br />Sector: Financials<br />Price: $42.19<br />Dividend: $0.83 (1.96%)","Company: CME Group Inc. (CME)<br />Sector: Financials<br />Price: $153.04<br />Dividend: $5.64 (3.68%)","Company: CMS Energy (CMS)<br />Sector: Utilities<br />Price: $41.77<br />Dividend: $1.42 (3.39%)","Company: Coca-Cola Company (The) (KO)<br />Sector: Consumer Staples<br />Price: $43.1<br />Dividend: $1.43 (3.32%)","Company: Cognizant Technology Solutions (CTSH)<br />Sector: Information Technology<br />Price: $75.16<br />Dividend: $0.79 (1.05%)","Company: Colgate-Palmolive (CL)<br />Sector: Consumer Staples<br />Price: $68.95<br />Dividend: $1.57 (2.28%)","Company: Comcast Corp. (CMCSA)<br />Sector: Consumer Discretionary<br />Price: $38.19<br />Dividend: $0.72 (1.89%)","Company: Comerica Inc. (CMA)<br />Sector: Financials<br />Price: $89.18<br />Dividend: $1.14 (1.28%)","Company: Conagra Brands (CAG)<br />Sector: Consumer Staples<br />Price: $35.49<br />Dividend: $0.84 (2.37%)","Company: ConocoPhillips (COP)<br />Sector: Energy<br />Price: $53.24<br />Dividend: $1.09 (2.05%)","Company: Consolidated Edison (ED)<br />Sector: Utilities<br />Price: $74.73<br />Dividend: $2.84 (3.8%)","Company: Constellation Brands (STZ)<br />Sector: Consumer Staples<br />Price: $208.73<br />Dividend: $2.03 (0.97%)","Company: Corning Inc. (GLW)<br />Sector: Information Technology<br />Price: $28.45<br />Dividend: $0.59 (2.08%)","Company: Costco Wholesale Corp. (COST)<br />Sector: Consumer Staples<br />Price: $178.61<br />Dividend: $1.95 (1.09%)","Company: Coty, Inc (COTY)<br />Sector: Consumer Staples<br />Price: $19.96<br />Dividend: $0.57 (2.86%)","Company: Crown Castle International Corp. (CCI)<br />Sector: Real Estate<br />Price: $103.81<br />Dividend: $4.01 (3.86%)","Company: CSRA Inc. (CSRA)<br />Sector: Information Technology<br />Price: $30.85<br />Dividend: $0.39 (1.28%)","Company: CSX Corp. (CSX)<br />Sector: Industrials<br />Price: $50.47<br />Dividend: $0.76 (1.51%)","Company: Cummins Inc. (CMI)<br />Sector: Industrials<br />Price: $165.73<br />Dividend: $4.14 (2.5%)","Company: CVS Health (CVS)<br />Sector: Consumer Staples<br />Price: $70.55<br />Dividend: $1.9 (2.69%)","Company: D. R. Horton (DHI)<br />Sector: Consumer Discretionary<br />Price: $44.55<br />Dividend: $0.48 (1.08%)","Company: Danaher Corp. (DHR)<br />Sector: Health Care<br />Price: $92.16<br />Dividend: $0.54 (0.59%)","Company: Darden Restaurants (DRI)<br />Sector: Consumer Discretionary<br />Price: $91.33<br />Dividend: $2.42 (2.65%)","Company: Deere & Co. (DE)<br />Sector: Industrials<br />Price: $153.66<br />Dividend: $2.28 (1.49%)","Company: Delta Air Lines Inc. (DAL)<br />Sector: Industrials<br />Price: $51.23<br />Dividend: $1.16 (2.27%)","Company: Dentsply Sirona (XRAY)<br />Sector: Health Care<br />Price: $56.85<br />Dividend: $0.34 (0.6%)","Company: Devon Energy Corp. (DVN)<br />Sector: Energy<br />Price: $34.94<br />Dividend: $0.23 (0.65%)","Company: Digital Realty Trust Inc (DLR)<br />Sector: Real Estate<br />Price: $98.96<br />Dividend: $3.53 (3.57%)","Company: Discover Financial Services (DFS)<br />Sector: Financials<br />Price: $72.4<br />Dividend: $1.32 (1.83%)","Company: Dollar General (DG)<br />Sector: Consumer Discretionary<br />Price: $95.1<br />Dividend: $1.01 (1.06%)","Company: Dominion Energy (D)<br />Sector: Utilities<br />Price: $73.31<br />Dividend: $3.32 (4.53%)","Company: Dover Corp. (DOV)<br />Sector: Industrials<br />Price: $96.2<br />Dividend: $1.81 (1.88%)","Company: DowDuPont (DWDP)<br />Sector: Materials<br />Price: $68.21<br />Dividend: $1.47 (2.15%)","Company: Dr Pepper Snapple Group (DPS)<br />Sector: Consumer Staples<br />Price: $116.93<br />Dividend: $2.3 (1.97%)","Company: DTE Energy Co. (DTE)<br />Sector: Utilities<br />Price: $98.49<br />Dividend: $3.5 (3.56%)","Company: Duke Energy (DUK)<br />Sector: Utilities<br />Price: $74.32<br />Dividend: $3.56 (4.78%)","Company: Duke Realty Corp (DRE)<br />Sector: Real Estate<br />Price: $24.52<br />Dividend: $0.77 (3.15%)","Company: DXC Technology (DXC)<br />Sector: Information Technology<br />Price: $91.92<br />Dividend: $0.69 (0.75%)","Company: Eastman Chemical (EMN)<br />Sector: Materials<br />Price: $93.57<br />Dividend: $2.12 (2.26%)","Company: Eaton Corporation (ETN)<br />Sector: Industrials<br />Price: $79.41<br />Dividend: $2.34 (2.94%)","Company: Ecolab Inc. (ECL)<br />Sector: Materials<br />Price: $127.76<br />Dividend: $1.57 (1.23%)","Company: Edison Int'l (EIX)<br />Sector: Utilities<br />Price: $58.07<br />Dividend: $2.35 (4.05%)","Company: Emerson Electric Company (EMR)<br />Sector: Industrials<br />Price: $66.4<br />Dividend: $1.87 (2.81%)","Company: Entergy Corp. (ETR)<br />Sector: Utilities<br />Price: $72.02<br />Dividend: $3.52 (4.89%)","Company: EOG Resources (EOG)<br />Sector: Energy<br />Price: $101.04<br />Dividend: $0.64 (0.63%)","Company: EQT Corporation (EQT)<br />Sector: Energy<br />Price: $46.25<br />Dividend: $0.12 (0.25%)","Company: Equifax Inc. (EFX)<br />Sector: Industrials<br />Price: $114<br />Dividend: $1.51 (1.33%)","Company: Equinix (EQIX)<br />Sector: Real Estate<br />Price: $409.98<br />Dividend: $7.7 (1.88%)","Company: Equity Residential (EQR)<br />Sector: Real Estate<br />Price: $55.26<br />Dividend: $1.96 (3.54%)","Company: Essex Property Trust, Inc. (ESS)<br />Sector: Real Estate<br />Price: $218.28<br />Dividend: $7.02 (3.21%)","Company: Estee Lauder Cos. (EL)<br />Sector: Consumer Staples<br />Price: $131.46<br />Dividend: $1.48 (1.13%)","Company: Everest Re Group Ltd. (RE)<br />Sector: Financials<br />Price: $241.06<br />Dividend: $5.08 (2.11%)","Company: Eversource Energy (ES)<br />Sector: Utilities<br />Price: $56.11<br />Dividend: $1.87 (3.34%)","Company: Exelon Corp. (EXC)<br />Sector: Utilities<br />Price: $35.98<br />Dividend: $1.37 (3.82%)","Company: Expedia Inc. (EXPE)<br />Sector: Consumer Discretionary<br />Price: $123.03<br />Dividend: $1.14 (0.93%)","Company: Expeditors International (EXPD)<br />Sector: Industrials<br />Price: $60.36<br />Dividend: $0.82 (1.35%)","Company: Extra Space Storage (EXR)<br />Sector: Real Estate<br />Price: $77.56<br />Dividend: $3.01 (3.88%)","Company: Exxon Mobil Corp. (XOM)<br />Sector: Energy<br />Price: $76.07<br />Dividend: $3.05 (4%)","Company: Fastenal Co (FAST)<br />Sector: Industrials<br />Price: $52.15<br />Dividend: $1.45 (2.78%)","Company: Federal Realty Investment Trust (FRT)<br />Sector: Real Estate<br />Price: $108.11<br />Dividend: $3.88 (3.59%)","Company: FedEx Corporation (FDX)<br />Sector: Industrials<br />Price: $239.27<br />Dividend: $1.91 (0.8%)","Company: Fidelity National Information Services (FIS)<br />Sector: Information Technology<br />Price: $92.74<br />Dividend: $1.23 (1.32%)","Company: Fifth Third Bancorp (FITB)<br />Sector: Financials<br />Price: $31.1<br />Dividend: $0.62 (1.98%)","Company: FirstEnergy Corp (FE)<br />Sector: Utilities<br />Price: $30.64<br />Dividend: $1.43 (4.67%)","Company: FLIR Systems (FLIR)<br />Sector: Information Technology<br />Price: $46.46<br />Dividend: $0.58 (1.24%)","Company: Flowserve Corporation (FLS)<br />Sector: Industrials<br />Price: $40.82<br />Dividend: $0.75 (1.83%)","Company: Fluor Corp. (FLR)<br />Sector: Industrials<br />Price: $55.31<br />Dividend: $0.81 (1.47%)","Company: FMC Corporation (FMC)<br />Sector: Materials<br />Price: $80.87<br />Dividend: $0.64 (0.79%)","Company: Foot Locker Inc (FL)<br />Sector: Consumer Discretionary<br />Price: $45.88<br />Dividend: $1.18 (2.58%)","Company: Ford Motor (F)<br />Sector: Consumer Discretionary<br />Price: $10.43<br />Dividend: $0.71 (6.78%)","Company: Fortive Corp (FTV)<br />Sector: Industrials<br />Price: $69.14<br />Dividend: $0.27 (0.39%)","Company: Fortune Brands Home & Security (FBHS)<br />Sector: Industrials<br />Price: $62.44<br />Dividend: $0.79 (1.26%)","Company: Franklin Resources (BEN)<br />Sector: Financials<br />Price: $38<br />Dividend: $0.89 (2.33%)","Company: Freeport-McMoRan Inc. (FCX)<br />Sector: Materials<br />Price: $17.16<br />Dividend: $0.19 (1.12%)","Company: Gap Inc. (GPS)<br />Sector: Consumer Discretionary<br />Price: $31.17<br />Dividend: $0.88 (2.82%)","Company: Garmin Ltd. (GRMN)<br />Sector: Consumer Discretionary<br />Price: $61.13<br />Dividend: $1.98 (3.23%)","Company: General Dynamics (GD)<br />Sector: Industrials<br />Price: $206.05<br />Dividend: $3.22 (1.56%)","Company: General Electric (GE)<br />Sector: Industrials<br />Price: $14.45<br />Dividend: $0.45 (3.15%)","Company: General Growth Properties Inc. (GGP)<br />Sector: Real Estate<br />Price: $21.62<br />Dividend: $0.87 (4.01%)","Company: General Mills (GIS)<br />Sector: Consumer Staples<br />Price: $53.99<br />Dividend: $1.94 (3.59%)","Company: General Motors (GM)<br />Sector: Consumer Discretionary<br />Price: $40.75<br />Dividend: $1.46 (3.59%)","Company: Genuine Parts (GPC)<br />Sector: Consumer Discretionary<br />Price: $96.31<br />Dividend: $2.62 (2.72%)","Company: Gilead Sciences (GILD)<br />Sector: Health Care<br />Price: $78.22<br />Dividend: $2.15 (2.75%)","Company: Global Payments Inc. (GPN)<br />Sector: Information Technology<br />Price: $100.59<br />Dividend: $0.04 (0.04%)","Company: Goldman Sachs Group (GS)<br />Sector: Financials<br />Price: $246.35<br />Dividend: $2.87 (1.17%)","Company: Goodyear Tire & Rubber (GT)<br />Sector: Consumer Discretionary<br />Price: $30.75<br />Dividend: $0.51 (1.67%)","Company: Grainger (W.W.) Inc. (GWW)<br />Sector: Industrials<br />Price: $258.6<br />Dividend: $5.09 (1.97%)","Company: Halliburton Co. (HAL)<br />Sector: Energy<br />Price: $47.41<br />Dividend: $0.69 (1.45%)","Company: Hanesbrands Inc (HBI)<br />Sector: Consumer Discretionary<br />Price: $19.57<br />Dividend: $0.53 (2.73%)","Company: Harley-Davidson (HOG)<br />Sector: Consumer Discretionary<br />Price: $47.54<br />Dividend: $1.44 (3.02%)","Company: Harris Corporation (HRS)<br />Sector: Information Technology<br />Price: $149.84<br />Dividend: $2.24 (1.49%)","Company: Hartford Financial Svc.Gp. (HIG)<br />Sector: Financials<br />Price: $53.34<br />Dividend: $0.95 (1.79%)","Company: Hasbro Inc. (HAS)<br />Sector: Consumer Discretionary<br />Price: $96.48<br />Dividend: $2.15 (2.23%)","Company: HCA Holdings (HCA)<br />Sector: Health Care<br />Price: $95.97<br />Dividend: $1.37 (1.42%)","Company: HCP Inc. (HCP)<br />Sector: Real Estate<br />Price: $22.64<br />Dividend: $1.43 (6.33%)","Company: Helmerich & Payne (HP)<br />Sector: Energy<br />Price: $64.87<br />Dividend: $2.69 (4.15%)","Company: Hess Corporation (HES)<br />Sector: Energy<br />Price: $43<br />Dividend: $0.97 (2.27%)","Company: Hewlett Packard Enterprise (HPE)<br />Sector: Information Technology<br />Price: $15.04<br />Dividend: $0.29 (1.93%)","Company: Hilton Worldwide Holdings Inc (HLT)<br />Sector: Consumer Discretionary<br />Price: $78.66<br />Dividend: $0.58 (0.73%)","Company: Home Depot (HD)<br />Sector: Consumer Discretionary<br />Price: $181.22<br />Dividend: $3.37 (1.86%)","Company: Honeywell Int'l Inc. (HON)<br />Sector: Industrials<br />Price: $146.02<br />Dividend: $2.88 (1.97%)","Company: Hormel Foods Corp. (HRL)<br />Sector: Consumer Staples<br />Price: $32.21<br />Dividend: $0.74 (2.29%)","Company: Host Hotels & Resorts (HST)<br />Sector: Real Estate<br />Price: $18.75<br />Dividend: $0.77 (4.11%)","Company: HP Inc. (HPQ)<br />Sector: Information Technology<br />Price: $19.92<br />Dividend: $0.52 (2.63%)","Company: Humana Inc. (HUM)<br />Sector: Health Care<br />Price: $262.37<br />Dividend: $1.58 (0.6%)","Company: Huntington Bancshares (HBAN)<br />Sector: Financials<br />Price: $15.1<br />Dividend: $0.42 (2.81%)","Company: Huntington Ingalls Industries (HII)<br />Sector: Industrials<br />Price: $225.37<br />Dividend: $2.76 (1.23%)","Company: Illinois Tool Works (ITW)<br />Sector: Industrials<br />Price: $156.15<br />Dividend: $2.98 (1.91%)","Company: Ingersoll-Rand PLC (IR)<br />Sector: Industrials<br />Price: $87.6<br />Dividend: $1.73 (1.97%)","Company: Intel Corp. (INTC)<br />Sector: Information Technology<br />Price: $42.75<br />Dividend: $1.13 (2.65%)","Company: Intercontinental Exchange (ICE)<br />Sector: Financials<br />Price: $67<br />Dividend: $3.64 (5.43%)","Company: International Business Machines (IBM)<br />Sector: Information Technology<br />Price: $147.59<br />Dividend: $5.76 (3.9%)","Company: International Paper (IP)<br />Sector: Materials<br />Price: $56.05<br />Dividend: $1.8 (3.21%)","Company: Interpublic Group (IPG)<br />Sector: Consumer Discretionary<br />Price: $21.34<br />Dividend: $0.72 (3.38%)","Company: Intl Flavors & Fragrances (IFF)<br />Sector: Materials<br />Price: $138<br />Dividend: $2.67 (1.93%)","Company: Intuit Inc. (INTU)<br />Sector: Information Technology<br />Price: $152.75<br />Dividend: $1.48 (0.97%)","Company: Invesco Ltd. (IVZ)<br />Sector: Financials<br />Price: $31.92<br />Dividend: $1.11 (3.47%)","Company: Iron Mountain Incorporated (IRM)<br />Sector: Real Estate<br />Price: $32.07<br />Dividend: $2.27 (7.08%)","Company: J. B. Hunt Transport Services (JBHT)<br />Sector: Industrials<br />Price: $114.81<br />Dividend: $0.93 (0.81%)","Company: Jacobs Engineering Group (JEC)<br />Sector: Industrials<br />Price: $62.82<br />Dividend: $0.57 (0.91%)","Company: JM Smucker (SJM)<br />Sector: Consumer Staples<br />Price: $118.37<br />Dividend: $3.08 (2.6%)","Company: Johnson & Johnson (JNJ)<br />Sector: Health Care<br />Price: $126.36<br />Dividend: $3.23 (2.56%)","Company: Johnson Controls International (JCI)<br />Sector: Industrials<br />Price: $36.55<br />Dividend: $1.01 (2.77%)","Company: JPMorgan Chase & Co. (JPM)<br />Sector: Financials<br />Price: $107.88<br />Dividend: $2.14 (1.98%)","Company: Juniper Networks (JNPR)<br />Sector: Information Technology<br />Price: $24.66<br />Dividend: $0.39 (1.58%)","Company: Kansas City Southern (KSU)<br />Sector: Industrials<br />Price: $103.53<br />Dividend: $1.39 (1.34%)","Company: Kellogg Co. (K)<br />Sector: Consumer Staples<br />Price: $65.98<br />Dividend: $2.22 (3.36%)","Company: KeyCorp (KEY)<br />Sector: Financials<br />Price: $20.08<br />Dividend: $0.4 (1.99%)","Company: Kimberly-Clark (KMB)<br />Sector: Consumer Staples<br />Price: $111.69<br />Dividend: $3.98 (3.56%)","Company: Kimco Realty (KIM)<br />Sector: Real Estate<br />Price: $14.01<br />Dividend: $1.08 (7.71%)","Company: Kinder Morgan (KMI)<br />Sector: Energy<br />Price: $16.8<br />Dividend: $0.49 (2.89%)","Company: KLA-Tencor Corp. (KLAC)<br />Sector: Information Technology<br />Price: $98.54<br />Dividend: $2.27 (2.3%)","Company: Kohl's Corp. (KSS)<br />Sector: Consumer Discretionary<br />Price: $60.34<br />Dividend: $2.11 (3.5%)","Company: Kraft Heinz Co (KHC)<br />Sector: Consumer Staples<br />Price: $71.58<br />Dividend: $2.43 (3.4%)","Company: Kroger Co. (KR)<br />Sector: Consumer Staples<br />Price: $27.57<br />Dividend: $0.48 (1.73%)","Company: L Brands Inc. (LB)<br />Sector: Consumer Discretionary<br />Price: $47.77<br />Dividend: $2.33 (4.89%)","Company: L-3 Communications Holdings (LLL)<br />Sector: Industrials<br />Price: $198.79<br />Dividend: $2.87 (1.44%)","Company: Lam Research (LRCX)<br />Sector: Information Technology<br />Price: $162.23<br />Dividend: $1.89 (1.17%)","Company: Leggett & Platt (LEG)<br />Sector: Consumer Discretionary<br />Price: $43.99<br />Dividend: $1.38 (3.15%)","Company: Lennar Corp. (LEN)<br />Sector: Consumer Discretionary<br />Price: $59.11<br />Dividend: $0.16 (0.26%)","Company: Leucadia National Corp. (LUK)<br />Sector: Financials<br />Price: $23.86<br />Dividend: $0.38 (1.6%)","Company: Lilly (Eli) & Co. (LLY)<br />Sector: Health Care<br />Price: $74.21<br />Dividend: $2.18 (2.93%)","Company: Lincoln National (LNC)<br />Sector: Financials<br />Price: $73.86<br />Dividend: $1.24 (1.68%)","Company: Lockheed Martin Corp. (LMT)<br />Sector: Industrials<br />Price: $334.3<br />Dividend: $7.74 (2.32%)","Company: Loews Corp. (L)<br />Sector: Financials<br />Price: $46.05<br />Dividend: $2.08 (4.51%)","Company: Lowe's Cos. (LOW)<br />Sector: Consumer Discretionary<br />Price: $95.01<br />Dividend: $1.56 (1.64%)","Company: LyondellBasell (LYB)<br />Sector: Materials<br />Price: $105.79<br />Dividend: $3.45 (3.26%)","Company: M&T Bank Corp. (MTB)<br />Sector: Financials<br />Price: $178.35<br />Dividend: $2.89 (1.62%)","Company: Macerich (MAC)<br />Sector: Real Estate<br />Price: $58.36<br />Dividend: $2.87 (4.92%)","Company: Macy's Inc. (M)<br />Sector: Consumer Discretionary<br />Price: $24<br />Dividend: $1.46 (6.1%)","Company: Marathon Oil Corp. (MRO)<br />Sector: Energy<br />Price: $15.68<br />Dividend: $0.19 (1.22%)","Company: Marathon Petroleum (MPC)<br />Sector: Energy<br />Price: $62.79<br />Dividend: $1.77 (2.83%)","Company: Marriott Int'l. (MAR)<br />Sector: Consumer Discretionary<br />Price: $133.88<br />Dividend: $1.27 (0.95%)","Company: Marsh & McLennan (MMC)<br />Sector: Financials<br />Price: $79.31<br />Dividend: $1.45 (1.83%)","Company: Martin Marietta Materials (MLM)<br />Sector: Materials<br />Price: $208.42<br />Dividend: $1.68 (0.8%)","Company: Masco Corp. (MAS)<br />Sector: Industrials<br />Price: $40.7<br />Dividend: $0.4 (0.98%)","Company: Mastercard Inc. (MA)<br />Sector: Information Technology<br />Price: $160.62<br />Dividend: $0.95 (0.59%)","Company: McCormick & Co. (MKC)<br />Sector: Consumer Staples<br />Price: $101.36<br />Dividend: $2.05 (2.03%)","Company: McDonald's Corp. (MCD)<br />Sector: Consumer Discretionary<br />Price: $158.97<br />Dividend: $3.88 (2.44%)","Company: McKesson Corp. (MCK)<br />Sector: Health Care<br />Price: $150.23<br />Dividend: $1.34 (0.89%)","Company: Medtronic plc (MDT)<br />Sector: Health Care<br />Price: $78.38<br />Dividend: $1.77 (2.26%)","Company: Merck & Co. (MRK)<br />Sector: Health Care<br />Price: $54.73<br />Dividend: $1.88 (3.44%)","Company: MetLife Inc. (MET)<br />Sector: Financials<br />Price: $44.28<br />Dividend: $1.53 (3.46%)","Company: MGM Resorts International (MGM)<br />Sector: Consumer Discretionary<br />Price: $33.5<br />Dividend: $0.43 (1.27%)","Company: Microchip Technology (MCHP)<br />Sector: Information Technology<br />Price: $79.9<br />Dividend: $1.4 (1.75%)","Company: Microsoft Corp. (MSFT)<br />Sector: Information Technology<br />Price: $85.01<br />Dividend: $1.59 (1.87%)","Company: Mid-America Apartments (MAA)<br />Sector: Real Estate<br />Price: $85.39<br />Dividend: $3.58 (4.2%)","Company: Molson Coors Brewing Company (TAP)<br />Sector: Consumer Staples<br />Price: $74.51<br />Dividend: $1.6 (2.15%)","Company: Mondelez International (MDLZ)<br />Sector: Consumer Staples<br />Price: $42.68<br />Dividend: $0.85 (2%)","Company: Monsanto Co. (MON)<br />Sector: Materials<br />Price: $119.08<br />Dividend: $2.14 (1.79%)","Company: Moody's Corp (MCO)<br />Sector: Financials<br />Price: $152.14<br />Dividend: $1.69 (1.11%)","Company: Morgan Stanley (MS)<br />Sector: Financials<br />Price: $51.79<br />Dividend: $0.95 (1.83%)","Company: Motorola Solutions Inc. (MSI)<br />Sector: Information Technology<br />Price: $98.74<br />Dividend: $2 (2.03%)","Company: Nasdaq, Inc. (NDAQ)<br />Sector: Financials<br />Price: $75.21<br />Dividend: $1.48 (1.97%)","Company: National Oilwell Varco Inc. (NOV)<br />Sector: Energy<br />Price: $32.64<br />Dividend: $0.19 (0.59%)","Company: Navient (NAVI)<br />Sector: Financials<br />Price: $13.38<br />Dividend: $0.61 (4.56%)","Company: NetApp (NTAP)<br />Sector: Information Technology<br />Price: $55.85<br />Dividend: $0.78 (1.39%)","Company: Newell Brands (NWL)<br />Sector: Consumer Discretionary<br />Price: $27.91<br />Dividend: $0.87 (3.12%)","Company: Newmont Mining Corporation (NEM)<br />Sector: Materials<br />Price: $36.61<br />Dividend: $0.3 (0.81%)","Company: News Corp. Class A (NWSA)<br />Sector: Consumer Discretionary<br />Price: $15.65<br />Dividend: $0.19 (1.25%)","Company: News Corp. Class B (NWS)<br />Sector: Consumer Discretionary<br />Price: $15.85<br />Dividend: $0.19 (1.23%)","Company: NextEra Energy (NEE)<br />Sector: Utilities<br />Price: $145.29<br />Dividend: $3.86 (2.65%)","Company: Nielsen Holdings (NLSN)<br />Sector: Industrials<br />Price: $33.9<br />Dividend: $1.23 (3.62%)","Company: Nike (NKE)<br />Sector: Consumer Discretionary<br />Price: $62.49<br />Dividend: $0.76 (1.22%)","Company: NiSource Inc. (NI)<br />Sector: Utilities<br />Price: $22.51<br />Dividend: $0.76 (3.38%)","Company: Noble Energy Inc (NBL)<br />Sector: Energy<br />Price: $25.43<br />Dividend: $0.38 (1.48%)","Company: Nordstrom (JWN)<br />Sector: Consumer Discretionary<br />Price: $47.23<br />Dividend: $1.42 (3%)","Company: Norfolk Southern Corp. (NSC)<br />Sector: Industrials<br />Price: $136.89<br />Dividend: $2.76 (2.02%)","Company: Northern Trust Corp. (NTRS)<br />Sector: Financials<br />Price: $96.2<br />Dividend: $1.6 (1.67%)","Company: Northrop Grumman Corp. (NOC)<br />Sector: Industrials<br />Price: $324.01<br />Dividend: $4.22 (1.3%)","Company: NRG Energy (NRG)<br />Sector: Utilities<br />Price: $24<br />Dividend: $0.34 (1.42%)","Company: Nucor Corp. (NUE)<br />Sector: Materials<br />Price: $60.38<br />Dividend: $1.46 (2.42%)","Company: Nvidia Corporation (NVDA)<br />Sector: Information Technology<br />Price: $217.52<br />Dividend: $0.57 (0.26%)","Company: Occidental Petroleum (OXY)<br />Sector: Energy<br />Price: $68.47<br />Dividend: $3.02 (4.41%)","Company: Omnicom Group (OMC)<br />Sector: Consumer Discretionary<br />Price: $75.91<br />Dividend: $2.42 (3.18%)","Company: ONEOK (OKE)<br />Sector: Energy<br />Price: $54.4<br />Dividend: $2.96 (5.44%)","Company: Oracle Corp. (ORCL)<br />Sector: Information Technology<br />Price: $46.84<br />Dividend: $0.73 (1.56%)","Company: PACCAR Inc. (PCAR)<br />Sector: Industrials<br />Price: $66.98<br />Dividend: $0.98 (1.46%)","Company: Packaging Corporation of America (PKG)<br />Sector: Materials<br />Price: $111.95<br />Dividend: $2.41 (2.15%)","Company: Parker-Hannifin (PH)<br />Sector: Industrials<br />Price: $174.51<br />Dividend: $2.51 (1.44%)","Company: Patterson Companies (PDCO)<br />Sector: Health Care<br />Price: $32.88<br />Dividend: $1.01 (3.07%)","Company: Paychex Inc. (PAYX)<br />Sector: Information Technology<br />Price: $61.86<br />Dividend: $1.91 (3.09%)","Company: Pentair Ltd. (PNR)<br />Sector: Industrials<br />Price: $66.67<br />Dividend: $1.36 (2.04%)","Company: People's United Financial (PBCT)<br />Sector: Financials<br />Price: $18.56<br />Dividend: $0.67 (3.59%)","Company: PepsiCo Inc. (PEP)<br />Sector: Consumer Staples<br />Price: $110.15<br />Dividend: $3.12 (2.84%)","Company: PerkinElmer (PKI)<br />Sector: Health Care<br />Price: $72.06<br />Dividend: $0.27 (0.37%)","Company: Perrigo (PRGO)<br />Sector: Health Care<br />Price: $84.44<br />Dividend: $0.62 (0.73%)","Company: Pfizer Inc. (PFE)<br />Sector: Health Care<br />Price: $33.63<br />Dividend: $1.31 (3.89%)","Company: Philip Morris International (PM)<br />Sector: Consumer Staples<br />Price: $100.39<br />Dividend: $4.35 (4.33%)","Company: Phillips 66 (PSX)<br />Sector: Energy<br />Price: $92.44<br />Dividend: $2.71 (2.93%)","Company: Pinnacle West Capital (PNW)<br />Sector: Utilities<br />Price: $74.34<br />Dividend: $2.75 (3.7%)","Company: Pioneer Natural Resources (PXD)<br />Sector: Energy<br />Price: $169.16<br />Dividend: $0.31 (0.18%)","Company: PNC Financial Services (PNC)<br />Sector: Financials<br />Price: $149.38<br />Dividend: $2.89 (1.94%)","Company: Polo Ralph Lauren Corp. (RL)<br />Sector: Consumer Discretionary<br />Price: $101.32<br />Dividend: $1.88 (1.86%)","Company: PPG Industries (PPG)<br />Sector: Materials<br />Price: $110.3<br />Dividend: $1.74 (1.58%)","Company: PPL Corp. (PPL)<br />Sector: Utilities<br />Price: $29.52<br />Dividend: $1.54 (5.22%)","Company: Praxair Inc. (PX)<br />Sector: Materials<br />Price: $144.07<br />Dividend: $3.17 (2.2%)","Company: Principal Financial Group (PFG)<br />Sector: Financials<br />Price: $60.38<br />Dividend: $1.93 (3.19%)","Company: Procter & Gamble (PG)<br />Sector: Consumer Staples<br />Price: $80.22<br />Dividend: $2.7 (3.37%)","Company: Progressive Corp. (PGR)<br />Sector: Financials<br />Price: $51.07<br />Dividend: $1.08 (2.11%)","Company: Prologis (PLD)<br />Sector: Real Estate<br />Price: $58.33<br />Dividend: $1.71 (2.93%)","Company: Prudential Financial (PRU)<br />Sector: Financials<br />Price: $103.38<br />Dividend: $2.79 (2.7%)","Company: Public Serv. Enterprise Inc. (PEG)<br />Sector: Utilities<br />Price: $46.73<br />Dividend: $1.69 (3.61%)","Company: Public Storage (PSA)<br />Sector: Real Estate<br />Price: $180.49<br />Dividend: $7.79 (4.32%)","Company: Pulte Homes Inc. (PHM)<br />Sector: Consumer Discretionary<br />Price: $28.67<br />Dividend: $0.35 (1.2%)","Company: PVH Corp. (PVH)<br />Sector: Consumer Discretionary<br />Price: $142.68<br />Dividend: $0.14 (0.1%)","Company: QUALCOMM Inc. (QCOM)<br />Sector: Information Technology<br />Price: $62.42<br />Dividend: $2.19 (3.51%)","Company: Quest Diagnostics (DGX)<br />Sector: Health Care<br />Price: $96.42<br />Dividend: $1.92 (1.99%)","Company: Range Resources Corp. (RRC)<br />Sector: Energy<br />Price: $12.82<br />Dividend: $0.08 (0.61%)","Company: Raymond James Financial Inc. (RJF)<br />Sector: Financials<br />Price: $86.06<br />Dividend: $0.95 (1.1%)","Company: Raytheon Co. (RTN)<br />Sector: Industrials<br />Price: $198.74<br />Dividend: $3.1 (1.56%)","Company: Realty Income Corporation (O)<br />Sector: Real Estate<br />Price: $47.56<br />Dividend: $2.55 (5.37%)","Company: Regency Centers Corporation (REG)<br />Sector: Real Estate<br />Price: $55.58<br />Dividend: $2.05 (3.69%)","Company: Regions Financial Corp. (RF)<br />Sector: Financials<br />Price: $17.9<br />Dividend: $0.34 (1.9%)","Company: Republic Services Inc (RSG)<br />Sector: Industrials<br />Price: $62.72<br />Dividend: $1.34 (2.14%)","Company: ResMed (RMD)<br />Sector: Health Care<br />Price: $89.26<br />Dividend: $1.35 (1.51%)","Company: Robert Half International (RHI)<br />Sector: Industrials<br />Price: $52.26<br />Dividend: $0.89 (1.71%)","Company: Rockwell Automation Inc. (ROK)<br />Sector: Industrials<br />Price: $178.73<br />Dividend: $3.16 (1.77%)","Company: Rockwell Collins (COL)<br />Sector: Industrials<br />Price: $133.31<br />Dividend: $1.3 (0.97%)","Company: Roper Technologies (ROP)<br />Sector: Industrials<br />Price: $259.4<br />Dividend: $1.61 (0.62%)","Company: Ross Stores (ROST)<br />Sector: Consumer Discretionary<br />Price: $75.06<br />Dividend: $0.62 (0.82%)","Company: Royal Caribbean Cruises Ltd (RCL)<br />Sector: Consumer Discretionary<br />Price: $122.45<br />Dividend: $2.29 (1.87%)","Company: S&P Global, Inc. (SPGI)<br />Sector: Financials<br />Price: $173.31<br />Dividend: $1.9 (1.09%)","Company: SCANA Corp (SCG)<br />Sector: Utilities<br />Price: $35.6<br />Dividend: $2.38 (6.68%)","Company: Schlumberger Ltd. (SLB)<br />Sector: Energy<br />Price: $67.4<br />Dividend: $1.93 (2.87%)","Company: Scripps Networks Interactive Inc. (SNI)<br />Sector: Consumer Discretionary<br />Price: $86.46<br />Dividend: $1.19 (1.38%)","Company: Seagate Technology (STX)<br />Sector: Information Technology<br />Price: $47.44<br />Dividend: $2.41 (5.09%)","Company: Sealed Air (SEE)<br />Sector: Materials<br />Price: $42.62<br />Dividend: $0.61 (1.44%)","Company: Sempra Energy (SRE)<br />Sector: Utilities<br />Price: $103.36<br />Dividend: $3.27 (3.16%)","Company: Sherwin-Williams (SHW)<br />Sector: Materials<br />Price: $387.65<br />Dividend: $3.27 (0.84%)","Company: Signet Jewelers (SIG)<br />Sector: Consumer Discretionary<br />Price: $49.38<br />Dividend: $1.22 (2.47%)","Company: Simon Property Group Inc (SPG)<br />Sector: Real Estate<br />Price: $152.18<br />Dividend: $7.67 (5.04%)","Company: Skyworks Solutions (SWKS)<br />Sector: Information Technology<br />Price: $99.04<br />Dividend: $1.25 (1.26%)","Company: SL Green Realty (SLG)<br />Sector: Real Estate<br />Price: $90.61<br />Dividend: $3.17 (3.5%)","Company: Snap-On Inc. (SNA)<br />Sector: Consumer Discretionary<br />Price: $156.72<br />Dividend: $3.08 (1.97%)","Company: Southern Co. (SO)<br />Sector: Utilities<br />Price: $43.4<br />Dividend: $2.32 (5.35%)","Company: Southwest Airlines (LUV)<br />Sector: Industrials<br />Price: $55.63<br />Dividend: $0.48 (0.86%)","Company: Stanley Black & Decker (SWK)<br />Sector: Consumer Discretionary<br />Price: $152.86<br />Dividend: $2.41 (1.58%)","Company: Starbucks Corp. (SBUX)<br />Sector: Consumer Discretionary<br />Price: $53.77<br />Dividend: $1.18 (2.2%)","Company: State Street Corp. (STT)<br />Sector: Financials<br />Price: $98.54<br />Dividend: $1.6 (1.62%)","Company: Stryker Corp. (SYK)<br />Sector: Health Care<br />Price: $148.01<br />Dividend: $1.81 (1.22%)","Company: SunTrust Banks (STI)<br />Sector: Financials<br />Price: $65.8<br />Dividend: $1.53 (2.32%)","Company: Symantec Corp. (SYMC)<br />Sector: Information Technology<br />Price: $25.59<br />Dividend: $0.29 (1.13%)","Company: Synchrony Financial (SYF)<br />Sector: Financials<br />Price: $34.98<br />Dividend: $0.56 (1.6%)","Company: Sysco Corp. (SYY)<br />Sector: Consumer Staples<br />Price: $57<br />Dividend: $1.4 (2.46%)","Company: T. Rowe Price Group (TROW)<br />Sector: Financials<br />Price: $101.99<br />Dividend: $2.18 (2.14%)","Company: Target Corp. (TGT)<br />Sector: Consumer Discretionary<br />Price: $71.11<br />Dividend: $2.41 (3.39%)","Company: TE Connectivity Ltd. (TEL)<br />Sector: Information Technology<br />Price: $95.27<br />Dividend: $1.53 (1.61%)","Company: TechnipFMC (FTI)<br />Sector: Energy<br />Price: $29.1<br />Dividend: $0.5 (1.71%)","Company: Texas Instruments (TXN)<br />Sector: Information Technology<br />Price: $97.66<br />Dividend: $2.37 (2.43%)","Company: Textron Inc. (TXT)<br />Sector: Industrials<br />Price: $55.54<br />Dividend: $0.08 (0.14%)","Company: The Bank of New York Mellon Corp. (BK)<br />Sector: Financials<br />Price: $53.29<br />Dividend: $0.92 (1.73%)","Company: The Clorox Company (CLX)<br />Sector: Consumer Staples<br />Price: $127.76<br />Dividend: $3.36 (2.63%)","Company: The Cooper Companies (COO)<br />Sector: Health Care<br />Price: $223.17<br />Dividend: $0.06 (0.03%)","Company: The Hershey Company (HSY)<br />Sector: Consumer Staples<br />Price: $97.65<br />Dividend: $2.59 (2.65%)","Company: The Mosaic Company (MOS)<br />Sector: Materials<br />Price: $24.13<br />Dividend: $0.1 (0.4%)","Company: The Travelers Companies Inc. (TRV)<br />Sector: Financials<br />Price: $135.01<br />Dividend: $2.74 (2.03%)","Company: The Walt Disney Company (DIS)<br />Sector: Consumer Discretionary<br />Price: $101.35<br />Dividend: $1.63 (1.6%)","Company: Thermo Fisher Scientific (TMO)<br />Sector: Health Care<br />Price: $198.73<br />Dividend: $0.65 (0.33%)","Company: Tiffany & Co. (TIF)<br />Sector: Consumer Discretionary<br />Price: $99.62<br />Dividend: $1.93 (1.94%)","Company: Time Warner Inc. (TWX)<br />Sector: Consumer Discretionary<br />Price: $93.02<br />Dividend: $1.57 (1.69%)","Company: TJX Companies Inc. (TJX)<br />Sector: Consumer Discretionary<br />Price: $74.36<br />Dividend: $1.22 (1.64%)","Company: Torchmark Corp. (TMK)<br />Sector: Financials<br />Price: $80.52<br />Dividend: $0.58 (0.72%)","Company: Total System Services (TSS)<br />Sector: Information Technology<br />Price: $81.17<br />Dividend: $0.49 (0.61%)","Company: Tractor Supply Company (TSCO)<br />Sector: Consumer Discretionary<br />Price: $65.94<br />Dividend: $1.06 (1.6%)","Company: Twenty-First Century Fox Class A (FOXA)<br />Sector: Consumer Discretionary<br />Price: $34.56<br />Dividend: $0.35 (1%)","Company: Twenty-First Century Fox Class B (FOX)<br />Sector: Consumer Discretionary<br />Price: $34.09<br />Dividend: $0.34 (1.01%)","Company: Tyson Foods (TSN)<br />Sector: Consumer Staples<br />Price: $73.92<br />Dividend: $1.21 (1.64%)","Company: U.S. Bancorp (USB)<br />Sector: Financials<br />Price: $52.65<br />Dividend: $1.15 (2.19%)","Company: UDR Inc (UDR)<br />Sector: Real Estate<br />Price: $32.92<br />Dividend: $1.21 (3.67%)","Company: Union Pacific (UNP)<br />Sector: Industrials<br />Price: $124.86<br />Dividend: $2.58 (2.06%)","Company: United Health Group Inc. (UNH)<br />Sector: Health Care<br />Price: $216.46<br />Dividend: $2.88 (1.33%)","Company: United Parcel Service (UPS)<br />Sector: Industrials<br />Price: $109.28<br />Dividend: $3.24 (2.97%)","Company: United Technologies (UTX)<br />Sector: Industrials<br />Price: $127.48<br />Dividend: $2.7 (2.12%)","Company: Universal Health Services, Inc. (UHS)<br />Sector: Health Care<br />Price: $114.87<br />Dividend: $0.39 (0.34%)","Company: Unum Group (UNM)<br />Sector: Financials<br />Price: $47.87<br />Dividend: $0.87 (1.82%)","Company: V.F. Corp. (VFC)<br />Sector: Consumer Discretionary<br />Price: $78.75<br />Dividend: $1.8 (2.29%)","Company: Valero Energy (VLO)<br />Sector: Energy<br />Price: $86.77<br />Dividend: $3.09 (3.56%)","Company: Ventas Inc (VTR)<br />Sector: Real Estate<br />Price: $50.92<br />Dividend: $3.04 (5.97%)","Company: Verizon Communications (VZ)<br />Sector: Telecommunication Services<br />Price: $49.04<br />Dividend: $2.27 (4.63%)","Company: Viacom Inc. (VIAB)<br />Sector: Consumer Discretionary<br />Price: $32.71<br />Dividend: $0.86 (2.62%)","Company: Visa Inc. (V)<br />Sector: Information Technology<br />Price: $113.86<br />Dividend: $0.8 (0.7%)","Company: Vornado Realty Trust (VNO)<br />Sector: Real Estate<br />Price: $66.18<br />Dividend: $2.48 (3.74%)","Company: Vulcan Materials (VMC)<br />Sector: Materials<br />Price: $121.47<br />Dividend: $0.95 (0.78%)","Company: Wal-Mart Stores (WMT)<br />Sector: Consumer Staples<br />Price: $100.02<br />Dividend: $1.98 (1.98%)","Company: Walgreens Boots Alliance (WBA)<br />Sector: Consumer Staples<br />Price: $68.22<br />Dividend: $1.53 (2.24%)","Company: Waste Management Inc. (WM)<br />Sector: Industrials<br />Price: $79.12<br />Dividend: $1.65 (2.08%)","Company: Wec Energy Group Inc (WEC)<br />Sector: Utilities<br />Price: $59.5<br />Dividend: $2.2 (3.69%)","Company: Wells Fargo (WFC)<br />Sector: Financials<br />Price: $55.4<br />Dividend: $1.5 (2.71%)","Company: Welltower Inc. (HCN)<br />Sector: Real Estate<br />Price: $54.67<br />Dividend: $3.36 (6.15%)","Company: Western Digital (WDC)<br />Sector: Information Technology<br />Price: $80.09<br />Dividend: $1.91 (2.39%)","Company: Western Union Co (WU)<br />Sector: Information Technology<br />Price: $18.81<br />Dividend: $0.68 (3.59%)","Company: WestRock Company (WRK)<br />Sector: Materials<br />Price: $60.93<br />Dividend: $1.63 (2.67%)","Company: Weyerhaeuser Corp. (WY)<br />Sector: Real Estate<br />Price: $33.6<br />Dividend: $1.25 (3.71%)","Company: Whirlpool Corp. (WHR)<br />Sector: Consumer Discretionary<br />Price: $164.95<br />Dividend: $4.23 (2.57%)","Company: Williams Cos. (WMB)<br />Sector: Energy<br />Price: $28.56<br />Dividend: $1.14 (4%)","Company: Willis Towers Watson (WLTW)<br />Sector: Financials<br />Price: $152.36<br />Dividend: $2.05 (1.35%)","Company: Wyndham Worldwide (WYN)<br />Sector: Consumer Discretionary<br />Price: $113.56<br />Dividend: $2.22 (1.95%)","Company: Wynn Resorts Ltd (WYNN)<br />Sector: Consumer Discretionary<br />Price: $169.28<br />Dividend: $1.91 (1.13%)","Company: Xcel Energy Inc (XEL)<br />Sector: Utilities<br />Price: $42.44<br />Dividend: $1.44 (3.39%)","Company: Xerox Corp. (XRX)<br />Sector: Information Technology<br />Price: $29.8<br />Dividend: $0.96 (3.21%)","Company: Xilinx Inc (XLNX)<br />Sector: Information Technology<br />Price: $62.82<br />Dividend: $1.31 (2.09%)","Company: XL Capital (XL)<br />Sector: Financials<br />Price: $41.26<br />Dividend: $0.86 (2.1%)","Company: Xylem Inc. (XYL)<br />Sector: Industrials<br />Price: $70.24<br />Dividend: $0.82 (1.17%)","Company: Yum! Brands Inc (YUM)<br />Sector: Consumer Discretionary<br />Price: $76.3<br />Dividend: $1.37 (1.8%)","Company: Zimmer Biomet Holdings (ZBH)<br />Sector: Health Care<br />Price: $115.53<br />Dividend: $0.92 (0.79%)","Company: Zions Bancorp (ZION)<br />Sector: Financials<br />Price: $50.71<br />Dividend: $0.75 (1.48%)","Company: Zoetis (ZTS)<br />Sector: Health Care<br />Price: $71.51<br />Dividend: $0.49 (0.68%)"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(69,94,229,1)","opacity":1,"size":3.21259842519685,"symbol":"circle","line":{"width":1.88976377952756,"color":"rgba(69,94,229,1)"}},"hoveron":"points","legendgroup":"","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":50.4541303445413,"r":7.30593607305936,"b":41.8264840182648,"l":43.1050228310502},"plot_bgcolor":"rgba(255,255,255,1)","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"title":{"text":"<b> Dividends Based on Stock Price <\/b>","font":{"color":"rgba(0,0,0,1)","family":"","size":22.5819842258198},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-14.906,534.346],"tickmode":"array","ticktext":["$0","$100","$200","$300","$400","$500"],"tickvals":[0,100,200,300,400,500],"categoryorder":"array","categoryarray":["$0","$100","$200","$300","$400","$500"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":0.66417600664176,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"y","title":{"text":"Share Price","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-0.00612,0.13292],"tickmode":"array","ticktext":["0%","5%","10%"],"tickvals":[0,0.05,0.1],"categoryorder":"array","categoryarray":["0%","5%","10%"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":0.66417600664176,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"x","title":{"text":"Dividend Yield","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.88976377952756,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.689497716895}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"4f906f9117b3":{"x":{},"y":{},"colour":{},"text":{},"type":"scatter"}},"cur_data":"4f906f9117b3","visdat":{"4f906f9117b3":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+<h2 id="analysis">Analysis</h2>
+<p>There is no strong correlation between the share price and dividend
+yield or earnings. This means that a universal rule for determining
+whether or not to invest into a stock does not exist. Instead,
+investments should be determined on an individual basis formulated on a
+company’s stability, potential, management, growth, and many other
+considerable factors. The role of an index fund, such as the S&amp;P
+500, is to give investors a diversified selection of securities in one
+easy, low-cost investment. It does not require much time, effort, and
+lowers risk dramatically because the chances of 500 companies crashing
+is a lot lower than a single company going bankrupt.</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<!--radix_placeholder_article_footer-->
+<!--/radix_placeholder_article_footer-->
+</div>
+
+<div class="d-appendix">
+</div>
+
+
+<!--radix_placeholder_site_after_body-->
+<!--/radix_placeholder_site_after_body-->
+<!--radix_placeholder_appendices-->
+<div class="appendix-bottom"></div>
+<!--/radix_placeholder_appendices-->
+<!--radix_placeholder_navigation_after_body-->
+<!--/radix_placeholder_navigation_after_body-->
+
+</body>
+
+</html>

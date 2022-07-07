@@ -2,19 +2,37 @@
   "articles": [
     {
       "path": "about.html",
-      "title": "About this site",
-      "description": "Some additional details about the website",
+      "title": "About this Project",
+      "description": "",
       "author": [],
-      "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-07-05T20:21:26-04:00"
+      "contents": "\r\nData Sources\r\nThe information used for this project came from two different\r\nsources: Wikipedia and DataHub. Both of them tracked and recorded\r\ninformation on the 503 companies in the S&P 500 index fund in their\r\nrespective years. Although the information may not be completely\r\naccurate, it provides baseline information on the stock. This allows us\r\nto graph and visualize the data in more unique and specific ways, which\r\ngives insight of the trends and patterns that occur in the US\r\neconomy.\r\nAbout the Course\r\nThis project was made for Kane’s Free Data Science\r\nCourse in the Summer of 2022. David Kane is a data scientist and a\r\nteacher of statistics/data science/analytics — whatever your preferred\r\nterm for using data to make decisions. He is the former Preceptor in\r\nStatistical Methods and Mathematics in the Department of Government at\r\nHarvard University. The course is for high school students, but those a\r\nbit younger or older are welcome. There is no charge. By the end of the\r\nfour weeks, students will be able to do basic data science!\r\nAbout Me\r\nEthan Hu currently lives Newton, Massachusetts, and is an incoming\r\nJunior at Newton North High School. He is interested in computer science\r\nand mathematics.\r\nEmail: ethanhu89@gmail.com\r\nGitHub: https://github.com/ethanhu89/\r\n\r\n\r\n\r\n",
+      "last_modified": "2022-07-07T19:09:17-04:00"
     },
     {
       "path": "index.html",
       "title": "Breakdown of the S&P 500",
       "description": "",
       "author": [],
-      "contents": "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-07-05T20:21:30-04:00"
+      "contents": "\r\nThe Standard and Poor’s 500, or simply the S&P 500, is a stock\r\nmarket index tracking the stock performance of 500 large companies\r\nlisted on exchanges in the United States. This means that the S&P\r\n500 gives a broad overview of how the US economy is doing at any point\r\nin time. It is one of the most commonly followed equity indices.\r\nAlternatives include Dow Jones Industrial (DJIA), Nasdaq Composite\r\n(COMP), and Vanguard Total Stock Market Index Fund Admiral Shares\r\n(VTSAX). (Wikpedia)\r\n \r\n \r\n\r\n\r\n\r\nAnalysis\r\nInformation Technology has been a dominating sector in the world\r\neconomy for years and is continuing to grow at an explosive rate. As\r\nseen in the graphic below, many of the top companies (in terms of value)\r\nare closely related to the tech industry (four out of five are FAANG).\r\nThere is an increasing demand for new technology as people move toward\r\nthe middle class. The world is becoming more advanced and modernized,\r\nwhich is why the Information Technology market will remain ginormous and\r\nkeep expanding as well.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+      "last_modified": "2022-07-07T19:09:20-04:00"
+    },
+    {
+      "path": "investing.html",
+      "title": "Investing Choices",
+      "description": "",
+      "author": [],
+      "date": "`r Sys.Date()`",
+      "contents": "\r\nEarnings Per Share (EPS) is a company’s net profit\r\ndivided by the number of common shares it has outstanding. The resulting\r\nnumber serves as an indicator of a company’s profitability. EPS\r\nindicates how much money a company makes for each share of its stock and\r\nis a widely used metric for estimating corporate value. A higher EPS\r\nindicates greater value because investors will pay more for a company’s\r\nshares if they think the company has higher profits relative to its\r\nshare price.\r\n \r\n\r\n\r\n\r\nDividends are the distribution of corporate earnings\r\nto eligible shareholders. They are often distributed quarterly and may\r\nbe paid out as cash or in the form of reinvestment in additional stock.\r\nCommon shareholders of dividend-paying companies are eligible to receive\r\na distribution as long as they own the stock before the ex-dividend\r\ndate. Dividend Yield is the amount paid per share\r\ndivided by the share price. Larger, established companies with\r\npredictable profits are often the best dividend payers.\r\n \r\n\r\n\r\n\r\nAnalysis\r\nThere is no strong correlation between the share price and dividend\r\nyield or earnings. This means that a universal rule for determining\r\nwhether or not to invest into a stock does not exist. Instead,\r\ninvestments should be determined on an individual basis formulated on a\r\ncompany’s stability, potential, management, growth, and many other\r\nconsiderable factors. The role of an index fund, such as the S&P\r\n500, is to give investors a diversified selection of securities in one\r\neasy, low-cost investment. It does not require much time, effort, and\r\nlowers risk dramatically because the chances of 500 companies crashing\r\nis a lot lower than a single company going bankrupt.\r\n\r\n\r\n\r\n",
+      "last_modified": "2022-07-07T19:09:22-04:00"
+    },
+    {
+      "path": "sources.html",
+      "title": "Sources",
+      "description": "Sources used for this project",
+      "author": [],
+      "date": "`r Sys.Date()`",
+      "contents": "\r\nDataHub\r\nDataHub is a modern data catalog built to enable end-to-end data\r\ndiscovery, data observability, and data governance. (S&p 500 Companies with Financial\r\nInformation 2018): List of companies in the S&P 500\r\n(Standard and Poor’s 500). The S&P 500 is a free-float,\r\ncapitalization-weighted index of the top 500 publicly listed stocks in\r\nthe US (top 500 by market cap). The dataset includes a list of all the\r\nstocks contained therein.\r\nWikipedia\r\nWikipedia is a free, open content online encyclopedia created through\r\nthe collaborative effort of a community of users known as Wikipedians.\r\nAnyone registered on the site can create an article for publication;\r\nregistration is not required to edit articles.The Standard and Poor’s\r\n500, or simply the S&P 500, is a stock market index tracking the\r\nstock performance of 500 large companies listed on exchanges in the\r\nUnited States. It is one of the most commonly followed equity indices.\r\n(S&p 500 2022)\r\nDistill\r\nDistill is a publication format for scientific and technical writing,\r\nnative to the web.\r\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill. (Jones\r\n2018)\r\n\r\n\r\n\r\nJones, Nora. 2018. “Distill for r Markdown.” Journal of\r\nData Science Software. https://doi.org/10.23915/distill.00010.\r\n\r\n\r\nS&p 500. 2022. https://en.wikipedia.org/wiki/S.\r\n\r\n\r\nS&p 500 Companies with Financial Information. 2018.\r\nhttps://datahub.io/core/s-and-p-500-companies.\r\n\r\n\r\n\r\n\r\n",
+      "last_modified": "2022-07-07T19:09:23-04:00"
     }
   ],
   "collections": []

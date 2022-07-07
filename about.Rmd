@@ -1,10 +1,24 @@
 ---
-title: "About this site"
-description: |
-  Some additional details about the website
+title: "About this Project"
+description: ""
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+
+## Data Sources
+
+The information used for this project came from two different sources: Wikipedia and DataHub. Both of them tracked and recorded information on the 503 companies in the S&P 500 index fund in their respective years. Although the information may not be completely accurate, it provides baseline information on the stock. This allows us to graph and visualize the data in more unique and specific ways, which gives insight of the trends and patterns that occur in the US economy.
+
+## About the Course
+
+This project was made for [Kane’s Free Data Science Course](https://bootcamp.davidkane.info/) in the Summer of 2022. David Kane is a data scientist and a teacher of statistics/data science/analytics — whatever your preferred term for using data to make decisions. He is the former Preceptor in Statistical Methods and Mathematics in the Department of Government at Harvard University. The course is for high school students, but those a bit younger or older are welcome. There is no charge. By the end of the four weeks, students will be able to do basic data science!
+
+
+## About Me
+
+Ethan Hu currently lives Newton, Massachusetts, and is an incoming Junior at Newton North High School. He is interested in computer science and mathematics.  
+Email: ethanhu89@gmail.com  
+GitHub: https://github.com/ethanhu89/

@@ -4,6 +4,9 @@ description: ""
 site: distill::distill_website
 ---
 
+The Standard and Poor's 500, or simply the S&P 500, is a stock market index tracking the stock performance of 500 large companies listed on exchanges in the United States. This means that the S&P 500 gives a broad overview of how the US economy is doing at any point in time. It is one of the most commonly followed equity indices. Alternatives include Dow Jones Industrial (DJIA), Nasdaq Composite (COMP), and Vanguard Total Stock Market Index Fund Admiral Shares (VTSAX). *(Wikpedia)*  
+&nbsp;  
+&nbsp;
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 library(tidyverse)
@@ -13,6 +16,7 @@ library(distill)
 library(ggplot2)
 library(readr)
 library(plotly)
+library(knitr)
 ```
 
 ```{r}
@@ -44,37 +48,33 @@ ggplot(data = market_cap_by_sector,
         axis.title.x = element_text(margin = margin(t = 10), color = "#454545"),
         plot.caption = element_text(face = "italic"))
 
-#add subtitle
+#ggsave("market_cap_graph.png", market_cap_graph)
+
+#include_graphics("market_cap_graph.png")
 ```
 
-```{r}
-dividend_price = raw_data |> 
-  clean_names() |> 
-  select(symbol, name, sector, price, dividend_yield) |> 
-  filter(dividend_yield != 0) |> 
-  mutate(dividend_yield = round(dividend_yield, 2),
-         price = round(price, 2))
+# Analysis
 
-dividend_price_plot = ggplot(data = dividend_price,
-       mapping = aes(x = price, y = dividend_yield, color = "",
-                     text = paste0("Company: ", name, " (", symbol, ")", "\n",
-                                  "Sector: ", sector, "\n",
-                                  "Price: $", price, "\n",
-                                  "Dividend: $", dividend_yield))) +
-  geom_point(size = 0.85) + 
-  scale_color_manual(values = c("#455ee5")) +
-  labs(title = "Dividends Based on Stock Price",
-       x = "Share Price ($)",
-       y = "Dividend Paid per Share ($)") +
+Information Technology has been a dominating sector in the world economy for years and is continuing to grow at an explosive rate. As seen in the graphic below, many of the top companies (in terms of value) are closely related to the tech industry (four out of five are FAANG). There is an increasing demand for new technology as people move toward the middle class. The world is becoming more advanced and modernized, which is why the Information Technology market will remain ginormous and keep expanding as well.  
+
+#### \
+```{r}
+top_10 = read_csv("wikipedia_top_10_2.csv") |> 
+  mutate(company = paste0(" (", symbol, ")")) |> 
+  mutate(market_cap = market_cap / 1000000000000)
+
+ggplot(data = top_10,
+       mapping = aes(x = fct_reorder(company, desc(market_cap)), y = market_cap, fill = market_cap)) +
+  geom_col() +
+  scale_fill_gradient(low = "#5782f8", high = "#2e0cf3") +
   theme_classic() +
-  theme(legend.position="none",
-        plot.title = element_text(face = "bold", size = 17, margin = margin(b = 10)))
-  
-ggplotly(dividend_price_plot, tooltip = "text")
-```
+  theme(axis.text.x = element_text(angle = 30, hjust = 0.5, vjust = 0.5),
+        plot.caption = element_text(face = "italic", margin = margin(t = 15)),
+        plot.title = element_text(face = "bold", size = 17, margin = margin(b = 10)),
+        legend.position="none") +
+  labs(title = "Top 10 Companies in S&P 500",
+       x = NULL,
+       y = "Market Cap in Trillion $",
+       caption = "Wikipedia (2022)")
 
-```{r}
-#something with earnings/share or price/earnings or highs and lows
-#does share price correlate to earnings/share and price/earnings
-#does volatility relate to price/earnings
 ```
